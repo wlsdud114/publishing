@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="29" viewBox="0 0 34 29">
+    <g data-name="그룹 25" transform="translate(-9 -41.577)">
+        <rect data-name="사각형 19" width="34" height="21" rx="5" transform="translate(9 41.577)" style="fill:#2473ff"/>
+        <path data-name="사각형 20" d="M4.359 0h8.282A4.359 4.359 0 0 1 17 4.359a.641.641 0 0 1-.641.641H.641A.641.641 0 0 1 0 4.359 4.359 4.359 0 0 1 4.359 0z" transform="translate(18 65.577)" style="fill:#a4c8fd"/>
+        <path data-name="패스 17" d="m121.67 110.439-1.421-.006a5.988 5.988 0 1 0-11.976-.05l-1.421-.006a7.409 7.409 0 1 1 14.818.061z" transform="translate(-87.921 -55.055)" style="fill:#a4c8fd"/>
+        <path data-name="패스 18" d="m147.966 141.076-1.421-.006a2.639 2.639 0 0 0-5.278-.022l-1.421-.006a4.06 4.06 0 0 1 8.119.034z" transform="translate(-117.567 -85.604)" style="fill:#a4c8fd"/>
+        <ellipse data-name="타원 9" cx="1" cy=".5" rx="1" ry=".5" transform="translate(25 54.577)" style="fill:#a4c8fd"/>
+    </g>
+</svg>

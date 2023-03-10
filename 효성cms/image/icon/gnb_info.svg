@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.17" height="24.399" viewBox="0 0 25.17 24.399">
+    <g data-name="패스 42" style="fill:none">
+        <path d="M3.02 0h19.129a3.128 3.128 0 0 1 3.02 3.225v12.9a3.128 3.128 0 0 1-3.02 3.225l-11.473.008L4.248 24.4v-5.039l-1.228-.008A3.128 3.128 0 0 1 0 16.127V3.225A3.128 3.128 0 0 1 3.02 0z" style="stroke:none"/>
+        <path d="M3.02 1.5c-.838 0-1.52.774-1.52 1.725v12.902c0 .952.682 1.726 1.52 1.726h.01l2.718.018v3.447l4.41-3.457 11.991-.008c.839 0 1.52-.774 1.52-1.726V3.225c0-.95-.681-1.725-1.52-1.725H3.02m0-1.5h19.13c1.667 0 3.02 1.444 3.02 3.225v12.902c0 1.782-1.353 3.226-3.02 3.226l-11.474.008L4.248 24.4v-5.038l-1.228-.008c-1.668 0-3.02-1.444-3.02-3.226V3.225C0 1.445 1.352 0 3.02 0z" style="fill:#fff;stroke:none"/>
+    </g>
+    <path data-name="선 16" transform="translate(6.216 7.224)" style="stroke:#fff;stroke-width:1.5px;fill:none" d="M0 0h12.738"/>
+    <path data-name="선 17" transform="translate(6.216 11.277)" style="stroke:#fff;stroke-width:1.5px;fill:none" d="M0 0h6.948"/>
+</svg>

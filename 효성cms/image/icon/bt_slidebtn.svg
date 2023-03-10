@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+    <defs>
+        <filter id="v9caibooqa" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 146">
+        <g style="filter:url(#v9caibooqa)">
+            <circle data-name="타원 8" cx="25" cy="25" r="25" transform="translate(9 6)" style="fill:#fff"/>
+        </g>
+        <path data-name="패스 52" d="m1619.643 557.046 10.909 8.59-10.909 8.59" transform="translate(-1590 -534.636)" style="fill:none;stroke:#707070"/>
+    </g>
+</svg>
