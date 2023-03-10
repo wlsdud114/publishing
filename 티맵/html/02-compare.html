@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <title>비교견적</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div class="visual-area">
+            <p class="md-txt">내가 다 비교하긴 힘들고,<br><span>알아서 해주는 곳</span> 없을까?</p>
+            <img src="../images/home-main-crop.png" alt="메인이미지">
+            <h1>초간단<br>비교견적!</h1>
+            <p class="md-txt">
+                같은 보장인데 보험료는 다르다?<br>
+                <span>내 조건에 맞는</span> 최적의 보험을 선택하세요!
+            </p>
+            <p class="sm-txt">
+                자동보험 비교견적 서비스는 TMAP 자동차보험<br>
+                제휴사 마이크로프로텍트 인슈코어에서 제공합니다
+            </p>
+        </div>
+        <div>
+            <ol class="box-list">
+                <li>
+                    <img src="../images/content_img01.png" alt="컨텐츠 이미지">
+                    <p>
+                        내 차에 맞는<br>
+                        자동차보험을 <span class="imp">한번에 비교!</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/content_img02.png" alt="컨텐츠 이미지">
+                    <p>
+                        비교해보고 핸드폰으로<br>
+                        <span class="imp">부담없이 상담</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/content_img03.png" alt="컨텐츠 이미지">
+                    <p>
+                        꼼꼼히 따져보고<br>
+                        내가 필요할 때 <span class="imp">언제든 가입</span>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="link-wrap ly_flx ly_flx_wrap">
+            <p><img src="../images/ic-check.png" alt="아이콘">국내 보험사를 한번에</p>
+            <a href="../html/03-terms.html" title="이용약관" class="cmn-btn">개인정보처리방침</a>
+            <a href="../html/04-faq.html" title="질문답변" class="cmn-btn">FAQ</a>
+            <button class="imp-btn" onclick="popOpen()"><span class="und">카카오톡으로 비교견적받기</span></button>
+        </div>
+        <footer>
+            <p>
+                MP준법필--2022-08-020-광고 (2022-08-24~2023-08-23)<br>
+                <br>
+                [필수 안내사항]<br>
+                ※보험대리점:마이크로프로텍트 인슈코어(등록번호: 제2020-040032호)<br>
+                ※본 광고는 광고심의기준을 준수하였으며, 유효기간은 심의일로부터 1년입니다<br>
+                ㈜마이크로프로텍트 인슈코어㈜<br>
+                사업자등록번호: 710-81-02083 / 보험대리점 명 및 보험대리점<br>
+                등록번호: 마이크로프로텍트 인슈코어㈜ 보험대리점(등록번호: 2020-040032)<br>
+                대표: 김형종 서울특별시 서초구 사임당로 32 재우빌딩 2층
+            </p>
+        </footer>
+        <div id="toast-pop">
+            <div class="terms-accept-container" id="termsAccept">
+                <h2 class="md-tit">자동차보험 비교하기</h2>
+                <p>인슈어테크기업 ㈜마이크로프로텍트인슈코어에서 <br>
+                    내 자동차 정보를 확인하고 내 자동차에 맞는 <br>
+                    보험료 산출을 위한 동의를 진행합니다.</p>
+                <div>
+                    <p><input type="checkbox" name="terms" id="master-chk"><label for="master-chk">전체동의</label></p>
+                    <p>
+                        <input type="checkbox" name="terms" id="chk01"><label for="chk01">[필수]개인정보 수집이용동의</label>
+                        <a href="../html/03-terms.html" title="약관보기">약관보기</a>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="terms" id="chk02"><label for="chk02">[필수]개인정보 제3자동의</label>
+                        <a href="../html/03-terms.html" title="약관보기">약관보기</a>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="terms" id="chk03"><label for="chk03">[필수]자동차보험 서비스 이용약관</label>
+                        <a href="../html/03-terms.html" title="약관보기">약관보기</a>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="terms" id="chk04"><label for="chk04">[선택]마케팅 활용 및 광고 수신 동의</label>
+                        <a href="../html/03-terms.html" title="약관보기">약관보기</a>
+                    </p>
+                </div>
+                <button class="imp-btn" onclick="nextStep()" id="accept">동의하고 상담받기</button>
+            </div>
+            <div class="personal-info-container" id="personalInfo">
+                <h2 class="md-tit">이름과 연락처를 입력해주세요</h2>
+                <form>
+                    <div>
+                        <span>이름</span>
+                        <input type="text" id="name">
+                        <span class="err">한글 및 영문만 입력이 가능합니다.</span>
+                    </div>
+                    <div>
+                        <span>연락처</span>
+                        <div class="ly_flx ly_flx_btw">
+                            <input type="text" id="pnum1" maxlength="3">
+                            <input type="text" id="pnum2" maxlength="4">
+                            <input type="text" id="pnum3" maxlength="4">
+                        </div>
+                        <span class="imp">보다 정확한 상담을 위해 본인 확인을 해주세요</span>
+                    </div>
+                </form>
+                <button class="imp-btn">상담 시작하기</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
