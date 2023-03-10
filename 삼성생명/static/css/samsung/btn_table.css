@@ -1,0 +1,81 @@
+@charset 'utf-8';
+
+/* BUTTONS LAYOUT----------- */
+.bl_btnWrap{margin:20px 0 30px;}
+.bl_btnWrap_def{display:flex;justify-content:space-between;}
+.bl_btnWrap_def button{margin-left:7px;flex:1 1 auto;}
+.bl_btnWrap_def button:first-child{margin-left:0;}
+.bl_btnWrap_center{display:flex;justify-content:center;gap:10px;}
+
+/* BUTTON/SWITCHES ----------- */
+.el_btn{display:inline-flex;padding:5px 10px;border-radius:5px;background:#007aff;color:#fff;justify-content:center;align-items:center;}
+.el_btn__medium{height:50px;letter-spacing:-.96px;font-size:16px;}
+.el_btn__large{height:62px;letter-spacing:-.96px;font-size:16px;}
+
+.hp_btn__single{width:100%;}
+.el_btn__single{width:100%;}
+
+.el_btn2{display:inline-block;padding:5px 10px;height:50px;border:1px solid #0b7aff;border-radius:10px;background:#fff;color:#0b7aff;text-align:center;letter-spacing:-.84px;font-size:14px;}
+.el_btn2__blue{border-color:#007aff;color:#0c7aff;font-weight:500;}
+
+.el_btn3{display:inline-flex;min-width:76px;height:36px;border:1px solid #007aff;border-radius:30px;background:#fff;color:#161616;text-align:center;letter-spacing:-.9px;font-weight:500;font-size:14px;justify-content:center;align-items:center;}
+.el_btn3__active{border-color:#3395ff;background-color:#3395ff;color:#fff;}
+.el_btn3__large{height:62px;border-width:2px;letter-spacing:-1.08px;font-size:18px;}
+.el_btn3__sm{height:30px;border-width:2px;letter-spacing:-1.08px;font-size:18px;}
+
+.el_btn3__primary{border-color:#007aff;}
+.el_btn3__secondary{border-color:#007aff;background-color:#007aff;color:#fff;}
+
+.el_btn3__brd_gray{border-color:#e3e3e3;}
+.el_btn3__brd_gray.el_btn3__active{border-color:#3395ff;}
+.el_btn3__bgc_none{background:transparent}
+
+.el_btn4{display:inline-flex;min-width:100px;height:36px;border:1px solid #f3f6fa;border-radius:30px;background:#f3f6fa;letter-spacing:-.78px;font-weight:500;font-size:13px;align-items:center;justify-content:center;}
+.el_btn4.is_active{border-color:#007aff;background-color:#fff;color:#007aff;}
+.el_btn4 .el_btn_arrHor{margin-left:8px;}
+.el_btn4__large{height:40px;}
+
+.el_btn4__secondary{border-color:#007aff;background-color:#fff;box-shadow:0 3px 3px rgba(0,0,0,.33);}
+.el_btn4__secondary.is_active{border-color:#007aff;background-color:#007aff;color:#fff;}
+.el_btn4__secondary.is_active .el_btn_arrHor path{stroke:#fff;}
+
+.el_btn5{display:inline-flex;min-width:100px;height:36px;border:1px solid #333;border-radius:30px;background:#fff;letter-spacing:-.78px;font-weight:500;font-size:13px;align-items:center;justify-content:center;}
+.el_btn5 .optionList{border:1px solid #333;}
+
+.el_btn6{display:inline-flex;border:1px solid #fff;border-radius:30px;color:#fff;letter-spacing:-.72px;font-weight:500;align-items:center;justify-content:center;}
+.el_btn6__sm{min-width:72px;height:24px;font-size:12px;}
+.el_btn6__shadow{box-shadow:0 3px 6px rgba(0,0,0,.29);}
+.el_btn6__gray{border-color:#aaa;color:#aaa}
+
+/* 사이즈 */
+
+/* 아이콘 */
+.el_btn_arrHor path{stroke:#464646;}
+.is_active>.el_btn_arrHor path{stroke:#007aff;}
+.el_btn_arrHor__secondary path{stroke:#464646;}
+.is_active>.el_btn_arrHor__secondary path{stroke:#fff;}
+
+.el_btn_arrHor__fold{transition:transform .35s;}
+.is_active .el_btn_arrHor__fold{transform:rotate(-180deg);}
+
+/* 기능별 */
+
+
+.el_btnKaKao{display:inline-flex;padding:0 10px 0 14px;min-width:120px;height:36px;border-color:#fae305;border-radius:36px;background:#fae305;color:#3c1e1e;text-align:center;font-weight:bold;align-items:center;}
+.el_btnKaKao .ico{margin-right:7px;margin-bottom:-3px}
+
+/* 폰트사이즈 */
+
+/* 스위치 */
+.el_switch{position:relative;display:inline-block;width:42px;height:24px;}
+.el_switch input{width:0;height:0;opacity:0;}
+.el_switch_btn{position:absolute;top:0;right:0;bottom:0;left:0;border-radius:50px;background-color:#e0e0e0;cursor:pointer;-webkit-transition:.4s;transition:.4s;}
+.el_switch_btn:before{position:absolute;bottom:2px;left:2px;width:20px;height:20px;border-radius:20px;background-color:#fff;box-shadow:-1px 0 2px rgba(0,0,0,.40);content:'';-webkit-transition:.5s;transition:.4s;}
+.el_switch input:checked+.el_switch_btn{background-color:#007aff;}
+.el_switch input:checked+.el_switch_btn:before{-webkit-transform:translateX(18px);-ms-transform:translateX(18px);transform:translateX(18px);}
+
+
+.el_btnSvg img{vertical-align:top;}
+/* 04.LABEL ----------- */
+.el_lable{display:inline-block;min-width:36px;height:16px;border-radius:9px;background-color:#007aff;color:#fff;vertical-align:middle;text-align:center;letter-spacing:-.54px;font-weight:bold;font-style:normal;font-size:9px;line-height:14px;}
+

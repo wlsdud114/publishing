@@ -1,0 +1,151 @@
+@charset 'utf-8';
+
+/* Noto Sans KR */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Thin.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Thin.woff') format('woff'),
+}
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Light.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Light.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 350;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-DemiLight.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-DemiLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Bold.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: local(''),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Black.woff2') format('woff2'),
+		url('../../fonts/samsung/NotoSansKR/NotoSansKR-Black.woff') format('woff');
+}
+
+
+
+/* Poppins */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 100;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-100.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-100.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 200;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-200.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-200.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-300.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-300.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-400.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-400.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-500.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-500.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-600.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-600.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-700.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-700.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 800;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-800.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-800.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 900;
+	src: local(''),
+		url('../../fonts/samsung/Poppins/Poppins-900.woff2') format('woff2'),
+		url('../../fonts/samsung/Poppins/Poppins-900.woff') format('woff'),
+}
+

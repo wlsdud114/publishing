@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*
+:root {
+    --main-color:#3cc35b;
+    --main-color-hover : #007b1c;
+}
+*/
+
+#header h1 a span { color:#3cc35b;}
+#header .headerIcon .btnCart .count { background:#3cc35b;}
+.headerMenu .allMenu { background:#3cc35b; }
+.headerMenu .allMenuBox .depth1 {background:#3cc35b;}
+.headerMenu .allMenuBox .depth1 a:hover,
+.headerMenu .allMenuBox .depth1 a.on { color:#3cc35b;}
+.formBox .successText { color:#3cc35b;}
+.success .inputBox { border-color:#3cc35b;}
+.button { background:#3cc35b;}
+.button:disabled:hover { background:#3cc35b}
+.button.line2 { color:#3cc35b; border:1px solid #3cc35b;}
+.mypageWrap .leftGnb li.on a{ color:#3cc35b;}
+.mypageWrap .leftGnb li:hover a { color:#3cc35b;}
+.mypageCont .myInfoBox .userInfo .text .label { background:#3cc35b;}
+.customerWrap .leftGnb li.on a{ color:#3cc35b;}
+.customerWrap .leftGnb li:hover a { color:#3cc35b;}
+.eventQuizBox > .quizBox .quiz { color:#3cc35b;}
+.imgStepBox2 .textBox .number { color:#3cc35b;}
+
+/* 
+html.color1 #header h1 a span { color:red;}
+html.color1 #header .headerSearch { background:rgba(255,0,0,0.1);}
+html.color1 #header .headerSearch .btnSearch i:after { border:2px solid red;}
+html.color1 #header .headerSearch .btnSearch i:before { background:red;}
+html.color1 #header .headerIcon .btnCart .count { background:red;}
+html.color1 .headerMenu .allMenu { background:red; }
+html.color1 .headerMenu .allMenuBox .depth1 {background:red;}
+html.color1 .headerMenu .allMenuBox .depth1 a:hover,
+html.color1 .headerMenu .allMenuBox .depth1 a.on { color:red;}
+html.color1 .formBox .successText { color:red;}
+html.color1 .success .inputBox { border-color:red;}
+html.color1 .button { background:red;}
+html.color1 .button:disabled:hover { background:red}
+html.color1 .button.line2 { color:red; border:1px solid red;}
+html.color1 .mypageWrap .leftGnb li.on a{ color:red;}
+html.color1 .mypageWrap .leftGnb li:hover a { color:red;}
+html.color1 .mypageCont .myInfoBox .userInfo .text .label { background:red;}
+html.color1 .customerWrap .leftGnb li.on a{ color:red;}
+html.color1 .customerWrap .leftGnb li:hover a { color:red;}
+html.color1 .eventQuizBox > .quizBox .quiz { color:red;}
+html.color1 .imgStepBox2 .textBox .number { color:red;} */
