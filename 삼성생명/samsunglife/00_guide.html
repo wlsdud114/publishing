@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>삼성생명치아서비스</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/samsung/style.css">
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/base.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/module-ui.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/layout.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/common.js"></script>
+	<style>
+		.el_btnSvg{color:orange;}
+		.el_btnSvg svg{fill:currentColor;}
+		svg rect{fill:currentColor;}
+		rect,path{fill:red !important;}
+	</style>
+</head>
+<body>
+<!-- WRAP -->
+<div class="wrap">
+	<!-- HEADER -->
+	<div class="header header__logo">
+		<h1 class="header_logo">
+			<a href="/"><img src="../images/layout/header_logo.svg" alt="삼성생명"></a>
+		</h1>
+
+		<div class="header_rgtArea">
+			<button type="button" class="header_btnHome"><img src="../images/layout/ico_gnb_home.svg" alt=""></button>
+		</div>
+	</div>
+	<!-- //HEADER -->
+
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- CONTENT -->
+		<div class="content">
+			<div class="ly_sect">
+				<div>
+					<strong>el_btn</strong>
+					<button type="button" class="el_btn">버튼1</button>
+					<button type="button" class="el_btn el_btn__large">버튼1</button>
+				</div>
+				<div>
+					<strong>el_btn2</strong>
+					<button type="button" class="el_btn2">버튼2</button>
+				</div>
+				<div>
+					<strong>el_btn3</strong>
+					<button type="button" class="el_btn3 el_btn3__brd_gray">버튼3</button>
+					<button type="button" class="el_btn3 el_btn3__brd_gray el_btn3__active">버튼3</button>
+					<button type="button" class="el_btn3 el_btn3__large">버튼3</button>
+					<button type="button" class="el_btn3 el_btn3__sm">버튼3</button>
+				</div>
+				<div>
+					<strong>el_btn4</strong>
+					<button type="button" class="el_btn4">버튼3</button>
+					<button type="button" class="el_btn4 el_btn4__large">버튼3</button>
+
+					<button type="button" class="el_btn4 el_btn4__secondary">버튼3</button>
+				</div>
+
+				<button style="font-size:32px" class="el_btnSvg"><svg class="el_svg"><use xlink:href="#apiMap_call"></svg></button>
+				<button><svg class="el_svg" style="font-size:32px"><use xlink:href="#apiMap_call"></svg></button>
+				<button class="el_btnSvg" style="font-size:32px"><svg class="el_svg"><use xlink:href="../images/icon/sprite_svg.svg#apiMap_call"></svg></button>
+				<button style="font-size:40px" class="el_btnSvg"><svg class="el_svg"><use xlink:href="#proc_discount"></svg></button>
+				<img src="../images/icon/svg/apiMap_call.svg" alt="">
+			</div>
+		</div> <!-- //CONTENT -->
+	</div> <!-- //CONTAINER -->
+</div><!-- //WRAP -->
+
+<!-- POPUP : 일반 회원이 프리미엄 덴탈케어 탭 진입 시 / 서비스 목록에서 진입시 -->
+<article class="bl_pop_wrapper js_pop_wrapper" id="popTest">
+	<div class="bl_pop_wrap js_pop_wrap">
+		<div class="bl_pop_cont">
+			<div class="bl_pop_msg hp_ta_center">
+				프리미엄 덴탈케어는
+				<br>
+				프리미엄 서비스 대상자에 한 해
+				<br>
+				제공하는 서비스입니다.
+			</div>
+		</div>
+
+		<div class="bl_pop_foot">
+			<div class="bl_pop_foot_def">
+				<button type="button" class="el_btn el_btn__medium hp_br_sharp el_btn__single pop-close">확인</button>
+			</div>
+		</div>
+
+		<button type="button" class="bl_pop_close pop-close">
+			<img src="../images/icon/ico_pop_close.svg" alt="닫기">
+		</button>
+	</div>
+</article><!-- //POPUP -->
+
+<!-- POPUP : 연 1회 횟수 제한 서비스로 신청 유무에 따라 진입 불가하게 -->
+<article class="bl_pop_wrapper js_pop_wrapper" id="popTest2">
+	<div class="bl_pop_wrap js_pop_wrap">
+		<div class="bl_pop_cont">
+			<div class="bl_pop_msg hp_ta_center">
+				죄송합니다.
+				<br>
+				연 1회 제공되는 서비스로 신청이 불가합니다.
+			</div>
+		</div>
+
+		<button type="button" class="bl_pop_close pop-close">
+			<img src="../images/icon/ico_pop_close.svg" alt="닫기">
+		</button>
+	</div>
+</article><!-- //POPUP -->
+</body>
+</html>

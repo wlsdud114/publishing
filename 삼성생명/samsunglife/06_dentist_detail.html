@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>삼성생명치아서비스</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/samsung/style.css">
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/base.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/module-ui.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/layout.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+            $('.review_select li div').click(function(){
+                let imgSrc = $(this).find('img').attr('src');
+
+                $('.review_select li div').removeClass('select');
+                $('.iimg01').find('img').attr('src',$('.iimg01').find('img').attr('src').replace('_wh.png','_bl.png'));
+                $('.iimg02').find('img').attr('src',$('.iimg02').find('img').attr('src').replace('_wh.png','_bl.png'));
+                $('.iimg03').find('img').attr('src',$('.iimg03').find('img').attr('src').replace('_wh.png','_bl.png'));
+
+                $(this).addClass('select');
+
+                if($(this).hasClass('select')){
+                   let imgSrc2 = imgSrc.replace('_bl.png','_wh.png');
+                   $(this).find('img').attr('src',imgSrc2);
+                }
+            });
+		});
+	</script>
+</head>
+<body>
+<!-- WRAP -->
+<div class="wrap">
+	<!-- HEADER -->
+	<div class="header">
+		<h1 class="header_ttl">치과치료비 비교</h1>
+
+		<div class="header_lftArea">
+			<button type="button" class="header_btnBack" onclick="location.href='01_main.html'"><img src="../static/images/samsung/layout/ico_gnb_back.svg" alt=""></button>
+		</div>
+        <div class="header_rgtArea">
+			<button type="button" class="header_btnHome"><img src="../static/images/samsung/layout/ico_gnb_home.svg" alt=""></button>
+		</div>
+	</div><!-- //HEADER -->
+
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- CONTENT -->
+		<div class="content ly_full">
+            <!-- BL : 탭 -->
+			<div class="bl_tab js_tab">
+				<div class="bl_tab_header">
+					<ul class="bl_tab_menu js_tab_menu">
+						<li class="is_active"><a href="#none">병원정보</a></li>
+						<li><a href="#none">리뷰(13)</a></li>
+					</ul>
+				</div>
+
+				<div class="bl_tab_body">
+                    <div class="bl_tab_contents js_tab_contents">
+                        <!-- 탭 : 병원정보 -->
+                        <div class="bl_tab_cont js_tab_cont">
+                            <div class="bl_benefit_info">
+                                <div class="bl_infoBox">
+                                    <strong class="bl_infoBox_ttl">과천 연세 스위트치과 병원</strong>
+                                    <p class="bl_infoBox_addr">경기도 과천시 별양상가1로 13 6층 일부호
+                                        <br>(별양동, 교보빌딩)</p>
+                                    <p class="bl_infoBox_tel">031-3678-2874</p>
+                                    <p class="bl_infoBox_map"><img src="../static/images/samsung/icon/ico_marker.png"></p>
+                                    <a class="bl_infoBox_call" href="tel:031-3678-2874"><img src="../static/images/samsung/icon/ico_apiMap_call.svg" alt=""></a>
+                                    <a class="bl_infoBox_homepage" href=""><img src="../static/images/samsung/icon/ico_apiMap_call.svg" alt="홈페이지 바로가기"></a>
+                                    <dl class="bl_list_benefit">
+                                        <dt>비급여 진료 항목</dt>
+                                        <dd>임플란트(PFM)<span>199,000 ~ 99,000원</span></dd>
+                                        <dd>임플란트(GOLD)<span>199,000 ~ 99,000원</span></dd>
+                                        <dd>임플란트(PFM)<span>199,000 ~ 99,000원</span></dd>
+                                        <dd>임플란트(GOLD)<span>199,000 ~ 99,000원</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="bl_formTtl ly_sect">
+                                <strong>의사정보</strong>
+                            </div>
+                            <div class="bl_table">
+                                <div class="ly_sect">
+                                    <div>
+                                        <p>총 의사 수</p>
+                                        <p><strong>0 명</strong></p>
+                                    </div>
+                                    <div>
+                                        <p>전문의 수</p>
+                                        <p><strong>0 명</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="bl_list2 bl_list2__dot ly_sect">
+                                <li>해당 병원이 건강보험심사평가원에 신고한 내용을 기준으로 작성 되었습니다.</li>
+                            </ul>
+                        </div><!-- //탭 : 병원정보 -->
+
+                        <!-- 탭 : 리뷰 -->
+                        <div class="tab-cont js_tab_cont ly_full">
+                            <!-- 리뷰 리스트 없을 때 -->
+                            <!-- <div class="ly_full review">
+                                <div class="ly_sect">
+                                    <p><strong>리뷰</strong></p>
+                                    <p>총 <span class="red">0</span>개</p>
+
+                                    <div class="bl_infoBox2">
+                                        <img src="../static/images/samsung/icon/alert_icon.png">
+                                        <p>작성된 리뷰가 없습니다.<br>이병원을 방문해보셨다면<br>리뷰를 제일 먼저 작성해주세요!</p>
+                                    </div>
+                                    <ul class="bl_list2 bl_list2__dot hp_mt20">
+                                        <li>해당 병원이 건강보험심사평가원에 신고한 내용을 기준으로 작성 되었습니다.</li>
+                                    </ul>
+                                </div>
+                                <div class="bl_btnWrap ly_sect">
+                                    <button type="button" class="el_btn el_btn__large el_btn__single">병원 리뷰남기기</button>
+                                </div>
+                            </div> -->
+                            <!-- 리뷰 작성 -->
+                            <div class="ly_full review_write">
+                                <div class="ly_sect">
+                                    <p><strong>삼성생명치과<br>리뷰를 작성해주세요</strong></p>
+
+                                    <ul class="ly_flx ly_flx_btw review_select">
+                                        <li>
+                                            <div class="iimg01 select"><img src="../static/images/samsung/icon/good_icon_wh.png"></div>
+                                            <p>좋아요</p>
+                                        </li>
+                                        <li>
+                                            <div class="iimg02"><img src="../static/images/samsung/icon/soso_icon_bl.png"></div>
+                                            <p>보통이에요</p>
+                                        </li>
+                                        <li>
+                                            <div class="iimg03"><img src="../static/images/samsung/icon/bad_icon_bl.png"></div>
+                                            <p>별로에요</p>
+                                        </li>
+                                    </ul>
+                                    <textarea placeholder="메세지 남기기"></textarea>
+                                </div>
+                                <div class="bl_btnWrap ly_sect">
+                                    <button type="button" class="el_btn el_btn__large el_btn__single">작성완료</button>
+                                </div>
+                            </div>
+                            <!-- 리뷰 리스트 있을 때 -->
+                            <!-- <div class="ly_full review">
+                                <div class="ly_sect">
+                                    <p><strong>리뷰</strong></p>
+                                    <p>총 <span class="red">5</span>개</p>
+
+                                    <div class="bl_reviewBox">
+                                        <p>추천해요. 친절하고 좋아요</p>
+                                        <p class="writer_info"><span class="name">***</span><span>yymmdd</span></p>
+                                        <a href="#none" class="h_btn"><img src="../static/images/samsung/icon/more_btn.png"></a>
+                                        <p class="eval"><img src="../static/images/samsung/icon/good_icon_bl.png">좋아요</p>
+                                    </div>
+                                    <div class="bl_reviewBox">
+                                        <p>추천해요. 친절하고 좋아요</p>
+                                        <p class="writer_info"><span class="name">***</span><span>yymmdd</span></p>
+                                        <a href="#none" class="h_btn"><img src="../static/images/samsung/icon/more_btn.png"></a>
+                                        <p class="eval"><img src="../static/images/samsung/icon/good_icon_bl.png">좋아요</p>
+                                    </div>
+                                    <div class="bl_reviewBox">
+                                        <p>추천해요. 친절하고 좋아요</p>
+                                        <p class="writer_info"><span class="name">***</span><span>yymmdd</span></p>
+                                        <a href="#none" class="h_btn"><img src="../static/images/samsung/icon/more_btn.png"></a>
+                                        <p class="eval"><img src="../static/images/samsung/icon/good_icon_bl.png">좋아요</p>
+                                    </div>
+                                    <a href="#none" class="more_btn">
+                                        <img src="../static/images/samsung/icon/plus_icon.png">
+                                        <span>더보기</span>
+                                    </a>
+                                </div>
+                                <div class="bl_btnWrap ly_sect">
+                                    <button type="button" class="el_btn el_btn__large el_btn__single">병원 리뷰남기기</button>
+                                </div>
+                            </div> -->
+                        </div><!-- //탭 : 리뷰 -->
+                    </div>
+                </div>
+			</div><!-- //BL : 탭 -->
+		</div><!-- //CONTENT -->
+	</div><!-- //CONTAINER -->
+</div><!-- //WRAP -->
+</body>
+</html>

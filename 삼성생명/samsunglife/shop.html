@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>삼성생명치아서비스</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/samsung/style.css">
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/slick.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/base.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/module-ui.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/layout.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/common.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			// 스와이프
+			$('#swipeShop').slick({
+				autoplay: false,
+				dots: false,
+				autoplaySpeed: 4000
+			});
+
+			// 코치마크 모달 열기
+			$('#popSwipe').openModal({
+				overlay: false
+			});
+
+
+			// 2초후 이벤트
+			setInterval(function() {
+				// 코치마크 모달 닫기
+				$('#popSwipe').closeModal({
+					fade: true
+				});
+
+				// 슬라이더 회색조 제거
+				$('.js_slider').removeClass('hp_fl_gs');
+			}, 2000);
+		});
+	</script>
+</head>
+<body>
+<!-- WRAP -->
+<div class="wrap">
+	<!-- HEADER -->
+	<div class="header">
+		<h1 class="header_ttl">쇼핑몰</h1>
+
+		<div class="header_lftArea">
+			<button type="button" class="header_btnBack"><img src="../static/images/samsung/layout/ico_gnb_back.svg" alt="" onclick="location.href='01_main.html'"></button>
+		</div>
+	</div><!-- //HEADER -->
+
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- CONTENT -->
+		<div class="content ly_full">
+			<div class="bl_slider bl_slider__tr hp_fl_gs js_slider js_slider__pageNum" id="swipeShop">
+				<div class="ly_sect ly_sect__sm">
+					<p>
+						<a href="#none" data-handler="popTest" data-control="popup"><img src="../static/images/samsung/content/bnnr_shop.jpg" alt=""></a>
+					</p>
+				</div>
+				<div class="ly_sect ly_sect__sm">
+					<p>
+						<a href="#none" data-handler="popTest2" data-control="popup"><img src="../static/images/samsung/content/bnnr_shop2.jpg" alt=""></a>
+					</p>
+				</div>
+				<div class="ly_sect ly_sect__sm">
+					<p>
+						<a href="#none" data-handler="popTest3" data-control="popup"><img src="../static/images/samsung/content/bnnr_shop3.jpg" alt=""></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="bl_sliderNum js_sliderNum"></div>
+		</div><!-- //CONTENT -->
+	</div><!-- //CONTAINER -->
+</div><!-- //WRAP -->
+
+<!-- POPUP -->
+<article class="bl_pop_wrapper js_pop_wrapper bl_pop_wrapper__bcgNone" id="popSwipe">
+	<div class="bl_pop_coach js_pop_wrap">
+		<div class="bl_pop_swipe">
+			<p class="arrow"><img src="../static/images/samsung/icon/ico_swipe_arr.png" alt=""></p>
+			<p class="hand"><img src="../static/images/samsung/icon/ico_swipe_hand.png" alt=""></p>
+		</div>
+	</div>
+</article><!-- //POPUP -->
+
+<!-- POPUP -->
+<article class="bl_pop_wrapper js_pop_wrapper" id="popTest">
+	<div class="bl_pop_wrap js_pop_wrap">
+		<div class="bl_pop_cont">
+			<div class="bl_pop_msg hp_ta_center">
+				본 서비스는 모두 다 건치 프로그램으로서 <br />
+				치아건강용품을 우대할인가로 제공하는 <br />
+				서비스입니다. 
+			</div>
+		</div>
+
+		<div class="bl_pop_foot">
+			<div class="bl_pop_foot_def">
+				<a href="https://www.usetoolcompany.com/store/aai/{{유저식별자}}"  target="_blank" class="el_btn el_btn__medium hp_br_sharp el_btn__single">Usetool Company 쇼핑몰 바로가기</a>
+			</div>
+		</div>
+
+		<button type="button" class="bl_pop_close pop-close"><img src="../static/images/samsung/icon/ico_pop_close.svg" alt="닫기"></button>
+	</div>
+</article><!-- //POPUP -->
+
+<!-- POPUP -->
+<article class="bl_pop_wrapper js_pop_wrapper" id="popTest2">
+	<div class="bl_pop_wrap js_pop_wrap">
+		<div class="bl_pop_cont">
+			<div class="bl_pop_msg hp_ta_center">
+				프리미엄 덴탈케어는
+				<br> 프리미엄 서비스 대상자에 한 해
+				<br> 제공하는 서비스입니다.</div>
+		</div>
+
+		<div class="bl_pop_foot">
+			<div class="bl_pop_foot_def">
+				<a href="https://www.brushmon.com/school/insurance/aai?key={key}"  target="_blank" class="el_btn el_btn__medium hp_br_sharp el_btn__single">키틴플래닛 쇼핑몰 바로가기</a>
+			</div>
+		</div>
+
+		<button type="button" class="bl_pop_close pop-close"><img src="../static/images/samsung/icon/ico_pop_close.svg" alt="닫기"></button>
+	</div>
+</article><!-- //POPUP -->
+
+<!-- POPUP -->
+<article class="bl_pop_wrapper js_pop_wrapper" id="popTest3">
+	<div class="bl_pop_wrap js_pop_wrap">
+		<div class="bl_pop_cont">
+			<div class="bl_pop_msg hp_ta_center">
+				프리미엄 덴탈케어는
+				<br> 프리미엄 서비스 대상자에 한 해
+				<br> 제공하는 서비스입니다.</div>
+		</div>
+
+		<div class="bl_pop_foot">
+			<div class="bl_pop_foot_def">
+				<a href="https://liveorals.com/product/detail.html?product_no=130"  target="_blank" class="el_btn el_btn__medium hp_br_sharp el_btn__single">라이브치과병원 쇼핑몰 바로가기</a>
+			</div>
+		</div>
+
+		<button type="button" class="bl_pop_close pop-close"><img src="../static/images/samsung/icon/ico_pop_close.svg" alt="닫기"></button>
+	</div>
+</article><!-- //POPUP -->
+</body>
+</html>

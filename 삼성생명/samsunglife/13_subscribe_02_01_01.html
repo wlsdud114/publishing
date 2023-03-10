@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>삼성생명치아서비스</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/samsung/style.css">
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery.timepicker.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/base.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/module-ui.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/layout.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/common.js"></script>
+</head>
+<body>
+<!-- WRAP -->
+<div class="wrap">
+	<!-- HEADER -->
+	<div class="header">
+		<h1 class="header_ttl">구독서비스</h1>
+
+		<div class="header_lftArea">
+			<button type="button" class="header_btnBack" onclick="location.href='08_scaling.html'"><img src="../static/images/samsung/layout/ico_gnb_back.svg" alt=""></button>
+		</div>
+		<div class="header_rgtArea">
+			<button type="button" class="header_btnHome"><img src="../static/images/samsung/layout/ico_gnb_home.svg" alt=""></button>
+		</div>
+	</div><!-- //HEADER -->
+
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- CONTENT -->
+		<div class="content ly_full">
+			<!-- BL : 탭 -->
+			<div class="bl_tab ">
+				<div class="bl_tab_header">
+					<ul class="bl_tab_menu">
+						<li>
+							<a href="#none">정기구독</a>
+						</li>
+						<li class="is_active">
+							<a href="#none">MY구독 정보</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="ly_sect">
+					<div class="bl_tab_body">
+						<div class="bl_tab_contents">
+							<!-- 탭 : MY구독 정보 -->
+							<div class="bl_tab_cont">
+								<div class="bl_subscribe">
+									<div class="bl_subscribe_head">
+										<p class="bl_subscribe_ttl">
+											<strong>벤처스랩(유즈툴)</strong>
+										</p>
+										<div class="bl_subscribe_head_btn">
+											<button type="button" class="el_btn6 el_btn6__sm el_btn6__gray">구독 취소</button>
+										</div>
+									</div>
+									<div class="bl_subscribe_date">
+										<p>구독신청일 : 2022.07.23</p>
+										<p>배송예정일 : 2022.08.21</p>
+									</div>
+
+									<ul class="bl_list2 bl_list2__dot bl_list2__dark bl_list2__sm hp_mt12">
+										<li>1회차 : 칫솔살균기/ 원형자석/ 칫솔 2/치약 2</li>
+										<li>2회차~17회차 : 각 회차별 칫솔 2/ 치약 2</li>
+										<li>배송주기
+											<br>
+											1회차 ~ 8회차 : 3개월 단위
+											<br>
+											9회차 ~ 17회차 : 4개월 단위</li>
+									</ul>
+								</div>
+
+								<div class="bl_contact bl_contact__hor hp_mt20">
+									<div>상품(교환)/배송 등은
+										<br> 카카오톡으로 문의해주세요.</div>
+									<div>
+										<a href="#none" class="el_btnKaKao"><img src="../static/images/samsung/icon/ico_kakao.svg" alt="" class="ico"> 카카오 상담</a>
+									</div>
+								</div>
+
+								<ul class="bl_list2 bl_list2__dot">
+									<li>출고 당일 아래 주소로 구독 상품이 배송됩니다.</li>
+									<li>출고일은 매월 1일부터 순차적으로 발송됩니다.</li>
+								</ul>
+
+								<!-- BL : FORM -->
+								<div class="bl_form bl_form__sm">
+									<h2 class="el_lv2Heading hp_fw700 hp_mt24">배송지 정보</h2>
+									<div class="bl_form_item">
+										<div class="bl_form_label">
+											<label for="">
+												<strong class="bl_form_reqTxt">받는사람</strong>
+											</label>
+										</div>
+										<div class="bl_form_inpArea">
+											<span class="el_inpTxt el_inpTxt__single">
+												<input type="text" class="el_inpTxt_txt" required>
+											</span>
+										</div>
+									</div>
+
+									<div class="bl_form_item bl_form_item__addr">
+										<div class="bl_form_label">
+											<label for="">
+												<strong class="bl_form_reqTxt">주소</strong>
+											</label>
+										</div>
+										<div class="bl_form_inpArea">
+
+											<div class="el_form_hoz el_form_hoz__post">
+												<span class="el_inpTxt">
+													<input type="tel" class="el_inpTxt_txt" placeholder="우편번호" required>
+												</span>
+												<button type="button" class="el_btn2 el_btn_addr hp_fw500">주소검색</button>
+											</div>
+											<span class="el_inpTxt el_inpTxt__single">
+												<input type="tel" class="el_inpTxt_txt" placeholder="기본주소" required>
+											</span>
+											<span class="el_inpTxt el_inpTxt__single">
+												<input type="tel" class="el_inpTxt_txt" placeholder="상세주소 선택 입력 가능" required>
+											</span>
+										</div>
+									</div>
+
+									<div class="bl_form_item">
+										<div class="bl_form_label">
+											<label for="">
+												<strong class="bl_form_reqTxt">연락처</strong>
+											</label>
+										</div>
+										<div class="bl_form_inpArea">
+											<span class="el_inpTxt el_inpTxt__single">
+												<input type="tel" class="el_inpTxt_txt">
+											</span>
+										</div>
+									</div>
+
+									<div class="bl_form_item">
+										<div class="bl_form_label">
+											<label for="">
+												<label for="">
+													보조 연락처
+												</label>
+											</label>
+										</div>
+										<div class="bl_form_inpArea">
+											<span class="el_inpTxt el_inpTxt__single">
+												<input type="tel" class="el_inpTxt_txt">
+											</span>
+										</div>
+									</div>
+								</div><!-- //BL : FORM -->
+							</div><!-- //탭 : MY구독 정보 -->
+						</div>
+					</div>
+				</div>
+			</div><!-- //BL : 탭 -->
+
+			<div class="ly_sect ly_sect__xs">
+				<div class="bl_btnWrap">
+					<div class="bl_btnWrap_def">
+						<button type="button" class="el_btn2 el_btn3__large el_btn3__secondary hp_grid1_2">구독 정보 변경</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- //CONTENT -->
+	</div><!-- //CONTAINER -->
+</div><!-- //WRAP -->
+</body>
+</html>

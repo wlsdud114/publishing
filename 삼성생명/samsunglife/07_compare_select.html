@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>삼성생명치아서비스</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/samsung/style.css">
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/base.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/module-ui.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/layout.js"></script>
+	<script type="text/javascript" src="../static/js/samsung/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//셀렉트 박스
+			const label = document.querySelectorAll('.label');
+			label.forEach(function(lb){
+				lb.addEventListener('click', e => {
+					let optionList = lb.nextElementSibling;
+					let optionItems = optionList.querySelectorAll('.optionItem');
+					clickLabel(lb, optionItems);
+				})
+			});
+			const clickLabel = (lb, optionItems) => {
+				if(lb.parentNode.classList.contains('active')) {
+					lb.parentNode.classList.remove('active');
+					optionItems.forEach((opt) => {
+						opt.removeEventListener('click', () => {
+							handleSelect(lb, opt)
+						})
+					})
+				} else {
+					lb.parentNode.classList.add('active');
+					optionItems.forEach((opt) => {
+						opt.addEventListener('click', () => {
+							handleSelect(lb, opt)
+						})
+					})
+				}
+			}
+			const handleSelect = (label, item) => {
+				label.innerHTML = item.textContent;
+				label.parentNode.classList.remove('active');
+			}
+
+            $('.sq_box').click(function(){
+               if($('.sqSelectblx .selectBox2.active').hasClass('active')){
+                $(this).css({'height':'500px','border':'2px solid #007aff'});
+                $('label').css('color','#007aff');
+                $(this).find('path').css('stroke','rgb(0,122,255)')
+                $(this).find('svg').css('transform','rotate(180deg)translateY(5px)')
+               } else {
+                $(this).css({'height':'43px','border':'2px solid #ddd'});
+                $('label').css('color','#ccc');
+                $(this).find('path').css('stroke','rgb(0,0,0)')
+                $(this).find('svg').css('transform','rotate(0deg)translateY(-5px)')
+               }
+            })
+
+		});
+	</script>
+</head>
+<body>
+<!-- WRAP -->
+<div class="wrap">
+	<!-- HEADER -->
+	<div class="header">
+		<h1 class="header_ttl">치과치료비 비교</h1>
+
+		<div class="header_lftArea">
+			<button type="button" class="header_btnBack" onclick="location.href='01_main.html'"><img src="../static/images/samsung/layout/ico_gnb_back.svg" alt=""></button>
+		</div>
+        <div class="header_rgtArea">
+			<button type="button" class="header_btnHome"><img src="../static/images/samsung/layout/ico_gnb_home.svg" alt=""></button>
+		</div>
+	</div><!-- //HEADER -->
+
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- CONTENT -->
+		<div class="content">
+			<div class="ly_full">
+                <div class="ly_sect__sm">
+                    <div class="bl_grid selectBoxList sqSelectblx hp_mt24">
+                        <!-- selectBox1 -->
+                        <div class="sq_box bl_grid_col1_3 box">
+                            <div class="selectBox2 "><svg xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414" class="el_svg el_btn_arrHor"><path id="_" data-name="&gt;" d="M1719.57-615.059l6-6-6-6" transform="translate(-613.645 -1718.155) rotate(90)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+                            <button class="label">시/도</button>
+                            <ul class="optionList">
+                                <li class="optionItem">강원도</li>
+                                <li class="optionItem">경기도</li>
+                                <li class="optionItem">경상남도</li>
+                                <li class="optionItem">경상북도</li>
+                                <li class="optionItem">광주광역시</li>
+                                <li class="optionItem">대구광역시</li>
+                                <li class="optionItem">대전광역시</li>
+                                <li class="optionItem">부산광역시</li>
+                                <li class="optionItem">서울특별시</li>
+                                <li class="optionItem">세종특별자치시</li>
+                                <li class="optionItem">울산광역시</li>
+                                <li class="optionItem">인천광역시</li>
+                                <li class="optionItem">전라남도</li>
+                                <li class="optionItem">전라북도</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <!-- selectBox2 -->
+                        <div class="sq_box bl_grid_col1_3 box">
+                            <div class="selectBox2  "><svg xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414" class="el_svg el_btn_arrHor"><path id="_" data-name="&gt;" d="M1719.57-615.059l6-6-6-6" transform="translate(-613.645 -1718.155) rotate(90)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+                            <button class="label">시군구</button>
+                            <ul class="optionList">
+                                <li class="optionItem"></li>
+                                <li class="optionItem"></li>
+                                <li class="optionItem"></li>
+                                <li class="optionItem"></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <!-- selectBox3 -->
+                        <div class="sq_box bl_grid_col1_3 box">
+                            <div class="selectBox2  "><svg xmlns="http://www.w3.org/2000/svg" width="14.828" height="8.414" viewBox="0 0 14.828 8.414" class="el_svg el_btn_arrHor"><path id="_" data-name="&gt;" d="M1719.57-615.059l6-6-6-6" transform="translate(-613.645 -1718.155) rotate(90)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+                            <button class="label">읍/면/동/로</button>
+                            <ul class="optionList">
+                                <li class="optionItem"></li>
+                                <li class="optionItem"></li>
+                                <li class="optionItem"></li>
+                                <li class="optionItem"></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div> <!--select-->
+
+                    <div>
+                        <ul class="bl_formList bl_formList__hor_fv">
+                            <li class="on">온레이</li>
+                            <li>인레이</li>
+                            <li>치과임플란트(1치당)</li>
+                            <li>치석제거</li>
+                            <li>크라운</li>
+                        </ul>
+                    </div>
+
+                    <div class="bl_btnWrap">
+                        <div class="bl_btnWrap_def">
+                            <button type="button" class="el_btn2 el_btn3__large el_btn3__secondary hp_grid1_2">검색하기</button>
+                        </div>
+                    </div>
+
+                    <ul class="bl_list2 bl_list2__dot hp_ml8">
+                        <li>실제 가격과 상이할 수 있으니 정확한 가격은 해당 의료 기관에 직접 문의 하여 주십시요.</li>
+                        <li>해당 자료는 건강보험심사평가원에서 제공하는 비급료 비용 정보입니다.</li>
+                    </ul>
+
+                </div>
+			</div>
+		</div><!-- //CONTENT -->
+	</div><!-- //CONTAINER -->
+</div><!-- //WRAP -->
+</body>
+</html>
