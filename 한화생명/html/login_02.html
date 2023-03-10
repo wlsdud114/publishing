@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/common.css">
+
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/jquery-ui.min.js"></script>
+        <script src="../js/common.js"></script>
+
+        <title>한화손해사정 로그인페이지</title>
+    </head>
+    <body>
+        <main>
+            <section id="lg_bg_02" class="logIn">
+                <div class="lg_img"></div>
+                <div>
+                    <h1>IMAGE SYSTEM</h1>
+                </div>
+                <h1><img src="../image/logo_wh.svg" alt="메인로고"></h1>
+            </section>
+            <section id="lg_input_02">
+                <div>
+                    <h3>(주)한화손해사정</h3>
+                    <form>
+                        <input type="text" placeholder="아이디">
+                        <input type="password" placeholder="패스워드">
+                        <input type="checkbox" name="keep_chk" id="keep_btn">
+                        <label for="keep_btn"  class="btn"></label>
+                        <label for="keep_btn" id="keep_txt" class="btn">아이디 기억하기</label>
+
+                        <input type="submit" value="로그인" class="btn">
+                    </form>
+
+                    <a href="#none" class="pwFind">비밀번호 찾기</a>
+                </div>
+                <dl>
+                    <dt>확인하세요!</dt>
+                    <dd>정보자산에 대한 모든 접근은 기록됩니다.</dd>
+                    <dd>정보보안상 60분 미사용시 세션이 종료됩니다.</dd>
+                </dl>
+            </section>
+        </main>
+    </body>
+</html>
