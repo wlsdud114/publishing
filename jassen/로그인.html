@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>얀센 코리아 로그인</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+	<div id="wrap" class="lg_wrap">
+		<header>
+			<h1><a href="#"><img src="./img/jassen_logo.png" alt="메인페이지 이동" class="header_logo"></a></h1>
+		</header>
+		<main>
+			<h2>한사람 한사람을 위한 돌봄 <br>Caring for the world,<br> one person at a time</h2>
+
+			<div class="form_login">
+				<form action="">
+					<fieldset>
+						<p><input type="text" class="i_txt" placeholder="아이디"></p>
+						<p><input type="password" class="i_txt" placeholder="비밀번호"></p>
+									
+						<div class="check_area">
+							<p><span class="ui_chkbox"><input type="checkbox" name="" id="ui_chk01"><label for="ui_chk01"><span class="txt">아이디 저장하기</span></label></span></p>
+						</div>
+
+						<div class="btns">
+							<button type="submit" class="bt_base">로그인</button>
+						</div>
+					</fieldset>
+				</form>
+
+				<div class="ui_id_find flx">
+					<div class="popOpen"><a href="#ui_id_pop" title="아이디 찾기">아이디 찾기</a></div>
+					<div class="popOpen"><a href="#ui_ps_pop" title="비밀번호 찾기" class="popOpen">비밀번호 찾기</a></div>
+				</div>
+			</div>
+			
+			<!--아이디찾기 팝업-->
+			<div id="ui_id_pop" class="Layer_pop">
+				<div class="bg"></div>
+				<div class="layerPopCont">
+					<h2>아이디 찾기</h2>
+					<a herf="#" class="close_btn"></a>
+					<div class="contBox">
+						<div class="inputBox">
+							<p>이름</p>
+							<input type="text" placeholder="이름을 입력해주세요">
+						</div>
+						<div class="inputBox">
+							<p>이메일</p>
+							<input type="text" placeholder="이메일을 입력해주세요">
+						</div>
+						<div class="btn_wrap">
+							<div class="cmn_btn_lg"><a href="#" title="">이메일 받기</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--비밀번호찾기 팝업-->
+			<div id="ui_ps_pop" class="Layer_pop">
+				<div class="bg"></div>
+				<div class="layerPopCont">
+					<h2>비밀번호 찾기</h2>
+					<a herf="#" class="close_btn"></a>
+					<div class="contBox">
+						<div class="inputBox">
+							<p>아이디</p>
+							<input type="text" placeholder="아이디를 입력해주세요">
+						</div>
+						<div class="inputBox">
+							<p>이메일</p>
+							<input type="text" placeholder="이메일을 입력해주세요">
+						</div>
+						<div class="btn_wrap">
+							<div class="cmn_btn_lg"><a href="#" title="">이메일 받기</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+		<footer>
+			<div>
+				<h2><a href="#"><img src="./img/jassen_logo.png" alt="메인페이지 이동" class="footer_logo"></a></h2>
+				<ul>
+					<li>상호 : (주)존슨앤존슨 서울</li>
+					<li>사업자등록번호 : 000-00-000000</li>
+					<li>주소 : 서울 용산구 한강대로 92(한강도2가)</li>
+				</ul>
+				<br>
+			<p>copyright &copy; 2022 jnj all rights reserved</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

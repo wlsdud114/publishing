@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>얀센 코리아 전체보기</title>
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.js"></script>
+		<script type="text/javascript" src="./js/common.js"></script>
+	</head>
+	<body>
+		<!--헤더영역-->
+		<header>
+			<div class="gnb_top">
+				<div class="gnb_sec1">
+					<a href="#"><img src="./img/jassen_logo.png" alt=""></a>
+				</div>
+				<div class="gnb_sec2">
+					<div class="inner_wrap">
+						<div class="notice">
+							<a href="#"><img src="./img/notice_icon.png" alt="" class="ico i_not">공지사항</a>
+						</div>
+						<div class="ui_btn">
+							<a href="#">홍길동</a><span>님 반갑습니다.</span>
+							<a href="#" class="mob_none">로그아웃</a>
+							<a href="#" class="mob_none">회원정보 수정</a>
+						</div>
+					</div>
+				</div>
+				<div class="gnb_sec3">
+					<p><span>홍길동</span> 님의 결재현황</p>
+					<div class="line"></div>
+					<div class="inner_wrap">	
+						<ul class="cond">
+							<li><a href="#">결제요청건: 3건</a></li>
+							<li><a href="#">승인대기건: 3건</a></li>
+							<li><a href="#">마감임박건: 3건</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--컨텐츠 영역-->
+		<main>
+			<div class="inner_wrap">
+				<div class="ui_filter">
+					<div class="ui_bd_filter">
+						<div class="ui_sel">
+							<p class="mob_none">문서선택</p>
+							<select name="" id="">
+								<option value="">문서1</option>
+								<option value="">문서2</option>
+								<option value="">문서3</option>
+								<option value="">문서4</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<a href="#" title=""><img src="./img/print.png" alt="프린트하기" class="pt_btn"></a>
+					</div>
+				</div>
+
+				<div class="main_list">
+					<div class="list_tab">
+						<div><a href="#">전체보기<span class="new">N</span></a></div>
+						<div class="on"><a href="#">결제신청</a></div>
+						<div><a href="#">나의 요청건</a></div>
+						<div><a href="#">업무요청관리</a></div>
+					</div>
+
+					<div class="ui_txt">
+						<div>
+							<p>제품명:</p>
+							<textarea class="bl_bx"></textarea>
+						</div>
+						<div>
+							<p>PCC:</p>
+							<textarea class="bl_bx"></textarea>
+						</div>
+						<div>
+							<p>변경근거:</p>
+							<textarea class="bl_bx"></textarea>
+						</div>
+						<div>
+							<p>&#8251;의도하지 않은 변경이 없음을 이전 AW와 비교<input type="checkbox"></p><br>
+							<p>&#8251;TVT적용 확인: 효능효과<input type="checkbox"> 용법용량<input type="checkbox"> 사용상주의사항<input type="checkbox"></p>
+						</div>
+						<div>
+							<div>
+								<p>YES</p>
+								<input type="radio" name="ui_a" id="c1" value="yes" class="rad_chk"><label for="c1"></label>
+							</div>
+							<div>
+								<p>NO</p>
+								<input type="radio" name="ui_a" id="c2" value="no" class="rad_chk"><label for="c2"></label>
+							</div>
+						</div>
+					</div>
+
+					<table class="rqt_tbl">
+						<colgroup>
+							<col width="5%">
+							<col width="15%">
+							<col width="50%">
+							<col width="15%">
+							<col width="15%">	
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2">NO</th>
+								<th colspan="2" rowspan="2">요구사항</th>
+								<th>작성자</th>
+								<th>검토자</th>
+							</tr>
+							<tr>
+								<th><span>YES</span><span>NO</span><span>NA</span></th>
+								<th><span>YES</span><span>NO</span><span>NA</span></th>
+							<tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="no">01</td>
+								<td colspan="2">제품명(주성분 일반명을 포함):품목허가증 확인요</td>
+								<td>
+								<input type="radio" name="l_01" id="chk_01" value="yes" class="rad_chk"><label for="chk_01"></label>
+								<input type="radio" name="l_01" id="chk_02" value="no" class="rad_chk"><label for="chk_02"></label>
+								<input type="radio" name="l_01" id="chk_03" value="na" class="rad_chk"><label for="chk_03"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_02" id="chk_04" value="yes" class="rad_chk_bl"><label for="chk_04"></label>
+								<input type="radio" name="l_02" id="chk_05" value="no" class="rad_chk_bl"><label for="chk_05"></label>
+								<input type="radio" name="l_02" id="chk_06" value="na" class="rad_chk_bl"><label for="chk_06"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">02</td>
+								<td colspan="2">제조사 또는 수입자의 상호와 주서(허가증상의 모든 제조원 포함): 1)제조품목의 경우 공장주소(<span class="bold">"제조의뢰자" 및 "제조자"</span>) 2)수입완제품의 경우 본사주소, 제조의뢰자 및 생산국 제조가의 상호와 주소(<span class="bold">"수입자" 및 제조자"</span>, 허가증에 2차 포장 제조원이 기재된 경우, 이를 포함) 3)소분제조품의 경우 제조의뢰자, 소분제조자 및 생간국 제조자의 상호와 주소(<span class="bold">"소분제조자" 및 "제조자"</span>) 4)대표전화번호(02-2094-4500)<span class="red">&#42;6포인트(2.108&#177;0.020mm)이상</span></td>
+								<td>
+								<input type="radio" name="l_03" id="chk_07" value="yes" class="rad_chk"><label for="chk_07"></label>
+								<input type="radio" name="l_03" id="chk_08" value="no" class="rad_chk"><label for="chk_08"></label>
+								<input type="radio" name="l_03" id="chk_09" value="na" class="rad_chk"><label for="chk_09"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_04" id="chk_10" value="yes" class="rad_chk_bl"><label for="chk_10"></label>
+								<input type="radio" name="l_04" id="chk_11" value="no" class="rad_chk_bl"><label for="chk_11"></label>
+								<input type="radio" name="l_04" id="chk_12" value="na" class="rad_chk_bl"><label for="chk_12"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">03</td>
+								<td colspan="2">전문의약품/일반의약품/일반(안전상비)의 약품<span class="red">&#42;<i>굵은 글씨</i> 또는 <i>글상자</i></span></td>
+								<td>
+								<input type="radio" name="l_05" id="chk_13" value="yes" class="rad_chk"><label for="chk_13"></label>
+								<input type="radio" name="l_05" id="chk_14" value="no" class="rad_chk"><label for="chk_14"></label>
+								<input type="radio" name="l_05" id="chk_15" value="na" class="rad_chk"><label for="chk_15"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_06" id="chk_16" value="yes" class="rad_chk_bl"><label for="chk_16"></label>
+								<input type="radio" name="l_06" id="chk_17" value="no" class="rad_chk_bl"><label for="chk_17"></label>
+								<input type="radio" name="l_06" id="chk_18" value="na" class="rad_chk_bl"><label for="chk_18"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">04</td>
+								<td colspan="2">오&#12685;남용우려의약품<span class="red">&#42;<i>굵은 글씨</i> 또는 <i>글상자</i></span></td>
+								<td>
+								<input type="radio" name="l_07" id="chk_19" value="yes" class="rad_chk"><label for="chk_19"></label>
+								<input type="radio" name="l_07" id="chk_20" value="no" class="rad_chk"><label for="chk_20"></label>
+								<input type="radio" name="l_07" id="chk_21" value="na" class="rad_chk"><label for="chk_21"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_08" id="chk_22" value="yes" class="rad_chk_bl"><label for="chk_22"></label>
+								<input type="radio" name="l_08" id="chk_23" value="no" class="rad_chk_bl"><label for="chk_23"></label>
+								<input type="radio" name="l_08" id="chk_24" value="na" class="rad_chk_bl"><label for="chk_24"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">05</td>
+								<td colspan="2">마약/항정신성/한외마약<span class="red">&#42;<i>적색</i></span><br>대한약전에 수재된 마약류의 경우"대한약전"</td>
+								<td>
+								<input type="radio" name="l_09" id="chk_25" value="yes" class="rad_chk"><label for="chk_25"></label>
+								<input type="radio" name="l_09" id="chk_26" value="no" class="rad_chk"><label for="chk_26"></label>
+								<input type="radio" name="l_09" id="chk_27" value="na" class="rad_chk"><label for="chk_27"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_10" id="chk_28" value="yes" class="rad_chk_bl"><label for="chk_28"></label>
+								<input type="radio" name="l_10" id="chk_29" value="no" class="rad_chk_bl"><label for="chk_29"></label>
+								<input type="radio" name="l_10" id="chk_30" value="na" class="rad_chk_bl"><label for="chk_30"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">06</td>
+								<td colspan="2">용법이 정해진 주사제는 "정맥주사용"&#12685;"정주용" "I.V.","근육주사용"&#12685;"근주용"&#12685;"I.M." 등으로<span class="red"><i>굵은 글씨</i></span> 표기</td>
+								<td>
+								<input type="radio" name="l_11" id="chk_31" value="yes" class="rad_chk"><label for="chk_31"></label>
+								<input type="radio" name="l_11" id="chk_32" value="no" class="rad_chk"><label for="chk_32"></label>
+								<input type="radio" name="l_11" id="chk_33" value="na" class="rad_chk"><label for="chk_33"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_12" id="chk_34" value="yes" class="rad_chk_bl"><label for="chk_34"></label>
+								<input type="radio" name="l_12" id="chk_35" value="no" class="rad_chk_bl"><label for="chk_35"></label>
+								<input type="radio" name="l_12" id="chk_36" value="na" class="rad_chk_bl"><label for="chk_36"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">07</td>
+								<td colspan="2">중량 또는 용량이나 개수:Put-up(포장단위)표시 ex)100정,200ml<span class="red">&#42;용량 별 포장 단위 확인</span></td>
+								<td>
+								<input type="radio" name="l_13" id="chk_37" value="yes" class="rad_chk"><label for="chk_37"></label>
+								<input type="radio" name="l_13" id="chk_38" value="no" class="rad_chk"><label for="chk_38"></label>
+								<input type="radio" name="l_13" id="chk_39" value="na" class="rad_chk"><label for="chk_39"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_14" id="chk_40" value="yes" class="rad_chk_bl"><label for="chk_40"></label>
+								<input type="radio" name="l_14" id="chk_41" value="no" class="rad_chk_bl"><label for="chk_41"></label>
+								<input type="radio" name="l_14" id="chk_42" value="na" class="rad_chk_bl"><label for="chk_42"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">08</td>
+								<td colspan="2">일반의약품: 7포인트 (2.460&#177;0.025mm) 이상, 전문의약품: 6포인트 (2.108&#177;0.020mm) 이상, 줄 간격은 0.5포인트 이상</span></td>
+								<td>
+								<input type="radio" name="l_15" id="chk_43" value="yes" class="rad_chk"><label for="chk_43"></label>
+								<input type="radio" name="l_15" id="chk_44" value="no" class="rad_chk"><label for="chk_44"></label>
+								<input type="radio" name="l_15" id="chk_45" value="na" class="rad_chk"><label for="chk_45"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_16" id="chk_46" value="yes" class="rad_chk_bl"><label for="chk_46"></label>
+								<input type="radio" name="l_16" id="chk_47" value="no" class="rad_chk_bl"><label for="chk_47"></label>
+								<input type="radio" name="l_16" id="chk_48" value="na" class="rad_chk_bl"><label for="chk_48"></label>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="6" class="no">09</td>
+								<td rowspan="6">원료약품 및 그 분량</td>
+								<td>주성분: 유효성분으로 표시 권장, 명칭, 규격, 분량 표시</td>
+								<td>
+								<input type="radio" name="l_17" id="chk_49" value="yes" class="rad_chk"><label for="chk_49"></label>
+								<input type="radio" name="l_17" id="chk_50" value="no" class="rad_chk"><label for="chk_50"></label>
+								<input type="radio" name="l_17" id="chk_51" value="na" class="rad_chk"><label for="chk_51"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_18" id="chk_52" value="yes" class="rad_chk_bl"><label for="chk_52"></label>
+								<input type="radio" name="l_18" id="chk_53" value="no" class="rad_chk_bl"><label for="chk_53"></label>
+								<input type="radio" name="l_18" id="chk_54" value="na" class="rad_chk_bl"><label for="chk_54"></label>
+								</td>
+							</tr>
+							<tr>
+								<td>보존제: 명칭 및 함량. 예) 첨가제(보존제): 벤조산나트륨 10mg</td>
+								<td>
+								<input type="radio" name="l_19" id="chk_55" value="yes" class="rad_chk"><label for="chk_55"></label>
+								<input type="radio" name="l_19" id="chk_56" value="no" class="rad_chk"><label for="chk_56"></label>
+								<input type="radio" name="l_19" id="chk_57" value="na" class="rad_chk"><label for="chk_57"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_20" id="chk_58" value="yes" class="rad_chk_bl"><label for="chk_58"></label>
+								<input type="radio" name="l_20" id="chk_59" value="no" class="rad_chk_bl"><label for="chk_59"></label>
+								<input type="radio" name="l_20" id="chk_60" value="na" class="rad_chk_bl"><label for="chk_60"></label>
+								</td>
+							</tr>
+							<tr>
+								<td>타르색소: 명칭 (별규 원료도 해당) 예) 첨가제(타르색소): 황색5호, 알루미늄 레이크</td>
+								<td>
+								<input type="radio" name="l_21" id="chk_61" value="yes" class="rad_chk"><label for="chk_61"></label>
+								<input type="radio" name="l_21" id="chk_62" value="no" class="rad_chk"><label for="chk_62"></label>
+								<input type="radio" name="l_21" id="chk_63" value="na" class="rad_chk"><label for="chk_63"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_22" id="chk_64" value="yes" class="rad_chk_bl"><label for="chk_64"></label>
+								<input type="radio" name="l_22" id="chk_65" value="no" class="rad_chk_bl"><label for="chk_65"></label>
+								<input type="radio" name="l_22" id="chk_66" value="na" class="rad_chk_bl"><label for="chk_66"></label>
+								</td>
+							</tr>
+							<tr>
+								<td>동물유래성분: 성분명, 기원동물 및 사용부위 (별규 원료도 해당, 다만, 빈캅셀 등 제조공정상 소해면상뇌증의 감염우려가 없는 품목의 경우에는 예외)</td>
+								<td>
+								<input type="radio" name="l_23" id="chk_67" value="yes" class="rad_chk"><label for="chk_67"></label>
+								<input type="radio" name="l_23" id="chk_68" value="no" class="rad_chk"><label for="chk_68"></label>
+								<input type="radio" name="l_23" id="chk_69" value="na" class="rad_chk"><label for="chk_69"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_24" id="chk_70" value="yes" class="rad_chk_bl"><label for="chk_70"></label>
+								<input type="radio" name="l_24" id="chk_71" value="no" class="rad_chk_bl"><label for="chk_71"></label>
+								<input type="radio" name="l_24" id="chk_72" value="na" class="rad_chk_bl"><label for="chk_72"></label>
+								</td>
+							</tr>
+							<tr>
+								<td>첨가제: ‘원료약품 및 그 분량’ 항목에 기재되어 있는 모든 원료명. 보존제, 타르색소, 동물유래성분은 다른 첨가제보다 먼저 기재 (권장사항: 가나다 순 기재) 예) 첨가제(또는 기타첨가제): 부틸히드록시톨루엔, 흑색잉크, 오파드라이노란색</td>
+								<td>
+								<input type="radio" name="l_25" id="chk_73" value="yes" class="rad_chk"><label for="chk_73"></label>
+								<input type="radio" name="l_25" id="chk_74" value="no" class="rad_chk"><label for="chk_74"></label>
+								<input type="radio" name="l_25" id="chk_75" value="na" class="rad_chk"><label for="chk_75"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_26" id="chk_76" value="yes" class="rad_chk_bl"><label for="chk_76"></label>
+								<input type="radio" name="l_26" id="chk_77" value="no" class="rad_chk_bl"><label for="chk_77"></label>
+								<input type="radio" name="l_26" id="chk_78" value="na" class="rad_chk_bl"><label for="chk_78"></label>
+								</td>
+							</tr>
+							<tr>
+								<td>주사제: 안정제, 보존제, 부형제의 명칭 및 분량 첨부용제의 명칭, 내용량, 성분 및 분량 또는 비율, 용해액을 첨부하였다는 사실을 표시</td>
+								<td>
+								<input type="radio" name="l_27" id="chk_79" value="yes" class="rad_chk"><label for="chk_79"></label>
+								<input type="radio" name="l_27" id="chk_80" value="no" class="rad_chk"><label for="chk_80"></label>
+								<input type="radio" name="l_27" id="chk_81" value="na" class="rad_chk"><label for="chk_81"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_28" id="chk_82" value="yes" class="rad_chk_bl"><label for="chk_82"></label>
+								<input type="radio" name="l_28" id="chk_83" value="no" class="rad_chk_bl"><label for="chk_83"></label>
+								<input type="radio" name="l_28" id="chk_84" value="na" class="rad_chk_bl"><label for="chk_84"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">10</td>
+								<td colspan="2">성상</span></td>
+								<td>
+								<input type="radio" name="l_29" id="chk_85" value="yes" class="rad_chk"><label for="chk_85"></label>
+								<input type="radio" name="l_29" id="chk_86" value="no" class="rad_chk"><label for="chk_86"></label>
+								<input type="radio" name="l_29" id="chk_87" value="na" class="rad_chk"><label for="chk_87"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_30" id="chk_88" value="yes" class="rad_chk_bl"><label for="chk_88"></label>
+								<input type="radio" name="l_30" id="chk_89" value="no" class="rad_chk_bl"><label for="chk_89"></label>
+								<input type="radio" name="l_30" id="chk_90" value="na" class="rad_chk_bl"><label for="chk_90"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">11</td>
+								<td colspan="2">효능&#12685;효과</span></td>
+								<td>
+								<input type="radio" name="l_31" id="chk_91" value="yes" class="rad_chk"><label for="chk_91"></label>
+								<input type="radio" name="l_31" id="chk_92" value="no" class="rad_chk"><label for="chk_92"></label>
+								<input type="radio" name="l_31" id="chk_93" value="na" class="rad_chk"><label for="chk_93"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_32" id="chk_94" value="yes" class="rad_chk_bl"><label for="chk_94"></label>
+								<input type="radio" name="l_32" id="chk_95" value="no" class="rad_chk_bl"><label for="chk_95"></label>
+								<input type="radio" name="l_32" id="chk_96" value="na" class="rad_chk_bl"><label for="chk_96"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">12</td>
+								<td colspan="2">용법&#12685;용량</span></td>
+								<td>
+								<input type="radio" name="l_33" id="chk_97" value="yes" class="rad_chk"><label for="chk_97"></label>
+								<input type="radio" name="l_33" id="chk_98" value="no" class="rad_chk"><label for="chk_98"></label>
+								<input type="radio" name="l_33" id="chk_99" value="na" class="rad_chk"><label for="chk_99"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_34" id="chk_100" value="yes" class="rad_chk_bl"><label for="chk_100"></label>
+								<input type="radio" name="l_34" id="chk_101" value="no" class="rad_chk_bl"><label for="chk_101"></label>
+								<input type="radio" name="l_34" id="chk_102" value="na" class="rad_chk_bl"><label for="chk_102"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">13</td>
+								<td colspan="2">사용상의 주의사항: 경고항은 <span class="under">글상자</span> 안에 기재, “사용상의 주의사항”이 추가되는 첨가제 및 관련 문구가 있는지 확인</span></td>
+								<td>
+								<input type="radio" name="l_35" id="chk_103" value="yes" class="rad_chk"><label for="chk_103"></label>
+								<input type="radio" name="l_35" id="chk_104" value="no" class="rad_chk"><label for="chk_104"></label>
+								<input type="radio" name="l_35" id="chk_105" value="na" class="rad_chk"><label for="chk_105"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_36" id="chk_106" value="yes" class="rad_chk_bl"><label for="chk_106"></label>
+								<input type="radio" name="l_36" id="chk_107" value="no" class="rad_chk_bl"><label for="chk_107"></label>
+								<input type="radio" name="l_36" id="chk_108" value="na" class="rad_chk_bl"><label for="chk_108"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">14</td>
+								<td colspan="2">저장방법</td>
+								<td>
+								<input type="radio" name="l_37" id="chk_109" value="yes" class="rad_chk"><label for="chk_109"></label>
+								<input type="radio" name="l_37" id="chk_110" value="no" class="rad_chk"><label for="chk_110"></label>
+								<input type="radio" name="l_37" id="chk_111" value="na" class="rad_chk"><label for="chk_111"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_38" id="chk_112" value="yes" class="rad_chk_bl"><label for="chk_112"></label>
+								<input type="radio" name="l_38" id="chk_113" value="no" class="rad_chk_bl"><label for="chk_113"></label>
+								<input type="radio" name="l_38" id="chk_114" value="na" class="rad_chk_bl"><label for="chk_114"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">15</td>
+								<td colspan="2">일반의약품은 <span class="under">쉬운 용어</span>를 병기한다. </td>
+								<td>
+								<input type="radio" name="l_39" id="chk_115" value="yes" class="rad_chk"><label for="chk_115"></label>
+								<input type="radio" name="l_39" id="chk_116" value="no" class="rad_chk"><label for="chk_116"></label>
+								<input type="radio" name="l_39" id="chk_117" value="na" class="rad_chk"><label for="chk_117"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_40" id="chk_118" value="yes" class="rad_chk_bl"><label for="chk_118"></label>
+								<input type="radio" name="l_40" id="chk_119" value="no" class="rad_chk_bl"><label for="chk_119"></label>
+								<input type="radio" name="l_40" id="chk_120" value="na" class="rad_chk_bl"><label for="chk_120"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">16</td>
+								<td colspan="2">“본 의약품은 엄격한 품질관리를 필한 제품입니다. 구입시 사용기한 또는 유효기한이 지났거나 변질&#12685;변패&#12685;오염되거나 손상된 제품이 발견될 경우에는 약국개설자, 안전상비의약품 판매자 및 의약품 판매업자를 통하여 교환하여 드립니다.” </td>
+								<td>
+								<input type="radio" name="l_41" id="chk_121" value="yes" class="rad_chk"><label for="chk_121"></label>
+								<input type="radio" name="l_41" id="chk_122" value="no" class="rad_chk"><label for="chk_122"></label>
+								<input type="radio" name="l_41" id="chk_123" value="na" class="rad_chk"><label for="chk_123"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_42" id="chk_124" value="yes" class="rad_chk_bl"><label for="chk_124"></label>
+								<input type="radio" name="l_42" id="chk_125" value="no" class="rad_chk_bl"><label for="chk_125"></label>
+								<input type="radio" name="l_42" id="chk_126" value="na" class="rad_chk_bl"><label for="chk_126"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">17</td>
+								<td colspan="2">“이 설명서 작성일자(0000년 0월 0일)이후 변경된 내용은 한국얀센 홈페이지(https://www.janssen.com/korea) 또는 식품의약품안전처 의약품통합정보시스템(https://nedrug.mfds.go.kr), 또는 전화 02-2094- 4500에서 확인하실 수 있습니다.”</td>
+								<td>
+								<input type="radio" name="l_43" id="chk_127" value="yes" class="rad_chk"><label for="chk_127"></label>
+								<input type="radio" name="l_43" id="chk_128" value="no" class="rad_chk"><label for="chk_128"></label>
+								<input type="radio" name="l_43" id="chk_129" value="na" class="rad_chk"><label for="chk_129"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_44" id="chk_130" value="yes" class="rad_chk_bl"><label for="chk_130"></label>
+								<input type="radio" name="l_44" id="chk_131" value="no" class="rad_chk_bl"><label for="chk_131"></label>
+								<input type="radio" name="l_44" id="chk_132" value="na" class="rad_chk_bl"><label for="chk_132"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">18</td>
+								<td colspan="2">상표명에 R 및 TM 여부 확인</td>
+								<td>
+								<input type="radio" name="l_45" id="chk_133" value="yes" class="rad_chk"><label for="chk_133"></label>
+								<input type="radio" name="l_45" id="chk_134" value="no" class="rad_chk"><label for="chk_134"></label>
+								<input type="radio" name="l_45" id="chk_135" value="na" class="rad_chk"><label for="chk_135"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_46" id="chk_136" value="yes" class="rad_chk_bl"><label for="chk_136"></label>
+								<input type="radio" name="l_46" id="chk_137" value="no" class="rad_chk_bl"><label for="chk_137"></label>
+								<input type="radio" name="l_46" id="chk_138" value="na" class="rad_chk_bl"><label for="chk_138"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">19</td>
+								<td colspan="2">Copyright statement (e.g. copyright symbol, company name and year; &copy;Janssen Korea Ltd, 20XX)<br>
+								&#8251;License-in product의 경우 copyright statement 기재 방식 확인. 
+								</td>
+								<td>
+								<input type="radio" name="l_47" id="chk_139" value="yes" class="rad_chk"><label for="chk_139"></label>
+								<input type="radio" name="l_47" id="chk_140" value="no" class="rad_chk"><label for="chk_140"></label>
+								<input type="radio" name="l_47" id="chk_141" value="na" class="rad_chk"><label for="chk_141"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_48" id="chk_142" value="yes" class="rad_chk_bl"><label for="chk_142"></label>
+								<input type="radio" name="l_48" id="chk_143" value="no" class="rad_chk_bl"><label for="chk_143"></label>
+								<input type="radio" name="l_48" id="chk_144" value="na" class="rad_chk_bl"><label for="chk_144"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">20</td>
+								<td colspan="2">정제그림이 들어갈 경우 실물과 같은지 확인 (낱알식별표시)</td>
+								<td>
+								<input type="radio" name="l_49" id="chk_145" value="yes" class="rad_chk"><label for="chk_145"></label>
+								<input type="radio" name="l_49" id="chk_146" value="no" class="rad_chk"><label for="chk_146"></label>
+								<input type="radio" name="l_49" id="chk_147" value="na" class="rad_chk"><label for="chk_147"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_50" id="chk_148" value="yes" class="rad_chk_bl"><label for="chk_148"></label>
+								<input type="radio" name="l_50" id="chk_149" value="no" class="rad_chk_bl"><label for="chk_149"></label>
+								<input type="radio" name="l_50" id="chk_150" value="na" class="rad_chk_bl"><label for="chk_150"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">21</td>
+								<td colspan="2">“의약품을 어린이의 손에 닿지 않게 보관하십시오”</td>
+								<td>
+								<input type="radio" name="l_51" id="chk_151" value="yes" class="rad_chk"><label for="chk_151"></label>
+								<input type="radio" name="l_51" id="chk_152" value="no" class="rad_chk"><label for="chk_152"></label>
+								<input type="radio" name="l_51" id="chk_153" value="na" class="rad_chk"><label for="chk_153"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_52" id="chk_154" value="yes" class="rad_chk_bl"><label for="chk_154"></label>
+								<input type="radio" name="l_52" id="chk_155" value="no" class="rad_chk_bl"><label for="chk_155"></label>
+								<input type="radio" name="l_52" id="chk_156" value="na" class="rad_chk_bl"><label for="chk_156"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">22</td>
+								<td colspan="2">“유효기한 또는 사용기한이 지난 제품은 사용하지 마십시오” (권장사항)</td>
+								<td>
+								<input type="radio" name="l_53" id="chk_157" value="yes" class="rad_chk"><label for="chk_157"></label>
+								<input type="radio" name="l_53" id="chk_158" value="no" class="rad_chk"><label for="chk_158"></label>
+								<input type="radio" name="l_53" id="chk_159" value="na" class="rad_chk"><label for="chk_159"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_54" id="chk_160" value="yes" class="rad_chk_bl"><label for="chk_160"></label>
+								<input type="radio" name="l_54" id="chk_161" value="no" class="rad_chk_bl"><label for="chk_161"></label>
+								<input type="radio" name="l_54" id="chk_162" value="na" class="rad_chk_bl"><label for="chk_162"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">23</td>
+								<td colspan="2">“첨부문서를 읽을 것, 첨부문서를 보관할 것” (권장사항)</td>
+								<td>
+								<input type="radio" name="l_55" id="chk_163" value="yes" class="rad_chk"><label for="chk_163"></label>
+								<input type="radio" name="l_55" id="chk_164" value="no" class="rad_chk"><label for="chk_164"></label>
+								<input type="radio" name="l_55" id="chk_165" value="na" class="rad_chk"><label for="chk_165"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_56" id="chk_166" value="yes" class="rad_chk_bl"><label for="chk_166"></label>
+								<input type="radio" name="l_56" id="chk_167" value="no" class="rad_chk_bl"><label for="chk_167"></label>
+								<input type="radio" name="l_56" id="chk_168" value="na" class="rad_chk_bl"><label for="chk_168"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">24</td>
+								<td colspan="2"> “외용제이므로 복용하지 마십시오” (권장사항, 외용제에 한함)</td>
+								<td>
+								<input type="radio" name="l_57" id="chk_169" value="yes" class="rad_chk"><label for="chk_169"></label>
+								<input type="radio" name="l_57" id="chk_170" value="no" class="rad_chk"><label for="chk_170"></label>
+								<input type="radio" name="l_57" id="chk_171" value="na" class="rad_chk"><label for="chk_171"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_58" id="chk_172" value="yes" class="rad_chk_bl"><label for="chk_172"></label>
+								<input type="radio" name="l_58" id="chk_173" value="no" class="rad_chk_bl"><label for="chk_173"></label>
+								<input type="radio" name="l_58" id="chk_174" value="na" class="rad_chk_bl"><label for="chk_174"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">25</td>
+								<td colspan="2">“소비자가 누르거나 벗겨서 복용하는 의약품(일명 PTP포장 의약품)을 복용하려 할 때 의약품을 포장에서 꺼내지 않고 복용하거나, 일부 포장 조각을 함께 복용함으로써 식도, 위장관 손상 등의 안전상 위해 우려가 있으니 주의하십시오” (권장사항, PTP포장에 한함)</td>
+								<td>
+								<input type="radio" name="l_59" id="chk_175" value="yes" class="rad_chk"><label for="chk_175"></label>
+								<input type="radio" name="l_59" id="chk_176" value="no" class="rad_chk"><label for="chk_176"></label>
+								<input type="radio" name="l_59" id="chk_177" value="na" class="rad_chk"><label for="chk_177"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_60" id="chk_178" value="yes" class="rad_chk_bl"><label for="chk_178"></label>
+								<input type="radio" name="l_60" id="chk_179" value="no" class="rad_chk_bl"><label for="chk_179"></label>
+								<input type="radio" name="l_60" id="chk_180" value="na" class="rad_chk_bl"><label for="chk_180"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">26</td>
+								<td colspan="2">희귀의약품: “희귀의약품” 또는 “희귀”와 같이 표기할 수 있음 (권장사항)	</td>
+								<td>
+								<input type="radio" name="l_61" id="chk_181" value="yes" class="rad_chk"><label for="chk_181"></label>
+								<input type="radio" name="l_61" id="chk_182" value="no" class="rad_chk"><label for="chk_182"></label>
+								<input type="radio" name="l_61" id="chk_183" value="na" class="rad_chk"><label for="chk_183"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_62" id="chk_184" value="yes" class="rad_chk_bl"><label for="chk_184"></label>
+								<input type="radio" name="l_62" id="chk_185" value="no" class="rad_chk_bl"><label for="chk_185"></label>
+								<input type="radio" name="l_62" id="chk_186" value="na" class="rad_chk_bl"><label for="chk_186"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">27</td>
+								<td colspan="2">장기추적조사 대상으로 지정된 첨단바이오의약품의 경우 장기추적조사 대상임을 명시</td>
+								<td>
+								<input type="radio" name="l_63" id="chk_187" value="yes" class="rad_chk"><label for="chk_187"></label>
+								<input type="radio" name="l_63" id="chk_188" value="no" class="rad_chk"><label for="chk_188"></label>
+								<input type="radio" name="l_63" id="chk_189" value="na" class="rad_chk"><label for="chk_189"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_64" id="chk_190" value="yes" class="rad_chk_bl"><label for="chk_190"></label>
+								<input type="radio" name="l_64" id="chk_191" value="no" class="rad_chk_bl"><label for="chk_191"></label>
+								<input type="radio" name="l_64" id="chk_192" value="na" class="rad_chk_bl"><label for="chk_192"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">28</td>
+								<td colspan="2">“부작용 피해구제 신청을 한국의약품안전관리원(1644-6223, 14-3333)에 할 수 있습니다.”(권장사항, 해당하는 경우)<br>
+								&#8251;※ 참고 : 의약품 부작용 피해구제급여 지급 제외 대상 의약품의 지정
+								</td>
+								<td>
+								<input type="radio" name="l_65" id="chk_193" value="yes" class="rad_chk"><label for="chk_193"></label>
+								<input type="radio" name="l_65" id="chk_194" value="no" class="rad_chk"><label for="chk_194"></label>
+								<input type="radio" name="l_65" id="chk_195" value="na" class="rad_chk"><label for="chk_195"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_66" id="chk_196" value="yes" class="rad_chk_bl"><label for="chk_196"></label>
+								<input type="radio" name="l_66" id="chk_197" value="no" class="rad_chk_bl"><label for="chk_197"></label>
+								<input type="radio" name="l_66" id="chk_198" value="na" class="rad_chk_bl"><label for="chk_198"></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="no">29</td>
+								<td colspan="2">기타특이사항(해당하는 경우, 상세내용기술. 예 : TVT 적용 시 cover 안 되는 항목 (표, 그래프 등)):<br>
+								<textarea></textarea>
+								</td>
+								<td>
+								<input type="radio" name="l_67" id="chk_199" value="yes" class="rad_chk"><label for="chk_199"></label>
+								<input type="radio" name="l_67" id="chk_200" value="no" class="rad_chk"><label for="chk_200"></label>
+								<input type="radio" name="l_67" id="chk_201" value="na" class="rad_chk"><label for="chk_201"></label>
+								</td>
+								<td>
+								<input type="radio" name="l_68" id="chk_202" value="yes" class="rad_chk_bl"><label for="chk_202"></label>
+								<input type="radio" name="l_68" id="chk_203" value="no" class="rad_chk_bl"><label for="chk_203"></label>
+								<input type="radio" name="l_68" id="chk_204" value="na" class="rad_chk_bl"><label for="chk_204"></label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!--main_list-->
+
+				<div class="inp_tbl">
+					<table>
+						<colgroup>
+							<col width="30%">
+							<col width="70%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>제목</td>
+								<td>표시자제 디자인 점검 checklist</td>
+							</tr>
+							<tr>
+								<td>마감기한</td>
+								<td>2021-12-31 기한없음</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="ui_prcs">
+					<div>
+						<div>
+							<p>결재요청인</p>
+							<p><span class="name">홍길동</span><br><span class="dep">부서명1</span></p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<p>2차 승인자</p>
+							<p><span class="name">홍길동</span><br><span class="dep">부서명2</span></p>
+						</div>
+						<!-- <a href="#">메일 재전송</a> --><!--나의 요청건 상세보기-->
+					</div>
+					<div>
+						<div>
+							<p>3차 승인자</p>
+							<p><span class="name">홍길동</span><br><span class="dep">부서명3</span></p>
+						</div>
+						<!-- <a href="#">메일 재전송</a> --><!--나의 요청건 상세보기-->
+					</div>
+				</div>
+
+				<div class="main_list">
+					<div class="thead">
+						<div class="mole col15">승인자</div>
+						<div class="mole col15">승인상태</div>
+						<div class="mole col15">승인일시</div>
+						<div class="mole col40">결재의견</div>
+						<div class="mole col15">편집</div>
+					</div>
+					<div class="tbody">
+						<div class="tr">
+							<div class="mole col15">홍길동</div>
+							<div class="mole col15">X</div>
+							<div class="mole col15">2022-01-05</div>
+							<div class="mole col40">수정부탁드립니다.</div>
+							<div class="mole col15"><a href="#" title="편집"><img src="./img/edit.png" alt="편집" class="icon"></a></div>
+						</div>
+						<div class="tr">
+							<div class="mole col15">홍길동</div>
+							<div class="mole col15">X</div>
+							<div class="mole col15">2022-01-05</div>
+							<div class="mole col40">수정부탁드립니다.</div>
+							<div class="mole col15"><a href="#" title="편집"><img src="./img/edit.png" alt="편집" class="icon"></a></div>
+						</div>
+						<div class="tr">
+							<div class="mole col15">홍길동</div>
+							<div class="mole col15">X</div>
+							<div class="mole col15">2022-01-05</div>
+							<div class="mole col40">수정부탁드립니다.</div>
+							<div class="mole col15"><a href="#" title="편집"><img src="./img/edit.png" alt="편집" class="icon"></a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn_wrap">
+					<div class="cmn_btn_lg"><a href="#" title="">목록</a></div>
+					<!-- <div class="cmn_btn_lg"><a href="#" title="">취소</a></div>
+					<div class="cmn_red_btn_lg"><a href="#" title="">신청하기</a></div>
+					<div class="cmn_blue_btn_lg"><a href="#" title="">수정하기</a></div>
+					<div class="cmn_blk_btn_lg"><a href="#" title="">결재</a></div> --><!--나의 요청 상세-->
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<h2><a href="#"><img src="./img/jassen_logo.png" alt="메인페이지 이동" class="footer_logo"></a></h2>
+				<ul>
+					<li>상호 : (주)존슨앤존슨 서울</li>
+					<li>사업자등록번호 : 000-00-000000</li>
+					<li>주소 : 서울 용산구 한강대로 92(한강도2가)</li>
+				</ul>
+				<br>
+			<p>copyright &copy; 2022 jnj all rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>얀센 코리아 업무요청관리</title>
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./js/common.js"></script>
+	</head>
+	<body>
+		<!--헤더영역-->
+		<header>
+			<div class="gnb_top">
+				<div class="gnb_sec1">
+					<a href="#"><img src="./img/jassen_logo.png" alt=""></a>
+				</div>
+				<div class="gnb_sec2">
+					<div class="inner_wrap">
+						<div class="notice">
+							<a href="#"><img src="./img/notice_icon.png" alt="" class="ico i_not">공지사항</a>
+						</div>
+						<div class="ui_btn">
+							<a href="#">홍길동</a><span>님 반갑습니다.</span>
+							<a href="#">로그아웃</a>
+							<a href="#">회원정보 수정</a>
+						</div>
+					</div>
+				</div>
+				<div class="gnb_sec3">
+					<p><span>홍길동</span> 님의 결재현황</p>
+					<div class="line"></div>
+					<div class="inner_wrap">	
+						<ul class="cond">
+							<li><a href="#">결제요청건: 3건</a></li>
+							<li><a href="#">승인대기건: 3건</a></li>
+							<li><a href="#">마감임박건: 3건</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--컨텐츠 영역-->
+		<main>
+			<h2>레이어팝업 모음</h2>
+			<div class="flx">
+				<div class="cmn_btn_lg popOpen"><a href="#pop01">결재하기</a></div>
+				<div class="cmn_btn_lg popOpen"><a href="#pop02" class="cmn_btn_lg">승인자 설정/변경</a></div>
+				<div class="cmn_btn_lg popOpen"><a href="#pop03" class="cmn_btn_lg">아이디 찾기</a></div>
+			</div>
+				
+			<!--팝업 창-->
+			<div id="pop01" class="Layer_pop">
+				<div class="bg"></div>
+				<div class="layerPopCont">
+					<h2>결재하기</h2>
+					<a herf="#" class="close_btn"></a>
+					<div class="contBox">
+						<div class="contInWrap">
+							<p>결재 상태</p>
+							<input type="radio" name="pop_rad" id="p_01" value=""><label for="p_01">승인</label>
+							<input type="radio" name="pop_rad" id="p_02" value=""><label for="p_02">반려</label>
+						</div>
+						<p>결재 의견</p>
+						<textarea></textarea>
+						<div class="btn_wrap">
+							<div class="cmn_btn_lg"><a href="#" title="">목록</a></div>
+							<div class="cmn_blue_btn_lg"><a href="#" title="">결재하기</a></div>
+						</div>
+
+					</div>
+				</div>
+			</div> <!--pop01-->
+
+			<div id="pop02" class="Layer_pop">
+				<div class="bg"></div>
+				<div class="layerPopCont">
+					<h2>승인자 설정</h2>
+					<a herf="#" class="close_btn"></a>
+					<div class="contBox">
+						<div class="contInWrap">
+							<p>검색하기</p>
+							<input type="text"><a href="#"><img src="./img/search_icon.png" alt="검색하기"></a>
+						</div>
+						<p>검색결과</p>
+						<div class="tbl_wrap">
+						<table class="lst_tbl">
+							<colgroup>
+								<col width="33.333%">
+								<col width="33.333%">
+								<col width="33.333%">
+							</colgroup>
+							<thead>
+								<th>이름</th>
+								<th>부서명</th>
+								<th>선택</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 1</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 2</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 3</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 4</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 5</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 6</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 7</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 8</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 9</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td>부서명 10</td>
+									<td><div class="cmn_btn"><a href="#">선택</a></div></td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<div class="btn_wrap">
+							<div class="cmn_btn_lg"><a href="#" title="">목록</a></div>
+							<div class="cmn_blue_btn_lg"><a href="#" title="">결재하기</a></div>
+						</div>
+
+					</div>
+				</div>
+			</div> <!--pop02-->
+
+			<div id="pop03" class="Layer_pop">
+				<div class="bg"></div>
+				<div class="layerPopCont">
+					<h2>결재하기</h2>
+					<a herf="#" class="close_btn"></a>
+					<div class="contBox">
+						<div class="contInWrap">
+							<p>결재 상태</p>
+							<input type="radio" name="pop_rad" id="p_01" value=""><label for="p_01">승인</label>
+							<input type="radio" name="pop_rad" id="p_02" value=""><label for="p_02">반려</label>
+						</div>
+						<p>결재 의견</p>
+						<textarea></textarea>
+						<div class="btn_wrap">
+							<div class="cmn_btn_lg"><a href="#" title="">목록</a></div>
+							<div class="cmn_blue_btn_lg"><a href="#" title="">결재하기</a></div>
+						</div>
+
+					</div>
+				</div>
+			</div> <!--pop03-->
+
+		</main>
+		<footer>
+			<div>
+				<h2><a href="#"><img src="./img/jassen_logo.png" alt="메인페이지 이동" class="footer_logo"></a></h2>
+				<ul>
+					<li>상호 : (주)존슨앤존슨 서울</li>
+					<li>사업자등록번호 : 000-00-000000</li>
+					<li>주소 : 서울 용산구 한강대로 92(한강도2가)</li>
+				</ul>
+				<br>
+			<p>copyright &copy; 2022 jnj all rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
