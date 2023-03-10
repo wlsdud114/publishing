@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>트레이닝 관리 : 아스트라제네카 관리자 시스템</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- LNB -->
+	<div id="gnb">
+		<h1 class="logo"><img src="../images/logo_az.png" alt="AstraZeneca"></h1>
+		<div class="user">
+			<div class="name">Honggil_admin01님</div>
+			<div class="logs_btn">
+				<button type="button" class="btn_log">로그아웃</button>
+			</div>
+		</div>
+
+		<nav class="nav">
+			<ul>
+				<li class="on">
+					<a href="#none">관리자 관리</a>
+					<ul class="sub">
+						<li class="on"><a href="#none">관리자 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">회원 관리</a>
+					<ul class="sub">
+						<li><a href="#none">회원 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">트레이닝 관리</a>
+					<ul class="sub">
+						<li><a href="#none">트레이닝 콘텐츠 관리</a></li>
+						<li><a href="#none">교육 기록 조회</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">SFE 관리</a>
+					<ul class="sub">
+						<li><a href="#none">SFE 리스트</a></li>
+						<li><a href="#none">Request 분석</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">게시판 관리</a>
+					<ul class="sub">
+						<li><a href="#none">공지사항 관리</a></li>
+						<li><a href="#none">FAQ 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">기타 관리</a>
+					<ul class="sub">
+						<li><a href="#none">카테고리 관리</a></li>
+						<li><a href="#none">팝업 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">통계 관리</a>
+					<ul class="sub">
+						<li><a href="#none">메뉴1</a></li>
+						<li><a href="#none">메뉴2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div><!-- //LNB -->
+
+	<!-- CONTENT -->
+	<div id="content">
+		<div class="global_area">
+			<div class="path"><a href="#none">Home</a> &gt; <a href="#none">트레이닝 관리</a> &gt; <strong>트레이닝 콘텐츠 관리</strong></div>
+			<h2 class="h_sub">트레이닝 콘텐츠 <span class="fs_regular">[보기&amp;수정]</span></h2>
+		</div>
+
+		<!-- BBS : WRITE -->
+		<div class="bbs_write">
+			<table class="bbs_tbl">
+				<colgroup>
+					<col style="width:140px">
+					<col style="width:auto">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">구분</th>
+						<td>
+							<div class="item">
+								<div class="lft_area" style="width:274px">
+									<span class="ui_chkbox primary lgray" style="width:85px"><input type="radio" name="sort"><label for=""><span class="txt">영상+문서</span></label></span>
+									<span class="ui_chkbox primary lgray"><input type="radio" name="sort"><label for=""><span class="txt">영상</span></label></span>
+									<span class="ui_chkbox primary lgray"><input type="radio" name="sort"><label for=""><span class="txt">문서</span></label></span>
+								</div>
+
+								<div class="lft_area divi brd_left">
+									<span class="ui_chkbox primary lgray"><input type="checkbox" name="sort"><label for=""><span class="txt noti">중요 상단공지</span></label></span>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">교육 대상</th>
+						<td>
+							<div class="item">
+								<span class="ui_chkbox primary lgray" style="width:85px"><input type="radio" name="edu"><label for=""><span class="txt">전체</span></label></span>
+								<span class="ui_chkbox primary lgray"><input type="radio" name="edu"><label for=""><span class="txt">부서</span></label></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">현재 만족도 평균</th>
+						<td>
+							<div class="item">
+								5.3
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">대상 부서</th>
+						<td class="part">
+							<div class="item">
+								<div class="lft_area">
+									<select name="" id="" class="i_sel" style="width:130px">
+										<option value="">부서 대분류</option>
+									</select>
+									
+									<select name="" id="" class="i_sel" style="width:130px">
+										<option value="">부서 소분류</option>
+									</select>
+
+									<a href="#popExam" class="bt_base primary" id="btnStaff" data-target="#popStaff" data-control="modal">대상 직원 검색</a>
+									
+									<!-- 개발코멘트 : 디자인 확인 불가 -->
+									<span class="target">(CVRM CL/(C) DG)홍길동</span>
+								</div>
+
+								<div class="rgt_area">
+									<button type="button" class="bt_base gray">&plus; 부서 추가</button>
+								</div>
+							</div>
+
+							<!-- 개발코멘트 : 부서 추가할 경우 -->
+							<div class="item">
+								<div class="lft_area target_dept" style="padding-top: 8px;width: 100%;">
+									<select name="deptCd" class="i_sel" style="width: 130px" onchange="onChangeDeptCd(this);">
+										<option value="">부서 대분류</option>
+										<option value="DBU001">CVRM</option>
+										<option value="DBU002">CVRM CL</option>
+										<option value="DBU003">CVRM GH</option>
+										<option value="DBU004">Onco</option>
+										<option value="DBU005">R&amp;I</option>
+									
+									</select> 
+
+									<select name="teamCd" class="i_sel" style="width: 130px" onchange="onChangeTeamCd(this);">
+										<option value="" selected="selected">부서 소분류</option>
+									</select>
+
+									<button id="btnEmplyrId" type="button" class="bt_base primary" data-target="#popStaff" data-control="modal" onclick="findUser(this); return false;">대상 직원 검색</button>
+										<span class="target" style="display: inline-block;"> 
+											<input type="text" id="emplyrNm" name="emplyrNm" value="" class="i_txt type_full lineless" readonly=""> 
+											<input type="hidden" id="emplyrId" name="emplyrId" value="">
+										</span>
+									<button class="bt_base gray remove" style="float: right;" onclick="removeDept(this); return false;" title="부서 삭제 버튼">− 부서 삭제</button> 
+								</div>
+							</div>
+							<div class="item">
+								<div class="lft_area target_dept" style="padding-top: 8px;width: 100%;">
+									<select name="deptCd" class="i_sel" style="width: 130px" onchange="onChangeDeptCd(this);">
+										<option value="">부서 대분류</option>
+										<option value="DBU001">CVRM</option>
+										<option value="DBU002">CVRM CL</option>
+										<option value="DBU003">CVRM GH</option>
+										<option value="DBU004">Onco</option>
+										<option value="DBU005">R&amp;I</option>
+									
+									</select> 
+
+									<select name="teamCd" class="i_sel" style="width: 130px" onchange="onChangeTeamCd(this);">
+										<option value="" selected="selected">부서 소분류</option>
+									</select>
+
+									<button id="btnEmplyrId" type="button" class="bt_base primary" data-target="#popStaff" data-control="modal" onclick="findUser(this); return false;">대상 직원 검색</button>
+										<span class="target" style="display: inline-block;"> 
+											<input type="text" id="emplyrNm" name="emplyrNm" value="" class="i_txt type_full lineless" readonly=""> 
+											<input type="hidden" id="emplyrId" name="emplyrId" value="">
+										</span>
+									<button class="bt_base gray remove" style="float: right;" onclick="removeDept(this); return false;" title="부서 삭제 버튼">− 부서 삭제</button> 
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">카테고리</th>
+						<td>
+							<div class="item">
+								<select name="" id="" class="i_sel" style="width:130px">
+									<option value="">DSS</option>
+								</select>
+
+								<select name="" id="" class="i_sel" style="width:130px">
+									<option value="">BASIC</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">제목</th>
+						<td>
+							<div class="item">
+								<input type="text" class="i_txt type_full lineless" placeholder="제목을 입력하세요.">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">비메오 주소</th>
+						<td>
+							<div class="item">
+								<input type="text" class="i_txt type_full lineless" placeholder="비메오 URL을 입력하세요.">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">내용</th>
+						<td>
+							<div class="item">
+								<textarea name="" id="" cols="30" rows="6" class="i_ta type_full lineless" placeholder="상세내용을 입력하세요."></textarea>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">리스트 썸네일 이미지</th>
+						<td>
+							<div class="item item_attach">
+								<div class="ui_attach" style="width:526px">
+									<input type="text" class="i_txt i_file" readonly>
+									<button type="button" class="bt_base primary btn_attach">찾아보기</button>
+									<input type="file" name="file" class="i_upload">
+								</div>
+								<!-- 개발코멘트 : 설계서엔 없으나, 디자인에 해당 문구가 있습니다. 썸네일에 사용되지 않는 확장자가 있어 설계서대로 우선 비활성화 처리합니다. -->
+								<!-- <p class="note">(확장자는 jpg, pdf, doc, ppt, hwp, zip 만 가능합니다.)</p> -->
+							</div>
+							<div class="item">
+								<p class="info">이미지 사이즈  :  000*000</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td>
+							<div class="item  item_attach">
+								<div class="ui_attach" style="width:526px">
+									<input type="text" class="i_txt i_file" readonly>
+									<button type="button" class="bt_base primary btn_attach">찾아보기</button>
+									<input type="file" name="file" class="i_upload">
+								</div>
+							</div>
+							<div class="item item_attach">
+								<div class="ui_attach" style="width:526px">
+									<input type="text" class="i_txt i_file" readonly>
+									<button type="button" class="bt_base primary btn_attach">찾아보기</button>
+									<input type="file" name="file" class="i_upload">
+								</div>
+								<button type="button" class="bt_base gray type_ico">+</button>
+								<p class="note">(확장자는 jpg, pdf, doc, ppt, hwp, zip 만 가능합니다.)</p>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- //BBS : WRITE -->
+
+		<!-- BBS : CONTROLLER -->
+		<div class="bbs_controller">
+			<div class="lft_area">
+				<a href="#none" class="bt_base gray large_h btn_list">목록</a>
+			</div>
+
+			<div class="rgt_area">
+				<button type="button" class="bt_base primary large_h">저장</button>
+				<button type="button" class="bt_base gray large_h">수정</button>
+				<button type="reset" class="bt_base gray large_h">삭제</button>
+			</div>
+		</div><!-- //BBS : CONTROLLER -->
+
+		
+
+
+		<!-- POPUP -->
+		<article class="pop_wrapper ui-modal" id="popStaff">
+			<div class="pop_wrap type_full">
+				<div class="pop_h_sub">대상직원 검색</div>
+
+				<!-- BBS :FILTER -->
+				<div class="bbs_filter">
+					<div class="lft_area type_piece">
+						<span class="piece total">총 <em>555</em> 명</span>
+						<span class="piece part">전략기획실/마케팅팀</span>
+					</div>
+
+					<div class="rgt_area">
+						<div class="bbs_srch">
+							<input type="text" class="i_txt" name="keyword" value="">
+							<button type="button" class="bt_base gray btn_srch">검색</button>
+						</div>
+					</div>
+				</div><!-- //BBS :FILTER -->
+
+				<!-- BBS : LIST -->
+				<div class="bbs_list">
+					<table class="bbs_tbl">
+						<colgroup>
+							<col style="width:70px">
+							<col style="width:70px">
+							<col style="width:120px">
+							<col style="width:110px">
+							<col style="width:60px">
+							<col style="width:130px">
+							<col style="width:130px">
+							<col style="width:auto">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">선택</th>
+								<th scope="col">No.</th>
+								<th scope="col">사번(아이디)</th>
+								<th scope="col">이름</th>
+								<th scope="col">직위</th>
+								<th scope="col">부서 대분류</th>
+								<th scope="col">부서 중분류</th>
+								<th scope="col">최종로그인</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>Compliance</td>
+								<td>Compliance Compliance</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) BS</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) CL S1</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) CL S2</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) DG</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) DG</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) DG</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) DG</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) DG</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+							<tr>
+								<td><span class="ui_chkbox primary nontxt"><input type="checkbox" name=""><label for=""></label></span></td>
+								<td>555</td>
+								<td><em class="medium">admin100</em></td>
+								<td>홍길동</td>
+								<td>부장</td>
+								<td>CVRM CL</td>
+								<td>(C) DG</td>
+								<td>
+							<div class="ui_datetime">
+								<span class="date">YYYY.MM.DD</span>
+								<span class="time">HH:MM</span>
+							</div>
+						</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- //BBS : LIST -->
+
+				<!-- PAGINATE -->
+				<div class="paginate">
+					<div class="paging">
+						<a class="first">처음</a>
+						<a class="prev">이전</a>
+						<strong class="on">1</strong>
+						<a href="#none">2</a>
+						<a href="#none">3</a>
+						<a href="#none">4</a>
+						<a href="#none">5</a>
+						<a href="#none">6</a>
+						<a href="#none">7</a>
+						<a class="next">다음</a>
+						<a class="last">마지막</a>
+					</div>
+				</div><!-- //PAGINATE -->
+
+				<!-- BBS : CONTROLLER -->
+				<div class="bbs_controller">
+					<button type="button" class="bt_base primary large_h">확인</button>
+					<button type="button" class="bt_base gray large_h pop-close ui-close">취소</button>
+				</div><!-- //BBS : CONTROLLER -->
+			</div>
+		</article><!-- //POPUP -->
+	</div><!-- //CONTENT -->
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>트레이닝 관리 : 아스트라제네카 관리자 시스템</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/libs/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- LNB -->
+	<div id="gnb">
+		<h1 class="logo"><img src="../images/logo_az.png" alt="AstraZeneca"></h1>
+		<div class="user">
+			<div class="name">Honggil_admin01님</div>
+			<div class="logs_btn">
+				<button type="button" class="btn_log">로그아웃</button>
+			</div>
+		</div>
+
+		<nav class="nav">
+			<ul>
+				<li class="on">
+					<a href="#none">관리자 관리</a>
+					<ul class="sub">
+						<li class="on"><a href="#none">관리자 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">회원 관리</a>
+					<ul class="sub">
+						<li><a href="#none">회원 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">트레이닝 관리</a>
+					<ul class="sub">
+						<li><a href="#none">트레이닝 콘텐츠 관리</a></li>
+						<li><a href="#none">교육 기록 조회</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">SFE 관리</a>
+					<ul class="sub">
+						<li><a href="#none">SFE 리스트</a></li>
+						<li><a href="#none">Request 분석</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">게시판 관리</a>
+					<ul class="sub">
+						<li><a href="#none">공지사항 관리</a></li>
+						<li><a href="#none">FAQ 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">기타 관리</a>
+					<ul class="sub">
+						<li><a href="#none">카테고리 관리</a></li>
+						<li><a href="#none">팝업 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">통계 관리</a>
+					<ul class="sub">
+						<li><a href="#none">메뉴1</a></li>
+						<li><a href="#none">메뉴2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div><!-- //LNB -->
+
+	<!-- CONTENT -->
+	<div id="content">
+		<div class="global_area">
+			<div class="path"><a href="#none">Home</a> &gt; <a href="#none">기타 관리</a> &gt; <strong>카테고리 등록</strong></div>
+			<h2 class="h_sub">카테고리 등록</h2>
+		</div>
+
+		<!-- BBS : WRITE -->
+		<div class="bbs_write">
+			<table class="bbs_tbl">
+				<colgroup>
+					<col style="width:140px">
+					<col style="width:auto">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">구분</th>
+						<td>
+							<div class="item">
+								<span class="ui_chkbox primary lgray"><input type="radio" name="sort"><label for=""><span class="txt">공지사항</span></label></span>
+								<span class="ui_chkbox primary lgray"><input type="radio" name="sort"><label for=""><span class="txt">FAQ</span></label></span>
+								<span class="ui_chkbox primary lgray"><input type="radio" name="sort"><label for=""><span class="txt">교육과정</span></label></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">카테고리명</th>
+						<td>
+							<div class="item">
+								<input type="text" class="i_txt type_full lineless" placeholder="카테고리명을 입력하세요.">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">사용여부</th>
+						<td>
+							<div class="item">
+								<span class="ui_chkbox primary lgray untxt"><input type="checkbox" name="edu"><label for=""></label></span>
+							</div>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div><!-- //BBS : WRITE -->
+
+		<!-- BBS : CONTROLLER -->
+		<div class="bbs_controller">
+			<div class="rgt_area">
+				<button type="button" class="bt_base primary large_h">등록</button>
+				<button type="button" class="bt_base gray large_h">취소</button>
+			</div>
+		</div><!-- //BBS : CONTROLLER -->
+	</div><!-- //CONTENT -->
+</div>
+</body>
+</html>
