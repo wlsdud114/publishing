@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <title>기본 퍼블 서식</title>
+</head>
+<body>
+    <header>
+        <div class="hd-area ly_flx">
+            <h1><a href="index.html"><img src="../images/logo/logo.png" alt="재정정보원로고"></a></h1>
+            <nav class="gnb dev_none">
+                <ul>
+                    <li><a href="" title="" class="main-mn">기관소개</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">기관소개</a></li>
+                            <li><a href="" title="">인사말</a></li>
+                            <li><a href="" title="">조직도</a></li>
+                            <li><a href="" title="">CI소개</a></li>
+                            <li><a href="" title="">인재채용</a></li>
+                            <li><a href="" title="">Help Desk</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="" class="main-mn">주요사업</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">dBrain 운영</a></li>
+                            <li><a href="" title="">e나라도움 운용</a></li>
+                            <li><a href="" title="">사이버안전센터</a></li>
+                            <li><a href="" title="">재정정보분석</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="" class="main-mn">홍보센터</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">공지사항</a></li>
+                            <li><a href="" title="">보도자료</a></li>
+                            <li><a href="" title="">포토뉴스</a></li>
+                            <li><a href="" title="">발간자료</a></li>
+                            <li><a href="" title="">소셜미디어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="" class="main-mn">열린경영</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">사회적가치 경영</a></li>
+                            <li><a href="" title="">정보공개</a></li>
+                            <li><a href="" title="">입찰.계약정보</a></li>
+                            <li><a href="" title="">사전정보공표</a></li>
+                            <li><a href="" title="">사업실명제</a></li>
+                            <li><a href="" title="">경영공시</a></li>
+                            <li><a href="" title="">공공데이터</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="" class="main-mn">국민참여</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">국민제안</a></li>
+                            <li><a href="" title="">클린신고센터</a></li>
+                            <li><a href="" title="">클린신고센터 처리결과</a></li>
+                            <li><a href="" title="">성희롱.성폭력 신고센터</a></li>
+                            <li><a href="" title="">기업성장응답센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="bg"></div>
+            </nav>
+            <!-- 모바일 gnb -->
+            <nav class="m_gnb pc_none">
+                <div class="m_ui_group">
+                    <img src="../images/icon/lang-icon.png" alt="언어설정">
+                    <a href="" title="국문 홈페이지" class="on">KOR</a>
+                    <a href="" title="영문 홈페이지">ENG</a>
+                    <button id="mClose"><img src="../images/icon/close.png" alt="모바일메뉴닫기"></button>
+                </div>
+                <ul>
+                    <li><a href="" class="main-mn">기관소개</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">기관소개</a></li>
+                            <li><a href="" title="">인사말</a></li>
+                            <li><a href="" title="">조직도</a></li>
+                            <li><a href="" title="">CI소개</a></li>
+                            <li><a href="" title="">인재채용</a></li>
+                            <li><a href="" title="">Help Desk</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="main-mn">주요사업</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">dBrain 운영</a></li>
+                            <li><a href="" title="">e나라도움 운용</a></li>
+                            <li><a href="" title="">사이버안전센터</a></li>
+                            <li><a href="" title="">재정정보분석</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="main-mn">홍보센터</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">공지사항</a></li>
+                            <li><a href="" title="">보도자료</a></li>
+                            <li><a href="" title="">포토뉴스</a></li>
+                            <li><a href="" title="">발간자료</a></li>
+                            <li><a href="" title="">소셜미디어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="main-mn">열린경영</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">사회적가치 경영</a></li>
+                            <li><a href="" title="">정보공개</a></li>
+                            <li><a href="" title="">입찰.계약정보</a></li>
+                            <li><a href="" title="">사전정보공표</a></li>
+                            <li><a href="" title="">사업실명제</a></li>
+                            <li><a href="" title="">경영공시</a></li>
+                            <li><a href="" title="">공공데이터</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="main-mn">국민참여</a>
+                        <ul class="sub-mn">
+                            <li><a href="" title="">국민제안</a></li>
+                            <li><a href="" title="">클린신고센터</a></li>
+                            <li><a href="" title="">클린신고센터 처리결과</a></li>
+                            <li><a href="" title="">성희롱.성폭력 신고센터</a></li>
+                            <li><a href="" title="">기업성장응답센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ui_group ly_flx">
+                <button class="lang-btn dev_none"><img src="../images/icon/lang-eng.png"></button>
+                <button class="search-btn"><img src="../images/icon/search.png"></button>
+                <button class="menu-btn pc_none"><img src="../images/icon/all-menu.png"></button>
+            </div>
+        </div>
+        <div class="main_searchBox">
+            <form>
+                <input type="text" placeholder="검색어를 입력해 주세요">
+                <input type="submit" value="검색" id="SrchBtn">
+                <label for="SrchBtn"><img src="../images/icon/search-icon.png" alt="검색버튼"></label>
+                <button id="SrchClose"><img src="../images/layout/close.png" alt="검색 닫기"></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="innerWrap">
+            <div class="top-area">
+                <h1 class="mn-tit">현재페이지 타이틀</h1>
+                <div class="remote ly_flx ly_flx_btw">
+                    <div class="nav ly_flx">
+                        <div>
+                            <a href="index.html" title="메인으로 이동" class="home-btn"><img src="../images/icon/home.png" alt="홈버튼">HOME</a>
+                        </div>
+                        <div class="item">
+                            <button>메뉴명</button>
+                        </div>
+                        <div class="item">
+                            <button>메뉴명</button>
+                        </div>
+                        <div class="item">
+                            <button>메뉴명</button>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button><img src="../images/icon/share.png" alt="공유하기"></button>
+                        <button><img src="../images/icon/share.png" alt="공유하기"></button>
+                        <button><img src="../images/icon/copy.png" alt="복사하기"></button>
+                        <button><img src="../images/icon/print.png" alt="프린트하기"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="ly_flx">
+                <aside class="lft-area">
+                    <div class="lnb">
+                        <div class="current-menu">
+                            <p>주요사업</p>
+                        </div>
+                        <div class="sub-menu">
+                            <ul>
+                                <li class="def def-y on">
+                                    <a href="" title="">기관소개</a>
+                                    <ul class="lnbsub">
+                                        <li><a href="" title="">소개</a></li>
+                                        <li class="on"><a href="" title="">미션 및 비전</a></li>
+                                        <li><a href="" title="">연혁</a></li>
+                                        <li><a href="" title="">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="def">
+                                    <a href="" title="">인사말</a>
+                                </li>
+                                <li class="def def-y">
+                                    <a href="" title="">조직도</a>
+                                    <ul class="lnbsub">
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                    </ul>
+                                </li>
+                                <li class="def def-y">
+                                    <a href="" title="">CI소개</a>
+                                    <ul class="lnbsub">
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                    </ul>
+                                </li>
+                                <li class="def def-y">
+                                    <a href="" title="">인재채용</a>
+                                    <ul class="lnbsub">
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                        <li><a href="" title=""></a></li>
+                                    </ul>
+                                </li>
+                                <li class="def">
+                                    <a href="" title="">Help Desk</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside><!-- //lft-area -->
+                <div class="rgt-area">
+                    <div class="tab-menu">
+                        <ul class="ly_flx ly_flx_wrap">
+                            <li class="tb-mn"><a href="#none" title="">메뉴명</a></li>
+                            <li class="tb-mn active"><a href="#none" title="">현재페이지 타이틀</a></li>
+                            <li class="tb-mn"><a href="#none" title="">메뉴명</a></li>
+                            <li class="tb-mn"><a href="#none" title="">메뉴명</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <img src="../images/layout/info-img.png" alt="설명아이콘">
+                        <p>
+                            한국재정정보원은 국가직무능력표준(NCS)을 활용한 블라인드 채용을 도입하여, 향후 NCS기반 블라인드채용 절차를
+                            통해 인재를 선발할 예정입니다.<br>
+                            이와 관련하여 "채용분야별 직무기술서"를 사전에 공개하오니 참고하시기 바랍니다.
+                        </p>
+                    </div>
+                    <div class="contents">
+                        <div class="cont-wrap ly_flx">
+                            <div class="lft-tit-area">
+                                <h1 class="lg-tit">대 타이틀</h1>
+                            </div>
+                            <div class="rgt-txt-area">
+                                <h2 class="md-tit">중 타이틀입니다</h2>
+                                <p>디지털예산회계시스템을 안정적으로 운영 관리하고 국가재정 관련 정책의 개발을 지원함으로써 국가재정 업무의 발전에
+                                이바지하고, 디지털 예산 회계시스템의 수출 등 재정정보화 분야의 국제협력을 강화함으로써 국제사회의 재정정보화에
+                                이바지함을 목적으로함</p>
+                                <h2 class="md-tit">중 타이틀</h2>
+                                <dl class="mark-list">
+                                    <dt>지출이란, 세출예산 및 기금운용계획의 집행을 위해 국고에서 현금 등이 지급되는 것</dt>
+                                    <dd>일반지출: 지출원인행위를 하고 채권자 등의 계좌로 국고금을 이체</dd>
+                                    <dd>관서운영경비 : 관서를 운영하는데 소요되는 경비로서, 필요한 자금을 출납공무원으로 하여금 지출관으로부터 교부 받아 지급하도록 하는 것</dd>
+                                </dl>
+                                <dl class="mark-list">
+                                    <dt>관련법령 : 국가재정법, 국고금관리법, 국가회계법 및 개별 법령의 규정에 따라 수행</dt>
+                                    <dd class="non">※개별 법령 : 수입 및 지출에 관한 회계예규, 보조금 관리에 관한 법률</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-tbl">
+                        <h1 class="lg-tit">table_type01</h1>
+                        <div class="srchArea ly_flx ly_flx_btw">
+                            <p class="count">총 <span>133</span>개</p>
+                            <form>
+                                <select>
+                                    <option>제목</option>
+                                    <option>작성자</option>
+                                    <option>작성일</option>
+                                </select>
+                                <div class="search-box">
+                                    <input type="text" placeholder="검색어를 입력해주세요">
+                                    <input type="submit" value="" class="btn-search" id="listSearch">
+                                    <label for="listSearch"><img src="../images/icon/search.png"></label>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <div class="table">
+                                <div class="thead">
+                                    <div class="th no">NO</div>
+                                    <div class="th subject">제목</div>
+                                    <div class="th name">작성자</div>
+                                    <div class="th date">작성일</div>
+                                    <div class="th no">조회수</div>
+                                    <div class="th file">첨부파일</div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계업종별 침해사고 발생 통계업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터기획재정사이버안전센터기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td no">17</div>
+                                        <div class="td subject"><a href="" title="">업종별 침해사고 발생 통계</a></div>
+                                        <div class="td name">기획재정사이버안전센터</div>
+                                        <div class="td date">2022-07-19</div>
+                                        <div class="td no">34</div>
+                                        <div class="td file"><a href="" download><img src="../images/icon/filedownload.png" alt="다운로드 받기"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <a href="" title="first-page" class="first-page"><img src="../images/icon/last.png" alt="마지막"></a>
+                                <a href="" title="prev-page" class="prev-page"><img src="../images/icon/next.png" alt="다음"></a>
+                                <a href="" title="1" class="on">1</a>
+                                <a href="" title="2">2</a>
+                                <a href="" title="3">3</a>
+                                <a href="" title="next-page" class="next-page"><img src="../images/icon/next.png" alt="다음"></a>
+                                <a href="" title="last-page" class="last-page"><img src="../images/icon/last.png" alt="마지막"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-tbl">
+                        <h1 class="lg-tit">table_type02</h1>
+                        <p class="tbl-alert">좌우로 스크롤하시면 내용이 보입니다.</p>
+                        <div class="grid-scroll-wrap">
+                            <table class="grid-wrap">
+                                <colgroup>
+                                    <col width="30%">
+                                    <col width="35%;">
+                                    <col width="35%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">공개대상</th>
+                                        <th colspan="2">공개방법 및 수수료</th>
+                                    </tr>
+                                    <tr>
+                                        <th>열람 · 시청</th>
+                                        <th>사본(종이출력물) · 인화물·복제물</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tb-tit">문서 · 도면 · 사진 등</td>
+                                        <td>
+                                            <dl class="mark-list">
+                                                <dt>열람</dt>
+                                                <dd>1일 1시간 이내:무료</dd>
+                                                <dd>1시간 초과시 30분 마다 1000원</dd>
+                                            </dl>
+                                        </td>
+                                        <td>
+                                            <dl class="mark-list">
+                                                <dt>열람</dt>
+                                                <dd>1일 1시간 이내:무료</dd>
+                                                <dd>1시간 초과시 30분 마다 1000원</dd>
+                                                <br>
+                                                <dd>1시간 초과시 30분 마다 1000원</dd>
+                                                <dd>1시간 초과시 30분 마다 1000원</dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="img-list-tbl">
+                        <h1 class="lg-tit">table_type03</h1>
+                        <div class="srchArea ly_flx ly_flx_btw">
+                            <p class="count">총 <span>133</span>개</p>
+                            <form>
+                                <select>
+                                    <option>제목</option>
+                                    <option>작성자</option>
+                                    <option>작성일</option>
+                                </select>
+                                <div class="search-box">
+                                    <input type="text" placeholder="검색어를 입력해주세요">
+                                    <input type="submit" value="" class="btn-search">
+                                </div>
+                            </form>
+                        </div>
+                        <table>
+                            <colgroup>
+                                <col width="300px;">
+                                <col width="auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="img-box">
+                                            <img src="" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2>재정시스템운영본부 웹 스퀘어 대면 실습교육 학습</h2>
+                                        <p>
+                                            2022년 8월 2일, 4일 양일에 걸쳐 재정시스템운영본부 직원대상 웹 스퀘어 대면 실습교육을 진행했다.
+                                            웹 스퀘어는 웹 표준을 따르는 UI/UX개발 툴로 웹과 모바일에서 효율적으로 비즈니스를 수행할 수 있는 환경을 제공한다.
+                                        </p>
+                                        <p class="date">2022.07.19</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="img-box">
+                                            <img src="" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2>재정시스템운영본부 웹 스퀘어 대면 실습교육 학습</h2>
+                                        <p>
+                                            2022년 8월 2일, 4일 양일에 걸쳐 재정시스템운영본부 직원대상 웹 스퀘어 대면 실습교육을 진행했다.
+                                            웹 스퀘어는 웹 표준을 따르는 UI/UX개발 툴로 웹과 모바일에서 효율적으로 비즈니스를 수행할 수 있는 환경을 제공한다.
+                                        </p>
+                                        <p class="date">2022.07.19</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="img-box">
+                                            <img src="" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2>재정시스템운영본부 웹 스퀘어 대면 실습교육 학습</h2>
+                                        <p>
+                                            2022년 8월 2일, 4일 양일에 걸쳐 재정시스템운영본부 직원대상 웹 스퀘어 대면 실습교육을 진행했다.
+                                            웹 스퀘어는 웹 표준을 따르는 UI/UX개발 툴로 웹과 모바일에서 효율적으로 비즈니스를 수행할 수 있는 환경을 제공한다.
+                                        </p>
+                                        <p class="date">2022.07.19</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h1 class="lg-tit">버튼 & 아이콘</h1>
+                        <div style="margin-top:50px">
+                            <button class="cmn_btn_bl">목록</button>
+                            <button class="cmn_btn_bk">삭제</button>
+                            <button class="cmn_btn_gy">글쓰기</button>
+                            <button class="cmn_btn_gy">수정</button>
+                            <button class="cmn_btn_gy">등록</button>
+                        </div>
+                        <div style="margin-top:50px">
+                            <button class="round-btn-gy">PNG 다운로드<img src="../images/icon/download.png" alt="다운로드"></button>
+                            <button class="round-btn-sky">PNG 다운로드<img src="../images/icon/download.png" alt="다운로드"></button>
+                            <button class="round-btn-bl">PNG 다운로드<img src="../images/icon/download.png" alt="다운로드"></button>
+                        </div>
+                        <div style="margin-top:50px">
+                            <button class="link-btn">바로가기<img src="../images/icon/link.png" alt="링크바로가기"></button>
+                        </div>
+                        <div style="margin-top:50px">
+                            <button class="lg-round-btn">e나라도움 홍보영상<img src="../images/icon/play-btn.png" alt="영상바로가기"></button>
+                            <button class="lg-round-btn">국고보조금 집행현황<br> 바로가기<img src="../images/icon/play-btn.png" alt="영상바로가기"></button>
+                        </div>
+                    </div>
+                    <div style="margin-top:50px">
+                        <div class="cont-area">
+                            <h1>컨텐츠 영역</h1>
+                        </div>
+                    </div>
+                    <div class="survey_wrap ly_flx ly_flx_btw" style="margin-top:50px">
+                        <div>
+                            <p>
+                                <span class="mark">Q.</span>
+                                이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?
+                            </p>
+                            <form>
+                                <div class="radio_box"><input type="radio" name="survey" id="score5"><label for="score5">매우만족</label></div>
+                                <div class="radio_box"><input type="radio" name="survey" id="score4"><label for="score4">만족</label></div>
+                                <div class="radio_box"><input type="radio" name="survey" id="score3"><label for="score3">보통</label></div>
+                                <div class="radio_box"><input type="radio" name="survey" id="score2"><label for="score2">불만족</label></div>
+                                <div class="radio_box"><input type="radio" name="survey" id="score1"><label for="score1">매우불만족</label></div>
+                            </form>
+                        </div>
+                        <div>
+                            <input type="submit" value="평가하기">
+                            <p>평균 <span class="imp_2">4.3</span>점 / <span class="imp_2">40</span>명 참여</p>
+                        </div>
+                    </div>
+                </div><!-- //rgt-area -->
+            </div>
+        </div><!-- //innerWrap -->
+    </main>
+    <footer>
+        <div class="ft-top-area">
+            <div class="innerWrap ly_flx ly_flx_btw">
+                <ol class="call-center">
+                    <li><img src="../images/icon/call.png" alt="콜센터"></li>
+                    <li>dBrain 콜센터<span>1811-8822</span></li>
+                    <li>e나라도움 콜센터<span>1670-9595</span></li>
+                    <li>한국재정정보원 대표전화<span>02-6908-8200</span>(상담 가능시간 평일 09:00 ~ 18:00)</li>
+                </ol>
+                <ol class="sns-wrap">
+                    <li><a href="" title=""><img src="../images/logo/facebook.png" alt="페이스북"></a></li>
+                    <li><a href="" title=""><img src="../images/logo/blog.png" alt="블로그"></a></li>
+                    <li><a href="" title=""><img src="../images/logo/youtube.png" alt="유튜브"></a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="ft-mid-area">
+            <div class="innerWrap ly_flx ly_flx_btw">
+                <ol>
+                    <li><a href="" title="이메일무단수집거부">이메일무단수집거부</a></li>
+                    <li><a href="" title="개인정보처리방침">개인정보처리방침</a></li>
+                    <li><a href="" title="영상정보처리기기">영상정보처리기기</a></li>
+                    <li><a href="" title="운영관리방침">운영관리방침</a></li>
+                    <li><a href="" title="저작관보호정책">저작권보호정책</a></li>
+                    <li><a href="" title="오시는길">오시는길</a></li>
+                    <li><a href="" title="Help desk">Help Desk</a></li>
+                    <li><a href="" title="사이트맵">사이트맵</a></li>
+                </ol>
+                <div class="related-site">
+                    <button class="select">관련사이트 바로가기</button>
+                    <ul class="related-site-list">
+                        <li><a href="" title="대한민국정부">대한민국정부</a></li>
+                        <li><a href="" title="기획재정부">기획재정부</a></li>
+                        <li><a href="" title="공공기관 경영정보 공개">공공기관 경영정보 공개</a></li>
+                        <li><a href="" title="국민신문고">국민신문고</a></li>
+                        <li><a href="" title="안전신문고">안전신문고</a></li>
+                        <li><a href="" title="공공데이터포털">공공데이터포털</a></li>
+                        <li><a href="" title="정보공개">정보공개</a></li>
+                        <li><a href="" title="열린재정">열린재정</a></li>
+                        <li><a href="" title="한눈에 보는 경제">한눈에 보는 경제</a></li>
+                        <li><a href="" title="e나라도움">e나라도움</a></li>
+                        <li><a href="" title="e나라재산">e나라재산</a></li>
+                        <li><a href="" title="국민참여예산">국민참여예산</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ft-btm-area">
+            <div class="innerWrap">
+                <h1><a href="index.html" title="메인페이지 바로가기"><img src="../images/logo/bottom-logo.png"></a></h1>
+                <div>
+                    <address>[04637] 서울특별시 중구 퇴계로 10, 메트로타워</address>
+                    <p>대표번호 : 02-6908-8200</p>
+                    <p>팩스 : 02-6312-8959</p>
+                    <p>Copyright(c) 2022 Korea Fiscal Informaion Service. All Rights Reserved.</p>
+                </div>
+                <img src="../images/logo/wa-mark.png" alt="웹접근성인증마크">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

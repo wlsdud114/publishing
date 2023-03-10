@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* 공통 */
+body#main {font-family: 'Roboto', sans-serif;}
+#sub_menu {box-sizing:initial; -webkit-box-sizing:initial;}
+#left_menu ul li a {height:auto;}
+
+/* 모바일메뉴 */
+.select_box_1 select {border:1px solid #767676;}
+
+/* About KPFIS > About the KPFIS > Vision & Key Values */
+.sub_contents h4 {font-weight:bold;}
+
+/* 사이트맵 */
+.sitemap ol, .sitemap li, .sitemap a {box-sizing:initial; -webkit-box-sizing:initial;}
+.sitemap a {font-weight:initial;}
+.sitemap > ol > li > a {padding: 0 0 6px 0;}
+.sitemap > ol > li > ol > li > a {padding: 0 0 10px 0;}
+
+
