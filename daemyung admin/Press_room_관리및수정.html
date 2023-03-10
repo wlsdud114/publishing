@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/custom.css">
+
+	<link rel="stylesheet" href="./css/summernote-lite.css">
+	
+    <title>대명_관리자페이지</title>
+  </head>
+  <body>
+  	<header>
+  	<ul class="nav justify-content-end navbar-dark bg-dark">
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">유재석님</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#">로그아웃</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">대명소노그룹 바로가기</a>
+		</li>
+	</ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#"><img src="./img/main_logo.png" alt="메인로고"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">관리자 관리</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Press Room</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">PR</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">제보하기(미정)</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">TimeLine(미정)</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	</header>
+
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 shadow bg-white rounded lft_box">
+					<div class="shadow-sm pd-3 bg-white rounded">
+						<h2>Press Room</h2>
+					</div>
+					<div>
+						<nav class="nav flex-column">
+							<a class="nav-link active" href="#"><img src="./img/megaphone_util.png" alt="" class="icon">Press Room 리스트</a>
+						</nav>
+					</div>
+				</div>
+				<div class="col-md-10 rgt_box">
+					<h2>Press Room (등록)</h2>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#"><img src="./img/home_util.png" alt="홈" class="icon">홈</a></li>
+							<li class="breadcrumb-item" aria-current="page">Press Room</li>
+						</ol>
+					</nav>
+
+					<table class="table">
+						<colgroup>
+							<col width="15%">
+							<col width="35.5%">
+							<col width="15%">
+							<col width="35.5%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>카테고리</th><!-- 수정 페이지에서는 작성된 데이터 값이 표시되어야함 -->
+								<td><div class="form-group mb-2 mr-sm-2 wd-4">
+										<select class="form-control">
+											<option>대명스테이션</option>
+											<option></option>
+											<option></option>
+										</select>
+									</div>
+								</td>
+								<th>게시 여부</th><!-- 수정 페이지에서는 작성된 데이터 값이 표시되어야함 -->
+								<td>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+										<label class="form-check-label" for="inlineRadio1">Y</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+										<label class="form-check-label" for="inlineRadio2">N</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>제목</th><!-- 수정 페이지에서는 작성된 데이터 값이 표시되어야함 -->
+								<td colspan="3"><input type="text" class="form-control" id="formGroupExampleInput" placeholder=""></td>
+							</tr>
+							<tr>
+								<th>내용</th><!-- 수정 페이지에서는 작성된 데이터 값이 표시되어야함 -->
+								<td colspan="3">
+									<form method="post">
+										<textarea id="summernote" name="editordata"></textarea>
+									</form>
+								</td>
+							</tr>
+							<tr>
+								<th>대표이미지</th><!-- 수정 페이지에서는 작성된 데이터 값이 표시되어야함 -->
+								<td colspan="3" class="text-left">
+									<div class="input-group mb-3">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="inputGroupFile02">
+											<label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+										</div>
+										<div class="input-group-append">
+											<span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+										</div>
+									</div>
+									이미지는 jpg,png,gif 형식만 가능합니다. 
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="d-flex justify-content-end">
+							<a class="btn btn-primary" href="#" role="button">저장</a>
+							<a class="btn btn-danger" href="#" role="button">삭제</a>
+							<a class="btn btn-secondary" href="#" role="button">목록</a>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		
+	</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./summernote/summernote-ko-KR.js"></script>
+	<script src="./summernote/summernote-lite.js"></script>
+	<script src="./summernote/summernote.min.js"></script>
+	<script src="./summernote/summernote.min.js"></script>
+
+	<script>
+	$('#summernote').summernote({
+      height: 500,                 
+      minHeight: 500,            
+      maxHeight: 500,            
+      focus: true,                  
+      lang: "ko-KR",
+      placeholder: '내용을 입력해주세요.',	
+      toolbar: [
+        ['fontname', ['fontname']],
+        ['fontsize', ['fontsize']],
+        ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
+        ['color', ['forecolor', 'color']],
+        ['table', ['table']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
+        ['insert', ['picture', 'link', 'video']],
+        ['view', ['fullscreen', 'help']]
+      ],
+      fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', '맑은 고딕', '궁서', '굴림체',
+        '굴림', '돋음체', '바탕체'],
+      fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '28', '30', '36',
+        '50', '72']
+		});
+	
+	</script>
+  </body>
+</html>
