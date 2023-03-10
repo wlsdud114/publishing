@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko" style="overflow-y: hidden;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>파일 일괄 등록</title>
+
+	<!-- icon -->
+	<link href='<c:url value="../../resources/his/lb/images/common/favicon.ico" />' rel="shortcut icon" />
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/lib/ol/ol.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/lib/fw-1.0/fw.css" />
+
+	<!-- 퍼블리싱 css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/all_admin.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/js/Tree/css/jstree.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/table_head_new/jquery.stickytable.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/darktooltip.css">
+	<script type="text/javascript" src="../../resources/his/js/Tree/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/Tree/jstree.js"></script>
+
+	<!-- chart -->
+	<script type="text/javascript" src="../../resources/his/js/chart/SearchTag.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/Validate.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/LbGrid.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/core.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/animated.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/charts.js"></script>
+    <script type="text/javascript" src="../../resources/his/user/publishing/js/lab/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="../../resources/his/user/publishing/js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#SearchData').empty();
+			var item = "";
+			var $tr = $("<tr class='cursor'></tr>");
+			var List_dataHtml = "";
+			List_dataHtml += "<td>1</td>"
+			List_dataHtml += "<td>20220801001</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>2</td>"
+			List_dataHtml += "<td>20220801002</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>3</td>"
+			List_dataHtml += "<td>20220801003</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>4</td>"
+			List_dataHtml += "<td>20220801004</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>5</td>"
+			List_dataHtml += "<td>20220801005</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>6</td>"
+			List_dataHtml += "<td>20220801006</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>7</td>"
+			List_dataHtml += "<td>20220801007</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>8</td>"
+			List_dataHtml += "<td>20220801008</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>9</td>"
+			List_dataHtml += "<td>20220801009</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>10</td>"
+			List_dataHtml += "<td>20220801010</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>11</td>"
+			List_dataHtml += "<td>20220801011</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>12</td>"
+			List_dataHtml += "<td>20220801012</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>13</td>"
+			List_dataHtml += "<td>20220801013</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>14</td>"
+			List_dataHtml += "<td>20220801014</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>15</td>"
+			List_dataHtml += "<td>20220801015</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			$tr = $("<tr class='cursor'></tr>");
+			List_dataHtml = "";
+			List_dataHtml += "<td>16</td>"
+			List_dataHtml += "<td>20220801016</td>"
+			List_dataHtml += "<td>2022-08-01</td>"
+			List_dataHtml += "<td>90000123</td>";
+			$tr.on("click",function(e){
+				window.open('../user/ViewMain.html', '', 'width=1400, height=1200;');
+			});
+			$tr.data('meta', item).append(List_dataHtml);
+			$('#SearchData').append($tr);
+
+			createPageNavi(200, 2, 10);
+		});
+
+		var createPageNavi = function (totalCnt, curPage, pageSize) {
+			//pageSize = "${Authentication.sessEnv.get('SYS_LIST_CNT_PER_PAGE').setval}";
+			var str = "";
+			var numberOfBlock   = 10;
+
+			var block       = Math.ceil(curPage / numberOfBlock);
+			var startPage   = (block - 1) * numberOfBlock + 1;
+			var endPage     = startPage + numberOfBlock - 1;
+			var totalPage   = Math.ceil(totalCnt / pageSize);
+			if (endPage > totalPage) endPage = totalPage;
+			var totalBlock  = Math.ceil(totalCnt / (numberOfBlock*pageSize));
+
+			var prevIndex = (block-1)*numberOfBlock;
+			var nextIndex = block*numberOfBlock+1;
+
+			if(totalCnt>0){
+				if(block > 1){
+					str += "<div class='ar' onclick='javascript:Search("+prevIndex+");'><img src='${ctxRoot}/resources/images/btn_list_prev.gif' alt=''/></div>";
+				}
+
+				for(var i = startPage; i <= endPage ; i++) {
+
+					if(i == curPage) {
+						str += "<div class='um on'>"+i+"</div>";
+					} else {
+						str += "<div class='um' onclick='javascript:Search("+i+");'>"+i+"</div>";
+					}
+				}
+
+				if((block != totalBlock) && totalBlock >0){
+					str += "<div class='ar' onclick='javascript:Search("+nextIndex+");'><img src='${ctxRoot}/resources/images/btn_list_next.gif' alt=''/></div>";
+				}
+			}
+			console.log("str ===",str)
+			$("#useHistoryPaging").empty();
+			//if(endPage>1){
+				$("#useHistoryPaging").html(str);
+			//}
+		}
+	</script>
+</head>
+<body>
+<!--left menu start-->
+<div id="header">
+	<div class="logo" style="height:79px;">
+		<img src="../../resources/his/img/admin/img_top_logo.png" alt="" style="padding-top:25px;padding-left:30px;" class="cursor"/>
+	</div>
+	<div class="userName">
+		<span>사용자</span>님 환영합니다.
+	</div>
+	<div class="userLogIn">
+		<button type="button" class="btn_trs"><img src="../../resources/his/img/add/setting.png" alt="관리"></button>
+		<button type="button" class="btn_trs"><img src="../../resources/his/img/add/home.png" alt="홈"></button>
+		<!-- <button type="button" class="btn_sst2 ml_2 " id="goToScan">SCAN</button> -->
+		<button type="button" class="btn_sst4 ml_2 " onclick="Logout();">로그아웃</button>
+	</div>
+</div>
+<div id="mySidenav" class="sidenav">
+	<div class="leftmenu">
+		<!--왼쪽 메뉴 : class="active"-->
+		<ul class="nav" id="demo1">
+			<li id="MenuDocSearch" class="mainMenu" class="active"><a href="./ZecmMngDocSearch.html" class="lefticon2">서류 조회</a></li>
+			<li id="MenuMngOrgan" class="mainMenu"><a href="./ZecmMngDept.html" class="lefticon3">조직 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuDept"><a href="./ZecmMngDept.html">부서 관리</a></li>
+					<li id="MenuUser"><a href="./ZecmMngUser.html">사용자 관리</a></li>
+				</ul>
+			</li>
+			<li id="MenuMngClass" class="mainMenu"><a href="./ZecmMngCustCompany.html" class="lefticon4">문서분류 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuCustCompany"><a href="./ZecmMngCustCompany.html">고객사 관리</a></li>
+					<li id="MenuTask"><a href="./ZecmMngTask.html">업무 관리</a></li>
+					<li id="MenuDocType"><a href="./ZecmMngDocType.html">문서 분류 관리</a></li>
+				</ul>
+			</li>
+			<li id="MenuMngStat" class="mainMenu"><a href="./ZecmMngStatImg.html" class="lefticon6">통계조회</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuStatImg"><a href="./ZecmMngStatImg.html">회사별 등록 건수</a></li>
+					<li id="MenuStatFile"><a href="./ZecmMngStatFile.html">회사별 등록 파일개수</a></li>
+				</ul>
+			</li>
+			<li id="MenuDocHistory" class="mainMenu">
+				<a href="./ZecmMngDocHistory.html" class="lefticon7">이력조회</a>
+			</li>
+			<li id="MenuMngArch" class="mainMenu"><a href="./ZecmMngArchTask.html" class="lefticon7">아카이브 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuArchTask"><a href="./ZecmMngArchTask.html">업무관리</a></li>
+					<li id="MenuArchCabinet"><a href="./ZecmMngArchCabinet.html">캐비닛 관리</a></li>
+					<li id="MenuMonitor"><a href="./ZecmMngMonitor.html">서버 자원</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!--왼쪽 메뉴 -->
+		<!-- 푸터 영역 -->
+		<footer>
+			<p>
+				금융상담 1588-1515<br>
+				공제상담 1588-4119<br>
+				일반상담 02-2240-2114
+			</p>
+			<address>서울특별시 송파구 오금로 62 수협중앙회</address>
+		</footer>
+	</div>
+</div>
+<!--left menu end-->
+
+<div id="main">
+    <h1 class="title_m3">보상 사진 등록</h1>
+    <div class="box ly_flx">
+        <p class="bx-tit">
+			<span>PC 폴더 선택</span>
+		</p>
+		<div class="ly_flx">
+			<input type="file" id="file">
+			<label for="file" class="bx_btn">PC 폴더 선택</label>
+			<div class="upload-name"></div>
+		</div>
+    </div>
+	<div class="box">
+        <p class="bx-tit">파일정보</p>
+		<div>
+			<div class="ly_flx">
+				<span class="bx_btn">전체 파일 개수</span>
+				<div class="countfile"></div>
+			</div>
+			<div class="ly_flx">
+				<span class="bx_btn">오류 파일 개수</span>
+				<div class="countfile"></div>
+			</div>
+		</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

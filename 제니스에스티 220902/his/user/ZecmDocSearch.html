@@ -1,0 +1,111 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+	<link rel="stylesheet" href="../../resources/user/css/reset.css">
+	<link rel="stylesheet" href="../../resources/user/css/common.css">
+	<link rel="stylesheet" href="../../resources/user/css/style.css">
+	<link rel="stylesheet" href="../../resources/user/css/jstree/style.css">	
+
+
+    <script src="../../resources/user/js/jquery-1.12.2.min.js"></script>
+    <script src="../../resources/user/js/jquery-ui.js"></script>
+    <script src="../../resources/user/js/common.js?15"></script>
+    <script src="../../resources/user/js/jstree.min.js"></script>
+</head>
+<body>
+	<header>
+            <div class="bg"></div>
+            <div class="header_wrap">
+                <div class="header_logo">
+                    <a href="#" title="스캔페이지로 이동" onclick="goToScan();"><img src="../../resources/his/img/admin/img_top_logo.png" alt=""></a>
+                </div>
+                <div class="header_name mob_none">
+                    <p><span class="bold">사용자</span>님 환영합니다</p>
+                </div>
+                <div class="header_ui mob_none">
+                    <a href="#" title="스캔페이지" id="home" onclick="goToScan();"><img src="../../resources/user/img/icon/Group 199.png" alt="홈"></a>
+                    <button type="button" class="logbtn" onclick="Logout();">로그아웃</button>
+                    
+                </div>                
+            </div>
+        </header>
+        <main>
+            <div class="flx">
+                <nav>
+                    <div class="nav_wrap">
+                        <ul class="gnb">
+                            <li><a href="#none"><img src="../../resources/user/img/icon/icon_6.png"><span class="foldingMn">전송결과조회</span></a></li>
+                        </ul>
+                        <p id="footer" class="foldingMn">서울특별시 송파구 오금로 62 수협중앙회<br />  
+                            금융상담 1588-1515 공제상담 1588-4119 일반상담 02-2240-2114 <br />                             
+                        </p>
+                    </div>
+                </nav>
+                <section id="content">
+
+                    <div class="innerWrap">
+                        <div class="full-content">
+                            <h2 class="pageTit"><img src="../../resources/user/img/icon/icon_b06.png" alt="">전송결과 조회</h2>
+                            <div class=""></div>
+                            <div class="wdt100">
+                                <div class="inner_uiGroup">
+                                    <p>업무</p>
+                                    <select id="taskList" name="taskList">
+                                        <option value="PA">사고조사</option>
+                                    </select>
+                                    <p>고객사</p>
+                                    <select id="workplaceList" name="workplaceList">
+                                        <option value="">한화손보</option>                                        <
+                                    </select>
+                                    <p>서류번호</p>
+                                    <span>
+                                        <input type="text" id="docnumber" value=""/>&nbsp;<button type="button" class="btbase" id="btnSearch">검색</button>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="wdt100">
+                                <h3 class="innerTit">전송결과 리스트</h3>
+                                <table class="inner_tbl mob_none">
+                                    <colgroup>
+                                        <col width="7%">
+                                        <col width="20%">
+                                        <col width="33%">
+                                        <col width="25%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+
+                                        <th>번호</th>
+                                        <th>서류번호</th>
+                                        <th>문서종류</th>
+                                        <th>등록일자</th>
+                                        <th>등록자</th>
+                                    </thead>
+                                    <tbody id="SearchData">
+                                       <tr class="cursor">
+											<td colspan="5">결과 없음</td>							
+									   </tr>
+                                       
+                                    </tbody>
+                                </table>
+                                <div id="mobileContent">                                    
+                                </div>
+                                
+                            </div>
+                            <div class="wdt100">
+                        		<div  id="useHistoryPaging" class="pagination">	                             
+	                          	</div>
+                        	</div>
+                        </div>                        	
+                    </div><!--innerWrap//-->
+                </section>
+            </div>
+        </main>
+        <footer></footer>
+</body>
+<!--footer start-->
+
+<!--footer end-->
+</html>

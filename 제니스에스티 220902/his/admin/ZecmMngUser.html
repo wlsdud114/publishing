@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko" style="overflow-y: hidden;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>이미지 시스템 관리</title>
+	
+	<!-- icon -->
+	<link href='<c:url value="../../resources/favicon.ico" />' rel="shortcut icon" />
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/lib/ol/ol.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/lib/fw-1.0/fw.css" />
+	
+	<!-- 퍼블리싱 css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/all_admin.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/js/Tree/css/jstree.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/table_head_new/jquery.stickytable.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/darktooltip.css">
+	<script type="text/javascript" src="../../resources/his/js/Tree/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/Tree/jstree.js"></script>
+	
+	<!-- chart -->
+	<script type="text/javascript" src="../../resources/his/js/chart/SearchTag.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/Validate.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/LbGrid.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/core.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/animated.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/charts.js"></script>
+</head>
+<body>
+<!--left menu start-->
+<div id="mySidenav" class="sidenav">
+	<div class="logo" style="height:79px;border-bottom:solid 2px #e4ecee;">
+		<img src="../../resources/his/img/admin/img_top_logo.png" alt="" style="padding-top:25px;padding-left:30px;" class="cursor"/>
+	</div>
+	<div class="leftmenu">
+		<!--왼쪽 메뉴 : class="active"-->
+		<ul class="nav" id="demo1">
+			<li id="MenuDocSearch" class="mainMenu"><a href="./ZecmMngDocSearch.html" class="lefticon2">서류 조회</a></li>
+			<li id="MenuMngOrgan" class="mainMenu"><a href="./ZecmMngDept.html" class="lefticon3">조직 관리</a>
+				<ul class="menu2"style="display:block">
+					<li id="MenuDept"><a href="./ZecmMngDept.html">부서 관리</a></li>
+					<li id="MenuUser" class="active"><a href="./ZecmMngUser.html">사용자 관리</a></li>
+				</ul>
+			</li>
+			<li id="MenuMngClass" class="mainMenu"><a href="./ZecmMngCustCompany.html" class="lefticon4">문서분류 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuCustCompany"><a href="./ZecmMngCustCompany.html">고객사 관리</a></li>
+					<li id="MenuTask"><a href="./ZecmMngTask.html">업무 관리</a></li>
+					<li id="MenuDocType"><a href="./ZecmMngDocType.html">문서 분류 관리</a></li>
+				</ul>
+			</li>
+			<li id="MenuMngStat" class="mainMenu"><a href="./ZecmMngStatImg.html" class="lefticon6">통계조회</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuStatImg"><a href="./ZecmMngStatImg.html">회사별 등록 건수</a></li>
+					<li id="MenuStatFile"><a href="./ZecmMngStatFile.html">회사별 등록 파일개수</a></li>
+				</ul>
+			</li>
+			<li id="MenuDocHistory" class="mainMenu">
+				<a href="./ZecmMngDocHistory.html" class="lefticon7">이력조회</a>
+			</li>
+			<li id="MenuMngArch" class="mainMenu"><a href="./ZecmMngArchTask.html" class="lefticon7">아카이브 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuArchTask"><a href="./ZecmMngArchTask.html">업무관리</a></li>
+					<li id="MenuArchCabinet"><a href="./ZecmMngArchCabinet.html">캐비닛 관리</a></li>
+					<li id="MenuMonitor"><a href="./ZecmMngMonitor.html">서버 자원</a></li>
+				</ul>
+			</li>				
+		</ul>
+		<!--왼쪽 메뉴 -->
+	</div>
+</div>
+<!--left menu end-->
+
+<div id="main">
+	<!--top start-->
+<div id="top_path">
+	<div class="inbox">
+		<div class="icon">
+			<img src="${ctxRoot}/resources/his/img/icon/setting.svg" alt="" />
+		</div>
+		<em>사용자관리</em>
+		<div  style="float:right;width:240px;height:30px;text-align: left;">
+			<div style="float:left;">
+				사용자 님
+			</div>
+				
+			<div style="float:right;">
+				<button type="button" class="btn_sst2 ml_2 " id="goToScan">SCAN</button>
+				<button type="button" class="btn_sst3 ml_2 " onclick="Logout();">로그아웃</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<!--top end-->
+	<div class="cont_body">
+
+		<!--분할 part_fl  /   part_fr -->
+		<div class="part_fl">
+			<!--폴더 박스-->
+			<div class="title_b1">부서정보</div>
+			<div class="folder_adm2 ">
+				<div id="deptTreeFrame" class="tree">
+					<ul id="deptTree"></ul>
+				</div>
+			</div>
+		</div>
+		<!--------- // --------->
+		<!--분할 part_fl  /   part_fr -->
+		<div class="part_fr">
+			<div class="com_box">
+				<div class="title_m1">그룹목록</div>			
+			</div>
+
+			<div class="box_st4  mb_20">
+				<table class="tb_write_02">
+					<col width="200px;" />
+					<col width="*" />
+					<col width="80px;" />
+					<thead>
+						<tr>
+							<th rowspan="2">권한그룹</th>
+							<th colspan="6">설정권한</th>
+							<th rowspan="2" style="border-left:solid 1px gray;width:120px;"></th>
+						</tr>
+						<tr>							
+							<th width="12%;">스캔</th>
+							<th width="12%;">조회</th>
+							<th width="12%;">삭제</th>
+							<th width="12%;">복사이동</th>
+							<th width="12%;">다운로드</th>	
+							<th width="12%;">인쇄</th>						
+						</tr>
+					</thead>
+					<tbody id="groupList">
+						<tr>
+							<td>관리자그룹</td>
+							<td><input name="scan" type="checkbox" checked/></td>
+							<td><input name="view" type="checkbox" checked/></td>
+							<td><input name="dele" type="checkbox" checked/></td>
+							<td><input name="cpmv" type="checkbox" checked/></td>
+							<td><input name="down" type="checkbox" checked/></td>
+							<td><input name="print" type="checkbox" checked/></td>
+							<td><button type="button" class="btn_st2 ml_2 ">수정</button></td>
+						</tr>						
+					</tbody>
+				</table>
+			</div>
+			<div class="part_flex mt_20">
+				<div class="w_48p">
+					<div class="com_box">
+						<div class="title_m1">사용자 목록</div>
+						<div class="search_r">
+							<input type="text" id="srchText" class="input_com" style='float:right;width:130px;'>
+							<button type="button" class="search_btn" id="searchUser">검색</button>
+						</div>
+
+					</div>
+					<div class="box_st4  mb_20">
+						<table class="tb_write_04">
+							<col width="20%" />
+							<col width="80%" />
+							<tbody>
+								<tr>
+									<th>대상</th>
+									<td>
+										<input type="radio" class="radioch" name="srchRadio" id="empNoRadio" checked="checked" value="1"> <label for="empNoRadio">ID</label> 
+										<input type="radio" class="radioch" name="srchRadio" id="userNameRadio" value="2"><label for="userNameRadio">이름</label> 
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="box_st4  mb_20">
+						<div class="tb_list_stnew_2 sticky-table  table_h3" style="height:340px;">
+							<table class="table-striped tb_list2">
+								<col width="35%" />
+								<col width="35%" />
+								<col width="30%" />
+								<thead>
+									<tr class="sticky-header">
+										<th>사번</th>
+										<th>이름</th>
+										<th>사용유무</th>
+									</tr>
+								</thead>
+								<tbody id="userList">
+									<tr class="cursor">
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>																	
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+				<div class="w_48p">
+					<div class="com_box">
+						<div class="title_m1">정보</div>
+						<div class="btn_r0t0">
+							<button type="button" class="btn_st1 ml_2" id="userMody">수정</button>
+							<button type="button" class="btn_st2 ml_2 " id="UserPWInit">비번 초기화</button>
+						</div>
+
+					</div>
+					<!--테이블 시작 -->
+					<div class="box_st4  mb_20">
+					<input type="hidden" id="userid">
+						<table class="tb_write_04">
+							<col width="25%" />
+							<col width="75%" />
+							<tbody>
+								<tr>
+									<th>부서명</th>
+									<td><input type="text" id="deptname" class="w_100p input_com"
+										placeholder="" value=""></td>
+								</tr>
+								<tr>
+									<th>사용자번호</th>
+									<td><input type="text" id="empno" class="w_100p input_com"
+										placeholder="" value=""></td>
+								</tr>
+								<tr>
+									<th>이름</th>
+									<td><input type="text" id="username" class="w_100p input_com"
+										placeholder="" value=""></td>
+								</tr>
+								<tr>
+									<th>권한 그룹</th>
+									<td>
+										<select id="authgroupid" class="w_100p input_com " style="height:30px;">
+										</select>
+									</td>
+								</tr>	
+								<tr>
+									<th>사용유무</th>
+									<td>
+										<select id="userState" class="w_100p input_com " style="height:30px;">
+											<option value="Y">사용</option>
+											<option value="N">미사용</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--------- //테이블시작 --------->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<!--footer start-->
+
+<!--footer end-->
+</html>

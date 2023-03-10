@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko" style="overflow-y: hidden;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>이미지 시스템 관리</title>
+	
+	<!-- icon -->
+	<link href='<c:url value="../../resources/favicon.ico" />' rel="shortcut icon" />
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/lib/ol/ol.css" />
+	<link rel="stylesheet" type="text/css" href="../../resources/his/lb/lib/fw-1.0/fw.css" />
+	
+	<!-- 퍼블리싱 css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/all_admin.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/js/Tree/css/jstree.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/table_head_new/jquery.stickytable.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/his/css/darktooltip.css">
+	<script type="text/javascript" src="../../resources/his/js/Tree/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/Tree/jstree.js"></script>
+	
+	<!-- chart -->
+	<script type="text/javascript" src="../../resources/his/js/chart/SearchTag.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/Validate.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/LbGrid.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/core.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/animated.js"></script>
+	<script type="text/javascript" src="../../resources/his/js/chart/charts.js"></script>
+	<script src="../../resources/his/charts5/index.js"></script>
+	<script src="../../resources/his/charts5/percent.js"></script>
+	<script src="../../resources/his/charts5/themes/Animated.js"></script>
+</head>
+<body>
+<!--left menu start-->
+<div id="mySidenav" class="sidenav">
+	<div class="logo" style="height:79px;border-bottom:solid 2px #e4ecee;">
+		<img src="../../resources/his/img/admin/img_top_logo.png" alt="" style="padding-top:25px;padding-left:30px;" class="cursor"/>
+	</div>
+	<div class="leftmenu">
+		<!--왼쪽 메뉴 : class="active"-->
+		<ul class="nav" id="demo1">
+			<li id="MenuDocSearch" class="mainMenu"><a href="./ZecmMngDocSearch.html" class="lefticon2">서류 조회</a></li>
+			<li id="MenuMngOrgan" class="mainMenu"><a href="./ZecmMngDept.html" class="lefticon3">조직 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuDept"><a href="./ZecmMngDept.html">부서 관리</a></li>
+					<li id="MenuUser"><a href="./ZecmMngUser.html">사용자 관리</a></li>
+				</ul>
+			</li>
+			<li id="MenuMngClass" class="mainMenu"><a href="./ZecmMngCustCompany.html" class="lefticon4">문서분류 관리</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuCustCompany"><a href="./ZecmMngCustCompany.html">고객사 관리</a></li>
+					<li id="MenuTask"><a href="./ZecmMngTask.html">업무 관리</a></li>
+					<li id="MenuDocType"><a href="./ZecmMngDocType.html">문서 분류 관리</a></li>
+				</ul>
+			</li>
+			<li id="MenuMngStat" class="mainMenu"><a href="./ZecmMngStatImg.html" class="lefticon6">통계조회</a>
+				<ul class="menu2" style="display:none">
+					<li id="MenuStatImg"><a href="./ZecmMngStatImg.html">회사별 등록 건수</a></li>
+					<li id="MenuStatFile"><a href="./ZecmMngStatFile.html">회사별 등록 파일개수</a></li>
+				</ul>
+			</li>
+			<li id="MenuDocHistory" class="mainMenu">
+				<a href="./ZecmMngDocHistory.html" class="lefticon7">이력조회</a>
+			</li>
+			<li id="MenuMngArch" class="mainMenu"><a href="./ZecmMngArchTask.html" class="lefticon7">아카이브 관리</a>
+				<ul class="menu2" style="display:block">
+					<li id="MenuArchTask"><a href="./ZecmMngArchTask.html">업무관리</a></li>
+					<li id="MenuArchCabinet" class="active"><a href="./ZecmMngArchCabinet.html">캐비닛 관리</a></li>
+					<li id="MenuMonitor"><a href="./ZecmMngMonitor.html">서버 자원</a></li>
+				</ul>
+			</li>				
+		</ul>
+		<!--왼쪽 메뉴 -->
+	</div>
+</div>
+<!--left menu end-->
+
+<div id="main">
+	<!--top start-->
+	<div id="top_path">
+		<div class="inbox">
+			<div class="icon">
+				<img src="../../resources/his/img/icon/setting.svg" alt="" />
+			</div>
+			아카이브 관리 > <em>캐비닛 관리</em>
+			<div  style="float:right;width:240px;height:30px;text-align: left;">
+				<div style="float:left;">
+					사용자 님
+				</div>
+					
+				<div style="float:right;">
+					<button type="button" class="btn_sst2 ml_2 " id="goToScan">SCAN</button>
+					<button type="button" class="btn_sst3 ml_2 " onclick="Logout();">로그아웃</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--top end-->
+	<div class="cont_body">
+		<div class="box_topsearch mb_20" >
+			<div class="b_title">업무 선택</div>
+			<div class="inbox">				
+				<div class="inin">
+					<div class="tit"></div>
+					<div class="search_r2  w_20p mr_20">
+						<select id="TaskList" name="TaskList" class="w_100p input_com " style="height:30px;" onchange="TaskSelectChange();">							
+						</select>	
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="part_fl">
+			<!--폴더 박스-->
+			<div class="title_b1">캐비닛 목록</div>
+			<div class="box_st4  mb_20 "style="width:700px;">
+				<div class="tb_list_stnew_2 sticky-table  table_h3" style="width:700px;height:560px;">
+					<table class="table-striped tb_list2">
+						<col width="30px;" />
+						<col width="30%" />
+						<col width="60%" />
+						<thead>
+							<tr class="sticky-header">
+								<th>No</th>
+								<th>캐비닛명</th>
+								<th>저장경로</th>
+							</tr>
+						</thead>
+						<tbody id="cabinetList">
+							<tr class="cursor">
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>														
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--분할 part_fl  /   part_fr -->
+		<div class="" style="float:right;height:100%;width:calc(100% - 710px);">
+			<div class="com_box">
+				<div class="title_m1">캐비닛 정보</div>
+				<div class="btn_r0t0">
+					<button type="button" class="btn_st1 ml_2" id="btnInitCabinetClass">신규</button>
+					<button type="button" class="btn_st2 ml_2" id="btnNewCabinetClass">등록</button>
+					<button type="button" class="btn_st2 ml_2" id="btnModCabinetClass">수정</button>
+					<button type="button" class="btn_st2 ml_2" id="btnDelCabinetClass">삭제</button>
+				</div>
+			</div>
+
+			<div class="box_st4  mb_20">
+				<table class="tb_write_04">
+					<col width="25%" />
+					<col width="75%" />
+					<tbody>
+						<tr>
+							<th>캐비닛명</th>
+							<td><input type="text" id="CabinetName" class="w_100p input_com"
+								placeholder="" value=""></td>
+						</tr>
+						<tr>
+							<th>캐비닛설명</th>
+							<td><input type="text" id="CabinetDesc" class="w_100p input_com"
+								placeholder="" value=""></td>
+						</tr>
+						<tr>
+							<th>저장경로</th>
+							<td><input type="text" id="CabinetPath" class="w_100p input_com"
+								placeholder="" value=""></td>
+						</tr>
+						<tr>
+							<th>최대용량</th>
+							<td><input type="text" id="CabinetCapacity" class="w_100p input_com"
+								placeholder="" value=""></td>
+						</tr>					
+						
+						<tr>
+							<th>사용유무</th>
+							<td>								
+								<select id="CabinetState" class="w_100p input_com " style="height:30px;">
+									<option selected="selected" value="1">사용대기</option>
+									<option value="2">사용중</option>	
+									<option value="3">사용완료</option>										
+								</select>							
+							</td>
+						</tr>
+						<input type="hidden" id="CabinetID"/>
+					</tbody>
+				</table>
+			</div>
+			<div class="com_box">
+				<div class="title_m1">캐비닛 용량</div>				
+			</div>
+			<div id="chartStorage" class="box_st4  mb_20" style="height:258px;">				
+			</div>	
+	</div>
+</div>
+</body>
+<!--footer start-->
+
+<!--footer end-->
+</html>

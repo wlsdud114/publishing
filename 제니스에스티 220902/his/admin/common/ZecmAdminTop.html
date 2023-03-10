@@ -1,0 +1,31 @@
+<div id="top_path">
+	<div class="inbox">
+		<div class="icon">
+			<img src="${ctxRoot}/resources/his/img/icon/setting.svg" alt="" />
+		</div>		
+		<% if(menu.equals("MenuDocSearch")){ %> <em>서류조회</em>
+		<% }else if(menu.equals("MenuFileSearch")){ %> <em>전송결과 조회</em> 
+		<% }else if(menu.equals("MenuCustCompany")){ %> 문서분류관리 > <em>고객사관리</em> 
+		<% }else if(menu.equals("MenuTask")){ %> 문서분류관리 > <em>업무관리</em>
+		<% }else if(menu.equals("MenuDocType")){ %> 문서분류관리 > <em>문서분류관리</em>
+		<% }else if(menu.equals("MenuStatImg")){ %> 통계조회 > <em>회사별 등록건수</em>
+		<% }else if(menu.equals("MenuStatFile")){ %> 통계조회 > <em>회사별 등록 파일개수</em>
+		<% }else if(menu.equals("MenuDocHistory")){ %> <em>이력조회</em> 
+		<% }else if(menu.equals("MenuUser")){ %> 조직관리 > <em>사용자관리</em>
+		<% }else if(menu.equals("MenuDept")){ %> 조직관리 > <em>부서관리</em>
+		<% }else if(menu.equals("MenuArchTask")){ %> 아카이브 관리 > <em>업무 관리</em> 
+		<% }else if(menu.equals("MenuArchCabinet")){ %> 아카이브 관리 > <em>캐비닛 관리</em>
+		<% }else if(menu.equals("MenuMonitor")){ %> 아카이브 관리 > <em>서버 자원</em>
+		
+		<div  style="float:right;width:240px;height:30px;text-align: left;">
+			<div style="float:left;">
+				사용자 님
+			</div>
+				
+			<div style="float:right;">
+				<button type="button" class="btn_sst2 ml_2 " id="goToScan">SCAN</button>
+				<button type="button" class="btn_sst3 ml_2 " onclick="Logout();">로그아웃</button>
+			</div>
+		</div>
+	</div>
+</div>
