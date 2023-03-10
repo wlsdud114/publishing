@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+
+	<script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <title>연동서비스</title>
+    <script>
+        $(function(){
+            $('.tab_slide_container .tab_list .tab_row div').click(function(){
+                let tabindex = $(this).index();
+
+                $('.tab_slide_container .tab_list .tab_row div').removeClass('on');
+                $(this).addClass('on');
+                $('.slide_content').find('.slide').css('display','none');
+                $('.slide_content').find('.slide').eq(tabindex).css('display','block');
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="gnb ly_flx ly_flx_btw">
+                <div class="hd-main hd-cnt ly_flx">
+                    <p class="logo"><a href="00_main.html" title="메인페이지로 이동"><img src="../images/logo/logo.png" alt="메인로고"></a></p>
+                    <ul class="menu menu-group1">
+                        <li>
+                            <div class="title"><a href="효성CMS+.html">효성CMS+</a></div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col col-wide">
+                                        <li><a href="효성CMS+.html">브랜드 스토리<img src="../images/icon/href_blk.svg" class="href_btn"></a></li>
+                                    </ul>
+                                    <ul class="col col-wide">
+                                        <li>
+                                            <p class="lg_txt">효성CMS+는<br> 어떻게 바꼈을까요?</p>
+                                            <a href="효성CMS+.html" class="point">자세히 보기<img src="../images/icon/href_bl.svg" class="href_btn"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="col col-wide">
+                                        <li>
+                                            <p class="lg_txt">효성CMS3.0 전환 고객은<br>이렇게 이용하세요</p>
+                                            <a href="효성CMS+.html" class="point">자세히 보기<img src="../images/icon/href_bl.svg" class="href_btn"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title"><a href="서비스.html">서비스</a></div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col col-line">
+                                        <li><a href="#" class="emp">어플리케이션</a></li>
+                                        <li><a href="#">효성CMS+</a></li>
+                                        <li><a href="#">스퀘어</a></li>
+                                    </ul>
+                                    <ul class="col col-line">
+                                        <li><a href="#" class="emp">페이먼츠</a></li>
+                                        <li><a href="#">CMS결제</a></li>
+                                        <li><a href="#">실시간CMS결제</a></li>
+                                        <li><a href="#">신용카드결제</a></li>
+                                        <li><a href="#">가상계좌결제</a></li>
+                                        <li><a href="#">휴대전화결제</a></li>
+                                        <li><a href="#">청구결제</a></li>
+                                    </ul>
+                                    <ul class="col">
+                                        <li><a href="#" class="emp">제휴</a></li>
+                                        <li><a href="#">연동서비스</a></li>
+                                        <li><a href="#">연동제휴하기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title"><a href="업종.html">업종</a></div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col col-line">
+                                        <li><a href="#">세무회계</a></li>
+                                        <li><a href="#">노무</a></li>
+                                        <li><a href="#">렌탈</a></li>
+                                        <li><a href="#">정기배송</a></li>
+                                        <li><a href="#">후원</a></li>
+                                        <li><a href="#">장기요양</a></li>
+                                    </ul>
+                                    <ul class="col">
+                                        <li><a href="#">대행용역</a></li>
+                                        <li><a href="#">협회단체</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">교육</a></li>
+                                        <li><a href="#">보육</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title"><a href="데모체험.html">데모체험</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd-main hd-etc ly_flx ly_flx_end">
+                    <ul class="menu menu-group2">
+                        <li>
+                            <div class="title"><a href="회사소개.html">회사소개</a></div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <div class="col">
+                                        <!-- <iframe width="250" height="150" src="https://www.youtube.com/embed/oQqRZf57l4U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                    </div>
+                                    <ul class="col">
+                                        <li><a href="">효성에프엠에스</a></li>
+                                        <li><a href="">정보보안</a></li>
+                                        <li><a href="">인재채용</a></li>
+                                        <li><a href="">CI/BI소개</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title"><a href="홍보센터.html">홍보센터</a></div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <div class="col col-large">
+                                        <a href=""><img src="../images/layout/gnb_category_01.png" alt="" class="gnb_img"></a>
+                                        <a href=""><p class="subject">소식</p></a>
+                                        <a href=""><p class="desc">시니어, 온라인 소비를 주도하다</p></a>
+                                    </div>
+                                    <div class="col col-large">
+                                        <a href=""><img src="../images/layout/gnb_category_02.png" alt="" class="gnb_img"></a>
+                                        <a href=""><p class="subject">비즈니스 UP</p></a>
+                                        <a href=""><p class="desc">고객의 소리를 듣고 고객 맟춤형 서비스로 발전하는 효성CMS!</p></a>
+                                    </div>
+                                    <div class="col col-large">
+                                        <a href=""><img src="../images/layout/gnb_category_01.png" alt="" class="gnb_img"></a>
+                                        <a href=""><p class="subject">비즈캠퍼스</p></a>
+                                        <a href=""><p class="desc">효성에프엠에스, 후원 기관 대상 ‘모금 역량 강화 교육 프로그램’ 진행</p></a>
+                                    </div>
+                                    <ul class="col">
+                                        <li><a href="">+아카이브</a></li>
+                                        <li><a href="">뉴스레터</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title"><a href="">고객지원</a></div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col">
+                                        <li><a href="">공지사항</a></li>
+                                        <li><a href="">고객자료실</a></li>
+                                        <li><a href="">문의하기</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">원격지원</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="menu util">
+                        <li>
+                            <div class="title"><a href=""><img src="../images/icon/gnb_info.svg" id="info"></a></div>
+                            <div class="dropContent"></div>
+                        </li>
+                        <li>
+                            <div class="title"><a href=""><img src="../images/icon/gnb_login.svg" id="login"></a></div>
+                            <div class="dropContent"></div>
+                        </li>
+                        <li>
+                            <div class="title"><img src="../images/icon/bt_menu_wh.svg" id="menu"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rnb">
+                <div class="rnb_wrap">
+                    <ul class="menu menu-group1">
+                        <li>
+                            <div class="title">효성CMS+</div>
+                            <div class="childpanel on">
+                                <div class="inner_wrapper">
+                                    <ul class="col col-wide">
+                                        <li><a href="효성CMS+.html">브랜드 스토리<img src="../images/icon/href_blk.svg" class="href_btn"></a></li>
+                                    </ul>
+                                    <ul class="col col-wide">
+                                        <li>
+                                            <p class="lg_txt">효성CMS+는<br> 어떻게 바꼈을까요?</p>
+                                            <a href="효성CMS+.html" class="point">자세히 보기<img src="../images/icon/href_bl.svg" class="href_btn"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="col col-wide">
+                                        <li>
+                                            <p class="lg_txt">효성CMS3.0 전환 고객은<br>이렇게 이용하세요</p>
+                                            <a href="효성CMS+.html" class="point">자세히 보기<img src="../images/icon/href_bl.svg" class="href_btn"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">서비스</div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col">
+                                        <li><a href="#" class="emp">어플리케이션</a></li>
+                                        <li><a href="#">효성CMS+</a></li>
+                                        <li><a href="#">스퀘어</a></li>
+                                    </ul>
+                                    <ul class="col">
+                                        <li><a href="#" class="emp">페이먼츠</a></li>
+                                        <li><a href="#">CMS결제</a></li>
+                                        <li><a href="#">실시간CMS결제</a></li>
+                                        <li><a href="#">신용카드결제</a></li>
+                                        <li><a href="#">가상계좌결제</a></li>
+                                        <li><a href="#">휴대전화결제</a></li>
+                                        <li><a href="#">청구결제</a></li>
+                                    </ul>
+                                    <ul class="col">
+                                        <li><a href="#" class="emp">제휴</a></li>
+                                        <li><a href="#">연동서비스</a></li>
+                                        <li><a href="#">연동제휴하기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">업종</div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col no-line">
+                                        <li><a href="#">세무회계</a></li>
+                                        <li><a href="#">노무</a></li>
+                                        <li><a href="#">렌탈</a></li>
+                                        <li><a href="#">정기배송</a></li>
+                                        <li><a href="#">후원</a></li>
+                                        <li><a href="#">장기요양</a></li>
+                                        <li><a href="#">대행용역</a></li>
+                                        <li><a href="#">협회단체</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">교육</a></li>
+                                        <li><a href="#">보육</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">데모체험</div>
+                            <div class="childpanel"></div>
+                        </li>
+                    </ul>
+                    <ul class="menu menu-group2">
+                        <li>
+                            <div class="title">회사소개</div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col no-line">
+                                        <li><a href="">효성에프엠에스</a></li>
+                                        <li><a href="">정보보안</a></li>
+                                        <li><a href="">인재채용</a></li>
+                                        <li><a href="">CI/BI소개</a></li>
+                                    </ul>
+                                    <div class="col no-line">
+                                        <iframe width="250" height="150" src="https://www.youtube.com/embed/oQqRZf57l4U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <img src="../images/icon/bt_play_bl.svg"> <span>효성에프엠에스를 알려드려요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">홍보센터</div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col no-line">
+                                        <li><a href="">+아카이브</a></li>
+                                        <li><a href="">뉴스레터</a></li>
+                                    </ul>
+                                    <div class="col no-line">
+                                        <a href=""><img src="../images/layout/gnb_category_01.png" alt="" class="gnb_img"></a>
+                                        <a href=""><p class="subject">소식</p></a>
+                                        <a href=""><p class="desc">시니어, 온라인 소비를 주도하다</p></a>
+                                    </div>
+                                    <div class="col no-line">
+                                        <a href=""><img src="../images/layout/gnb_category_02.png" alt="" class="gnb_img"></a>
+                                        <a href=""><p class="subject">비즈니스 UP</p></a>
+                                        <a href=""><p class="desc">고객의 소리를 듣고 고객 맟춤형 서비스로 발전하는 효성CMS!</p></a>
+                                    </div>
+                                    <div class="col no-line">
+                                        <a href=""><img src="../images/layout/gnb_category_01.png" alt="" class="gnb_img"></a>
+                                        <a href=""><p class="subject">비즈캠퍼스</p></a>
+                                        <a href=""><p class="desc">효성에프엠에스, 후원 기관 대상 ‘모금 역량 강화 교육 프로그램’ 진행</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">고객지원</div>
+                            <div class="childpanel">
+                                <div class="inner_wrapper">
+                                    <ul class="col no-line">
+                                        <li><a href="">공지사항</a></li>
+                                        <li><a href="">고객자료실</a></li>
+                                        <li><a href="">문의하기</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">원격지원</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="sub_tit_area api_sub">
+                <div class="inner_wrapper">
+                    <div class="txt_wrap">
+                        <h1>연동서비스</h1>
+                        <p class="mob_none">효성에프엠에스는 다양한 API를 통한<br>
+                            수납환경을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_cont_area api_sub">
+                <div class="inner_wrapper">
+                    <div class="txt_wrap">
+                        <h3>효성에프엠에스는 고객사의 프로그램에<br>
+                            결제서비스를 연동하기 위한 <br>
+                            다양한 IT 기술 및 인프라를 제공합니다
+                        </h3>
+                    </div>
+                    <div class="tab_slide_container">
+                        <div class="tab_list">
+                            <div class="tab_row">
+                                <div class="on"><span>Web API</span></div>
+                                <div><span>SDSI</span></div>
+                                <div><span>DB Agent</span></div>
+                            </div>
+                        </div>
+                        <div class="slide_content">
+                            <div class="slide on">
+                                <p>Web Application Programming Interface</p>
+                                <h3>고객사(Client)의 프로그램에서 손쉽게<br class="pc_none tab_none"> 사용할 수 있도록<br class="mob_none">
+                                    표준 HTTP 통신<br class="pc_none tab_none"> 프로토콜을 활용한 API 주소를 제공하는<br class="pc_none tab_none"> 연동 방식입니다
+                                </h3>
+                                <img src="../image/layout/web_api.png">
+                                <div class="slide_info">
+                                    <h4>모든 데이터는 SSL 규약으로 암호화되며<br class="pc_none tab_none"> JSON 형태로 전송됩니다 </h4>
+                                    <div class="col">
+                                        <p>개요</p>
+                                        <p>표준 HTTP 통신 프로토콜을 활용한 API 서비스</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>인증</p>
+                                        <p> 표준 HTTP 통신 Authorization 헤더 사용</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>보안</p>
+                                        <p>모든 통신은 SSL 규약으로 안전하게 데이터 전송</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>형태</p>
+                                        <p>가독성이 높은 개방형 표준 형식인 JSON 방식 사용 속성(Key, Value)쌍의 형태를 지원해 프로그램 언어의 제약이 없음</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <p>Standard Data Socket Interface</p>
+                                <h3>효성에프엠에스만의 표준화된 Socket<br class="pc_none tab_none"> 통신 방식으로<br class="mob_none">
+                                    고객사(Client)와 효성에<br class="pc_none tab_none">프엠에스(Server) 간 암호화된 전문을<br class="pc_none tab_none"> 송수신하는 연동 방식입니다
+                                </h3>
+                                <img src="../image/layout/sdsi.png">
+                                <div class="slide_info">
+                                    <h4> 모든 데이터는 암호화 통신으로 규격화된<br class="pc_none tab_none"> 전문을 주고 받습니다 </h4>
+                                    <div class="col">
+                                        <p>개요</p>
+                                        <p>TCP/IP 프로토콜을 활용한 서비스</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>인증</p>
+                                        <p>효성에프엠에스에서 발급한 고객사 고유의 인증정보 사용</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>보안</p>
+                                        <p>암호화 라이브러리를 이용한 전문 데이터 송수신</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>형태</p>
+                                        <p>규격화된 전문 사용</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <p>Web Application Programming Interface</p>
+                                <h3>별도의 개발없이 고객사(Client) 서버에<br class="pc_none tab_none"> DB Agent 설치 및 환경 설정 만으로<br>
+                                    DB 정보를 조회해 효성에프엠에스<br class="pc_none tab_none">(Server)로 자동으로 처리해주는<br class="pc_none tab_none"> 연동 방식입니다
+                                </h3>
+                                <img src="../image/layout/db_agent.png">
+                                <div class="slide_info">
+                                    <h4> 모든 데이터는 암호화 통신으로 규격화된<br class="pc_none tab_none"> 전문을 주고 받습니다 </h4>
+                                    <div class="col">
+                                        <p>개요</p>
+                                        <p>TCP/IP 프로토콜을 활용한 서비스</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>인증</p>
+                                        <p>효성에프엠에스에서 발급한 고객사 고유의 인증정보 사용</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>보안</p>
+                                        <p>암호화 라이브러리를 이용한 전문 데이터 송수신</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>형태</p>
+                                        <p>규격화된 전문 사용   *설치 패키지 종류 : Windows, Linux, Unix 사용 가능</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_cont_banner">
+                    <div class="inner_wrapper">
+                        <a href=""><img src="../image/banner/connect_banner.png" class="mob_none"></a>
+                        <a href=""><img src="../image/banner/connect_banner_mob.png" class="pc_none tab_none"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="inner_wrapper">
+                <img src="../images/icon/bt_top.svg" alt="위로가기버튼" class="top_btn">
+                <div class="footer_top_area">
+                    <ul class="fnb ly_flx ly_flx_btw">
+                        <li class="fnb_tit">회사소개
+                            <ul class="sub">
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">비전&핵심가치</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                                <li><a href="#">정보보안</a></li>
+                                <li><a href="#">인사채용</a></li>
+                                <li><a href="#">CL/BL 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">서비스 소개
+                            <ul class="sub">
+                                <li><a href="#">효성 CMS+ 소개</a></li>
+                                <li><a href="#">서비스 튜토리얼</a></li>
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">업종별솔루션</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">고객사례
+                            <ul class="sub">
+                                <li><a href="#">업종별 고객사례</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">+아카이브
+                            <ul class="sub">
+                                <li><a href="#">+아카이브</a></li>
+                                <li><a href="#">뉴스레터 신청</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">고객센터
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">고객자료실</a></li>
+                                <li><a href="#">이용문의</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="sub">
+                                <li><a href="tel:1544-5162" class="fnb_tit">TEL.1544.5162</a></li>
+                                <li><a href="#" class="fnb_tit">FAX.1599-0330</a></li>
+                                <li><a href="mailto:info@hyosungfms.com" class="fnb_tit">info@hyosungfms.com</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_area">
+                    <div class="ly_flx ly_flx_btw">
+                        <ul class="ly_flx ly_flx_btw ly_flx_wrap fnb_info">
+                            <li><a href="#" class="fnb_tit">이용약관</a></li>
+                            <li><a href="#" class="fnb_tit">개인정보처리방침</a></li>
+                            <li><a href="#" class="fnb_tit">이메일무단수집거부</a></li>
+                            <li><a href="#" class="fnb_tit">찾아오시는 길</a></li>
+                        </ul>
+                        <div class="slct_wrap">
+                            <ul class="ui_select">
+                                <li>Brand Site<span><img src="../images/icon/bt_plus.png"></span></li>
+                                <li><a href="#">브랜드 사이트1</a></li>
+                                <li><a href="#">브랜드 사이트2</a></li>
+                                <li><a href="#">브랜드 사이트3</a></li>
+                                <li><a href="#">브랜드 사이트4</a></li>
+                            </ul>
+                            <ul class="ui_select">
+                                <li>Family Site<span><img src="../images/icon/bt_plus.png"></span></li>
+                                <li><a href="#">브랜드 사이트1</a></li>
+                                <li><a href="#">브랜드 사이트2</a></li>
+                                <li><a href="#">브랜드 사이트3</a></li>
+                                <!-- <li><a href="#">브랜드 사이트4</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fnb_addr">
+                        <p>효성에프엠에스(주)</p>
+                        <p>대표이사<span>강현식</span>사업자등록번호<span>211-87-98181</span>주소<span>서울특별시 강남구 광평로 281 수서빌딩 5F</span></p>
+                        <p>ⓒ HYOSUNG FMS INC. All RIGHTS RESERVED.</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/icon/bt_facebook.svg" alt="페이스북"></a>
+                        <a href=""><img src="../images/icon/bt_youtube.svg" alt="유튜브"></a>
+                        <a href=""><img src="../images/icon/bt_blog.svg" alt="블로그"></a>
+                    </div>
+                </div> <!--//footer_bottom_area-->
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

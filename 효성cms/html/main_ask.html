@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+
+	<script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <title>고객문의</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="bg_pc"></div>
+            <div class="gnb_bg"></div>
+            <div class="inner_wrapper">
+                <div class="logoWrap"><a href="00_main.html" title="메인페이지로 이동"><img src="../image/logo/logo.png" alt="메인로고" class="logoImg"></a></div>
+                <div class="navWrap">
+                    <ul class="nav ly_flx ly_flx_btw">
+                        <li>
+                            <p>회사소개<img src="../image/icon/i_down-arrow.png" class="down pc_none tab_none"></p>
+                            <ul class="sub">
+                                <li><a href="company_info.html">기업개요</a></li>
+                                <li><a href="company_vision.html">비전&핵심가치</a></li>
+                                <li><a href="company_ceo.html">CEO인사말</a></li>
+                                <li><a href="company_info_security.html">정보보안</a></li>
+                                <li><a href="company_recruit.html">인재채용</a></li>
+                                <li><a href="company_ci_bi.html">CI/BI소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>서비스 소개<img src="../image/icon/i_down-arrow.png" class="down pc_none tab_none"></p>
+                            <ul class="sub">
+                                <li><a href="#">효성CMS+ 소개</a></li>
+                                <li><a href="service_api.html">API</a></li>
+                                <li><a href="service_solution.html">업종별솔루션</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>고객사례</p>
+                            <ul class="sub">
+                                <li><a href="customer.html">업종별 고객사례</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>+아카이브<img src="../image/icon/i_down-arrow.png" class="down pc_none tab_none"></p>
+                            <ul class="sub">
+                                <li><a href="achive.html">+아카이브</a></li>
+                                <li><a href="achive_news.html">뉴스레터 신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>고객센터<img src="../image/icon/i_down-arrow.png" class="down pc_none tab_none"></p>
+                            <ul class="sub">
+                                <li><a href="board.html">공지사항</a></li>
+                                <li><a href="board.html">고객자료실</a></li>
+                                <li><a href="use_inquiry.html">이용문의</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="rgt_area ly_flx">
+                        <li><a href="#">문의하기</a></li>
+                        <li><a href="#">서비스 접속
+
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="ui_bar pc_none">
+                    <img src="../image/icon/bt_menu.svg" alt="모바일 메뉴버튼">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="sub_tit_area">
+                <div class="inner_wrapper">
+                    <div class="txt_wrap">
+                        <h1>고객문의</h1>
+                        <p>고민은 그만하고 바로 가볍게 문의해보세요</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_cont_area">
+                <div class="inner_wrapper">
+                    <h5>필요하신 문의 내용을 선택해주세요</h5>
+                    <div class="ly_flx ly_flx_btw bl_el_input">
+                        <div class="bl_el_w50 bl_tab_btn on">
+                            <p class="bold">효성CMS+ 가입/상담문의 <br /><span>효성 CMS+ 가입/상담 문의를 도와드립니다</span><img src="../image/icon/bt_check_circle.svg"></p>
+                        </div>
+                        <div class="bl_el_w50 bl_tab_btn">
+                            <p class="bold">제휴 문의 <br /><span>비전을 함께 나누고 실현할 파트너를 기다립니다</span><img src="../image/icon/bt_check_circle_c.svg"></p>
+                        </div>
+                    </div>
+                    <p><span class="emp">*</span>필수입력 사항입니다</p>
+                    <div class="ly_flx ly_flx_wrap bl_el_input">
+                        <div class="bl_el_w50">
+                            <p class="bold">회사 또는 단체명<span class="emp">*</span></p>
+                            <input type="text" placeholder="회사 또는 단체명을 입력해주세요">
+                        </div>
+                        <div class="bl_el_w50">
+                            <p class="bold">문의자명<span class="emp">*</span></p>
+                            <input type="text" placeholder="담당자명을 입력해주세요">
+                        </div>
+                        <div class="bl_el_w50">
+                            <p class="bold">이메일주소</p>
+                            <input type="text" placeholder="회신 받을 메일 주소를 입력해주세요">
+                        </div>
+                        <div class="bl_el_w50">
+                            <p class="bold">연락처<span class="emp">*</span></p>
+                            <input type="text" placeholder="연락 받으실 번호를 입력해주세요">
+                        </div>
+                        <div class="bl_el_w50">
+                            <p class="bold">상담가능 시간대<span class="emp">*</span></p>
+                            <select>
+                                <option>상담 시간을 선택해주세요</option>
+                                <option>상담 시간을 선택해주세요</option>
+                                <option>상담 시간을 선택해주세요</option>
+                                <option>상담 시간을 선택해주세요</option>
+                            </select>
+                        </div>
+                        <div class="bl_el_w100">
+                            <p class="bold">문의내용</p>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="bl_el_30">
+                        <h3><input type="checkbox"> 개인정보 수집 및 이용안내를 동의합니다 [필수]</h3>
+                        <p class="bl_el_15 bg_gray">
+                            <span class="bold">수집하는 개인정보 항목</span><br />
+                            회사는 홈페이지 내 마련된 각종 신청 양식 등을 통해 수집한 개인정보는 이용자에게 보다 나은 서비스를 제공하는데 활용되고 있습니다.<br />
+                            각종 신청 양식 등을 통해 수집된 개인정보와 개별 요청 내용, 관심 항목의 내용 등은 이용자의 기호에 맞는 서비스 발굴 및 대고객 서비스 개선을 위해 사용되며, 회사 내부의 자료로만 활용됩니다.<br />
+                            <span class="bold">개인정보의 수집내역</span><br />
+                            항목: 이메일  /  수집목적: 뉴스레터 발송  /  보유기간: 구독 해지 또는 서비스 종료 시까지<br />
+                            <span class="bold">개인정보의 보유기간</span><br />
+                            목적이 종료되는 시점에 즉시 삭제 처리합니다. 다만, 관계 법령에 의해 보관해야 하는 정보는 법령이 정한 기간 동안 보관 후 파기 합니다.<br />
+                            <span class="bold">개인정보의 수집 및 이용 동의</span><br />
+                            위와 같이 개인정보 수집 동의에 대하여 거부할 권리가 있습니다. 그러나, 동의를 거부할 경우 서비스를 제공받으실 수 없습니다.<br />
+                        </p>
+                    </div>
+                    <div class="bl_el_30">
+                        <h3><input type="checkbox"> 개인정보의 취급·위탁을 동의합니다 [필수]</h3>
+                        <p class="bl_el_15 bg_gray">
+                            회사는 원활한 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있으며, 관련 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다.<br />
+                            <span class="bold">개인정보 취급업무 위탁내역</span><br />
+                            위탁 받는 곳: (주)효성FMS  /  업무내용: 뉴스레터 발송  /  개인정보 보유 및 이용기간: 위탁계약 종료 시까지<br />
+                            <span class="bold">개인정보의 취급업무 위탁 동의</span><br />
+                            위와 같이 개인정보의 취급업무 위탁 동의에 대하여 거부할 권리가 있습니다. 그러나, 동의를 거부할 경우 서비스를 제공받으실 수 없습니다.
+                        </p>
+                    </div>
+                    <div class="el_btnWrap bl_el_50">
+                        <a href="#" class="h_btn">구독하기</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="inner_wrapper">
+                <img src="../image/icon/bt_top.svg" alt="위로가기버튼" class="top_btn">
+                <div class="footer_top_area">
+                    <ul class="fnb ly_flx ly_flx_btw">
+                        <li class="fnb_tit">회사소개
+                            <ul class="sub">
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">비전&핵심가치</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                                <li><a href="#">정보보안</a></li>
+                                <li><a href="#">인사채용</a></li>
+                                <li><a href="#">CL/BL 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">서비스 소개
+                            <ul class="sub">
+                                <li><a href="#">효성 CMS+ 소개</a></li>
+                                <li><a href="#">서비스 튜토리얼</a></li>
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">업종별솔루션</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">고객사례
+                            <ul class="sub">
+                                <li><a href="#">업종별 고객사례</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">+아카이브
+                            <ul class="sub">
+                                <li><a href="#">+아카이브</a></li>
+                                <li><a href="#">뉴스레터 신청</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="fnb_tit">고객센터
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">고객자료실</a></li>
+                                <li><a href="#">이용문의</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="sub">
+                                <li><a href="tel:1544-5162" class="fnb_tit">TEL.1544.5162</a></li>
+                                <li><a href="#" class="fnb_tit">FAX.1599-0330</a></li>
+                                <li><a href="mailto:info@hyosungfms.com" class="fnb_tit">info@hyosungfms.com</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_area">
+                    <div class="ly_flx ly_flx_btw">
+                        <ul class="ly_flx ly_flx_btw ly_flx_wrap fnb_info">
+                            <li><a href="#" class="fnb_tit">이용약관</a></li>
+                            <li><a href="#" class="fnb_tit">개인정보처리방침</a></li>
+                            <li><a href="#" class="fnb_tit">이메일무단수집거부</a></li>
+                            <li><a href="#" class="fnb_tit">찾아오시는 길</a></li>
+                        </ul>
+                        <div class="slct_wrap">
+                            <ul class="ui_select">
+                                <li>Brand Site<span><img src="../image/icon/bt_plus.png"></span></li>
+                                <li><a href="#">브랜드 사이트1</a></li>
+                                <li><a href="#">브랜드 사이트2</a></li>
+                                <li><a href="#">브랜드 사이트3</a></li>
+                                <li><a href="#">브랜드 사이트4</a></li>
+                            </ul>
+                            <ul class="ui_select">
+                                <li>Family Site<span><img src="../image/icon/bt_plus.png"></span></li>
+                                <li><a href="#">브랜드 사이트1</a></li>
+                                <li><a href="#">브랜드 사이트2</a></li>
+                                <li><a href="#">브랜드 사이트3</a></li>
+                                <!-- <li><a href="#">브랜드 사이트4</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fnb_addr">
+                        <p>효성에프엠에스(주)</p>
+                        <p>대표이사<span>강현식</span>사업자등록번호<span>211-87-98181</span>주소<span>서울특별시 강남구 광평로 281 수서빌딩 5F</span></p>
+                        <p>ⓒ HYOSUNG FMS INC. All RIGHTS RESERVED.</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="../image/icon/bt_facebook.svg" alt="페이스북"></a>
+                        <a href=""><img src="../image/icon/bt_youtube.svg" alt="유튜브"></a>
+                        <a href=""><img src="../image/icon/bt_blog.svg" alt="블로그"></a>
+                    </div>
+                </div> <!--//footer_bottom_area-->
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
