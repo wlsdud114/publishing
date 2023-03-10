@@ -1,0 +1,93 @@
+#header{
+  position:fixed;
+  width:100%;
+  height:60px;
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  z-index: 10;
+  display:flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -moz-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+.userName{
+  line-height:60px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+.userName span{
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.userLogIn{
+  margin:auto 40px auto 0;
+}
+.userLogIn .btn_trs{
+  background-color:#fff;
+  margin-right: 50px;
+}
+
+.sidenav {
+  height: calc(100% - 60px);
+  width: 260px;
+  position: fixed;
+  z-index: 9;
+  top: 60px;
+  left: 0;
+  background-color: #0057aa;
+  transition: margin-left .5s;
+  padding-top: 10px;
+  box-shadow: 3px 3px 30px rgba(126, 140, 174, 0.3) !important;
+  margin-left: 0px
+}
+.sidenav .logo {
+  width: 260px;
+  float: left
+}
+.sidenav .leftmenu {
+  width: 260px;
+  float: left
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#sidenav_open {
+  position: absolute;
+  right: -35px;
+  top: 0px;
+  width: 35px;
+  height: 35px;
+  background: url("../../img/icon/angle-right.svg")no-repeat center center;
+  background-color: #172b44;
+  background-size: 20px;
+  cursor: pointer
+}
+#sidenav_close {
+  position: absolute;
+  right: -35px;
+  top: 0px;
+  width: 35px;
+  height: 35px;
+  background: url("../../img/icon/angle-left-b.svg")no-repeat center center;
+  background-color: #172b44;
+  background-size: 20px;
+  cursor: pointer
+}
+#main {
+  transition: margin-left .5s;
+  padding: 60px 30px 20px 30px;
+  background-color: #f5f7fc;
+  margin-left: 260px; height: 100%; position: relative; min-width: 1000px;
+}
+@media screen and (max-height: 450px) {}

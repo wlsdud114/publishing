@@ -1,0 +1,108 @@
+button{transition: all 0.5s;
+-moz-transition: all 0.5s; /* Firefox 4 */
+-webkit-transition: all 0.5s; /* Safari and Chrome */
+-o-transition: all 0.5s; /* Opera */
+
+}
+ .btn_box_fr{ width: 100%; float: left;display:flex;justify-content: flex-end;  flex-direction:row;}
+
+ .btn_r{position: absolute; right: 0px; top:10px}
+
+ .btn_r0t0{position: absolute; right:0px; top:0px}
+
+ .btn_r0tc{position: absolute;top:50%;transform:translateY(-50%);right:0;}
+
+
+.btn_sst1{border-radius: 4px; background-color: #59A9AB; color: #fff; font-size: 14px; padding: 0px 15px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sst1:hover{border-radius: 4px; background-color: #329497; color: #fff; font-size: 14px; padding: 0px 15px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+
+.btn_sst2{border-radius: 4px; background-color:#336dd6; color: #fff; font-size: 14px; padding: 0px 15px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sst2:hover{border-radius: 4px; background-color:#144DB3; color: #fff; font-size: 14px; padding: 0px 15px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+
+
+.btn_sst3{border-radius: 4px; background-color:#7B8293; color: #fff; font-size: 14px; padding: 0px 15px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sst3:hover{border-radius: 4px; background-color:#5A6172; color: #fff; font-size: 14px; padding: 0px 15px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sst4{ padding: 11px 33px 11px 32px; border-radius: 100px; border: solid 1px #0057aa;background-color:#fff;color:#0057aa; font-size: 15px;}
+
+
+.btn_st1{border-radius: 4px; background-color: #336dd6; color: #fff; font-size: 14px; padding: 0px 30px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_st1:hover{border-radius: 4px; background-color: #144DB3; color: #fff; font-size: 14px; padding: 0px 30px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+
+.btn_st2{border-radius: 4px; background-color: #51628e; color: #fff; font-size: 14px; padding: 0px 30px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+.btn_st2:hover{border-radius: 4px; background-color: #2C3E6E; color: #fff; font-size: 14px; padding: 0px 30px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_st3{border-radius: 4px; background-color: #85888F; color: #fff; font-size: 14px; padding: 0px 30px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+.btn_st3:hover{border-radius: 4px; background-color: #5A6172; color: #fff; font-size: 14px; padding: 0px 30px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+
+.btn_down1{border-radius: 4px; background-color: #6dca77; color: #fff; font-size: 14px; padding: 0px 20px 0px 50px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;position: relative; cursor: pointer
+}
+.btn_down1 .icon{ width: 35px; height: 35px; border-radius: 4px;  background: url("../img/icon/icon_down.svg")no-repeat center center; background-size: 20px;  background-color: #4a784f; position: absolute; left: 0px; top: 0px  }
+
+.btn_down1:hover{border-radius: 4px; background-color: #46A851; color: #fff; font-size: 14px; padding: 0px 20px 0px 50px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;position: relative; cursor: pointer
+}
+.btn_down1:hover .icon{ width: 35px; height: 35px; border-radius: 4px;  background: url("../img/icon/icon_down.svg")no-repeat center center; background-size: 20px;  background-color: #37683C; position: absolute; left: 0px; top: 0px  }
+
+
+
+.btn_down2{border-radius: 4px; background-color: #608de4; color: #fff; font-size: 14px; padding: 0px 20px 0px 50px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;position: relative; cursor: pointer
+}
+.btn_down2 .icon{ width: 35px; height: 35px; border-radius: 4px;  background: url("../img/icon/icon_upload.svg")no-repeat center center; background-size: 20px;  background-color: #486aab; position: absolute; left: 0px; top: 0px  }
+
+
+
+.btn_down2:hover{border-radius: 4px; background-color: #4371CB; color: #fff; font-size: 14px; padding: 0px 20px 0px 50px; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;position: relative; cursor: pointer
+}
+.btn_down2:hover .icon{ width: 35px; height: 35px; border-radius: 4px;  background: url("../img/icon/icon_upload.svg")no-repeat center center; background-size: 20px;  background-color: #2C4D8E; position: absolute; left: 0px; top: 0px  }
+
+
+.btn_sm1{border-radius: 4px; background-color: #51628e; color: #fff; font-size: 12px; padding: 0px 20px; line-height: 25px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sm2{border-radius: 4px;background-color: #336dd6; color: #fff; font-size: 13px; padding: 0px 20px; line-height: 30px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sm2:hover{border-radius: 4px;background-color: #144DB3;color: #fff; font-size: 13px; padding: 0px 20px; line-height: 30px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+
+.btn_sm3{border-radius: 4px;background-color: #85888F;color: #fff; font-size: 13px; padding: 0px 20px; line-height: 30px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sm3:hover{border-radius: 4px;background-color: #5A6172;color: #fff; font-size: 13px; padding: 0px 20px; line-height: 30px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sm4{border-radius: 4px;background-color: #fff; color: #336dd6; border:1px solid #336dd6;font-size: 13px; padding: 0px 20px; line-height: 30px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500; cursor: pointer}
+
+.btn_sm5{border-radius: 4px;background-color: #fff; color: #333; border:1px solid #0d315c;font-size: 12px; padding: 0 3px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500; cursor: pointer}
+.btn_sm5 img{transform: translateY(-1px);}
+
+.btn_detail{border-radius: 4px;  color: #fff;padding: 0px 15px 0px 40px;  background: url("../img/icon/icon_detail.svg")no-repeat 10px center; background-color: #1d3361; background-size: 20px; line-height: 35px; height: 35px; cursor: pointer}
+.btn_detail:hover{ background-color: #102247;}
+
+
+.btn_sm_plus{border-radius: 4px; background: url("../img/icon/icon_plus.svg")no-repeat calc(100% - 10px) center; background-size: 20px; background-color: #336dd6; color: #fff; font-size: 14px; padding: 0px 40px 0px 15px ; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sm_plus:hover{background-color: #144DB3;}
+
+
+.btn_sm_minus{border-radius: 4px; background: url("../img/icon/icon_minus.svg")no-repeat calc(100% - 10px) center;background-size: 20px; background-color: #85888F;color: #fff; font-size: 14px;  padding: 0px 40px 0px 15px ; line-height: 35px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_sm_minus:hover{background-color: #5A6172;}
+
+
+
+
+.btn_ex{border-radius: 4px; background: url("../img/common/icon_excel.png")no-repeat 15px center;background-size: 20px; background-color: #429831;color: #fff; font-size: 14px;  padding: 0px 15px 0px 40px ; line-height: 40px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500;; cursor: pointer}
+
+.btn_ex:hover{background-color: #2E6B22;}
+
+
+
+
+
+
+

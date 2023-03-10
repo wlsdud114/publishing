@@ -1,0 +1,136 @@
+@charset "utf-8";
+@-ms-viewport {
+  width: device-width;
+}
+
+@font-face {
+    font-family:'NanumGothic-Regular';
+    font-weight:300;
+    font-style: normal;
+    src: url('font/NanumGothic-Regular.eot');
+    src: url('font/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+         url('font/NanumGothic-Regular.woff') format('woff'),
+         url('font/NanumGothic-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family:'NanumGothic-Bold';
+    font-weight:500;
+    font-style: normal;
+    src: url('font/NanumGothic-Bold.eot');
+    src: url('font/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'),
+         url('font/NanumGothic-Bold.woff') format('woff'),
+         url('font/NanumGothic-Bold.ttf') format('truetype')
+}@font-face {
+    font-family:'NanumGothic-ExtraBold';
+    font-weight:700;
+    font-style: normal;
+    src: url('font/NanumGothic-ExtraBold.eot');
+    src: url('font/NanumGothic-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('font/NanumGothic-ExtraBold.woff') format('woff'),
+         url('font/NanumGothic-ExtraBold.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:300;
+    font-style: normal;
+    src: url('font/NanumSquareL.eot');
+    src: url('font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+         url('font/NanumSquareL.woff') format('woff'),
+         url('font/NanumSquareL.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:400;
+    font-style: normal;
+    src: url('font/NanumSquareR.eot');
+    src: url('font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+         url('font/NanumSquareR.woff') format('woff'),
+         url('font/NanumSquareR.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:700;
+    font-style: normal;
+    src: url('font/NanumSquareB.eot');
+    src: url('font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+         url('font/NanumSquareB.woff') format('woff'),
+         url('font/NanumSquareB.ttf') format('truetype')
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Thin-Hestia.eot');
+    src: url('font/NotoSansKR-Thin-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-Thin-Hestia.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Light-Hestia.eot');
+    src: url('font/NotoSansKR-Light-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-Light-Hestia.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-DemiLight-Hestia.eot');
+    src: url('font/NotoSansKR-DemiLight-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-DemiLight-Hestia.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Regular-Hestia.eot');
+    src: url('font/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-Regular-Hestia.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Medium-Hestia.eot');
+    src: url('font/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-Medium-Hestia.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Bold-Hestia.eot');
+    src: url('font/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-Bold-Hestia.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Black-Hestia.eot');
+    src: url('font/NotoSansKR-Black-Hestia.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSansKR-Black-Hestia.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.font_bb{font-size: 17px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500; }
+.font_bm{font-size: 16px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 500; }
+.font_bs{font-size: 14px; font-family: 'Noto Sans KR', sans-serif;   font-weight: 400;}
+
+.font_m{font-size: 15px; }
+.font_ms{font-size: 14px; }
+.font_s{font-size: 13px; }
