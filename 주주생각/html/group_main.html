@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>모임 메인화면</title>
+</head>
+<body>
+    <header>
+        <button><img src="../image/icon/btn_menu.png" class="menu"></button>
+        <div class="gnb">
+            <div class="top_area">
+                <button class="close_btn"><img src="../image/icon/btn_close.png"></button>
+            </div>
+            <div class="bottom_area ly_flx ly_column ly_flx_btw">
+                <div class="profile">
+                    <img src="../image/layout/profile.jpg" class="user_profile_img">
+                    <p class="user_name">주주 닉네임</p>
+                    <p class="user_email">mogni@naver.com</p>
+                    <a href="setting.html"><img src="../image/icon/btn_settings.png" class="setting_btn"></a>
+                </div>
+                <div class="profile_menu ly_flx ly_column ly_flx_wrap">
+                    <div class="ly_flx ly_flx_btw">
+                        <a href="" class="half_btn"><img src="../image/icon/btn_message.png"><span class="alert_num">12</span></a>
+                        <a href="" class="half_btn"><img src="../image/icon/btn_alarm.png"><span class="alert_num">100+</span></a>
+                    </div>
+                    <a href=""><img src="../image/icon/btn_group.png">참여모임</a>
+                    <a href=""><img src="../image/icon/btn_savetag.png">저장됨</a>
+                    <a href=""><img src="../image/icon/btn_update.png">최신</a>
+                    <a href=""><img src="../image/icon/btn_favorite.png">관심 유저</a>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="logo"><img src="../image/logo/logo.png"></a>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div id="main_wrapper">
+            <div class="group_info_box">
+                <p class="g_info"><span>상장코드 : 030790</span><span>모임결성일 : 2022년 7월 22일</span></p>
+                <div class="group_tit ly_flx ly_flx_btw">
+                    <h1 class="g_tit">비케이탑스 화난 주주 모임</h1>
+                    <a href="#none" class="add_group"><img src="../image/icon/btn_add.png">초대</a>
+                </div>
+                <div class="group_detail">
+                    <button class="level_info"><img src="../image/icon/icon_exclaimation.png"></button>
+                    <div>
+                        <h2 class="level">1단계</h2>
+                        <p class="date">승급일 : 2022.07.29</p>
+                        <div class="level_bar">
+                            <p class="level_gauge"></p>
+                        </div>
+                    </div>
+                    <ul class="ly_flx ly_flx_wrap">
+                        <li>
+                            <p><img src="../image/icon/icon_user.png">주주회원수</p>
+                            <p>120명</p>
+                        </li>
+                        <li>
+                            <p><img src="../image/icon/icon_graph.png">누적지분율</p>
+                            <p>0.27%</p>
+                        </li>
+                        <li>
+                            <p><img src="../image/icon/icon_group.png">서포터즈 회원</p>
+                            <p>200명</p>
+                        </li>
+                        <li>
+                            <p><img src="../image/icon/icon_partnership.png">동맹모임</p>
+                            <p>2곳</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="group_contents">
+                <div class="notice_line">
+                    <a href="notice_detail.html">
+                        <p>[공지] 안녕하세요! 비케이스탁 화난 주주 모임입니다.주주 모임입니다.</p>
+                        <img src="../image/icon/icon_next.png" alt="바로가기">
+                    </a>
+                </div>
+                <div class="content_list_wrap">
+                    <div class="group_main_list">
+                        <a href="group_home.html">
+                            <h2>전체게시글 (23개)</h2>
+                            <p>주주들의 적극적인 활동으로 새로운 내일을 만듭니다.</p>
+                            <p>more</p>
+                        </a>
+                        <a href="group_home.html">
+                            <h2>찬반투표 (진행중 : 3개)</h2>
+                            <p>나와 비슷한 생각을 하고 있는 주주들과 소통해요.</p>
+                            <p>more</p>
+                        </a>
+                        <a href="group_home.html">
+                            <h2>여론조사 (진행중 : 5개)</h2>
+                            <p>소액 주주들 의견을 모아 공식력을 확보해보세요.</p>
+                            <p>more</p>
+                        </a>
+                        <a href="group_home.html">
+                            <h2>주주청원 (진행중 : 0개)</h2>
+                            <p>적극적으로 기업의 주주의 생각을 관철시켜보세요.</p>
+                            <p>more</p>
+                            <div class="lock_menu">
+                                <img src="../image/icon/btn_lock_wh.png">
+                            </div>
+                        </a>
+                        <a href="group_home.html" class="lock_menu">
+                            <h2>의결권 대행 ( 진행중 : 0개)</h2>
+                            <p>주주들의 소중한 한표들을 모아 주요결정을 진행해요</p>
+                            <p>more</p>
+                            <div class="lock_menu">
+                                <img src="../image/icon/btn_lock_wh.png">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> <!--//group_contents-->
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

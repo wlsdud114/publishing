@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>회원가입-회원약관</title>
+</head>
+<body>
+    <header>
+        <!-- <button><img src="../image/icon/btn_menu.png" class="menu"></button>
+        <div class="gnb">
+            <div class="top_area">
+                <button class="close_btn"><img src="../image/icon/btn_close.png"></button>
+            </div>
+            <div class="bottom_area ly_flx ly_column ly_flx_btw">
+                <div class="profile">
+                    <img src="../image/layout/profile.jpg" class="user_profile_img">
+                    <p class="user_name">주주 닉네임</p>
+                    <p class="user_email">mogni@naver.com</p>
+                    <a href="setting.html"><img src="../image/icon/btn_settings.png" class="setting_btn"></a>
+                </div>
+                <div class="profile_menu ly_flx ly_column ly_flx_wrap">
+                    <div class="ly_flx ly_flx_btw">
+                        <a href="" class="half_btn"><img src="../image/icon/btn_message.png"><span class="alert_num">12</span></a>
+                        <a href="" class="half_btn"><img src="../image/icon/btn_alarm.png"><span class="alert_num">100+</span></a>
+                    </div>
+                    <a href=""><img src="../image/icon/btn_group.png">참여모임</a>
+                    <a href=""><img src="../image/icon/btn_savetag.png">저장됨</a>
+                    <a href=""><img src="../image/icon/btn_update.png">최신</a>
+                    <a href=""><img src="../image/icon/btn_favorite.png">관심 유저</a>
+                </div>
+            </div>
+        </div> -->
+        <a href="index.html" class="logo"><img src="../image/logo/logo.png"></a>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div id="main_wrapper">
+            <div class="intro full_hgt ly_flx ly_column ly_flx_btw">
+                <div class="login_box">
+                    <h1>회원가입</h1>
+                    <div class="join_terms">
+                        <p class="checkbox"><input type="checkbox" name="terms" id="mastercheck" onclick="masterchk();"><label for="mastercheck"><i></i>전체동의 <span class="blur">(선택 항목 포함)</span></label></p>
+                        <p class="checkbox"><input type="checkbox" name="terms" id="check01"><label for="check01"><i></i>이용약관 동의 <span class="blur">(필수)</span></label></p>
+                        <div class="terms">
+                            <p>
+                                이용약관 내용
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            </p>
+                        </div>
+                        <p class="checkbox"><input type="checkbox" name="terms" id="check02"><label for="check02"><i></i>개인정보 수집 및 이용에 대한 안내 <span class="blur">(필수)</span></label></p>
+                        <div class="terms">
+                            <p>
+                                이용약관 내용
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" class="full_type_btn clr_yw" value="확인">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* RESET ----------- */
+body,input,textarea,select,button,table,option,div,strong,em,span,a,header,footer,section,nav,dl,dt,dd,ul,ol,li,i,h1,h2,h3,h4,h5,h6,p,label{box-sizing:border-box;}
+header,footer,section,article,aside,nav,menu,figure,figcaption{display:block;}
+html,body{width:100%;font-family:'Noto Sans KR',sans-serif;}
+html,body,ul,ol,li,form,fieldset,legend,dt,dd,figure{margin:0;padding:0;}
+p,h1,h2,h3,h4,h5,h6,dl{margin:0;}
+body,input,textarea,select,button,table,option{color:#333;font-weight:400;font-size:16px;font-family:'Noto Sans KR',sans-serif;line-height:1.5;-webkit-text-size-adjust:100%;}
+fieldset,img{border:0;}
+legend{color:#333;}
+button{margin:0;padding:0;border:0;background:none;}
+button,a{color:#333;text-decoration:none;cursor:pointer;}
+li{list-style:none;}
+table{border-spacing:0;border-collapse:collapse;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
+blockquote,q{quotes:' ';}
+abbr,acronym{border-bottom:1px dotted;cursor:help;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+hr{display:none;}
+i{font-style:normal;}
+input:focus {outline: none;}
+
+/* LAYOUT */
+.ly_flx{display: -moz-box;display: -ms-flexbox;display: flex;}
+.ly_column{-webkit-box-orient: vertical;-moz-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+.ly_flx_btw{-webkit-box-pack: justify;-moz-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;}
+.ly_flx_cntr{-webkit-box-pack: center;-moz-box-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+.ly_flx_end{-webkit-box-pack: end;-moz-box-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;}
+.ly_flx_wrap{-webkit-box-lines: multiple;-moz-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;}
+.ly_tbl{display: table;table-layout: fixed;width:100%;}
+.tbl_cl{display: table-cell;width:initial !important;}
+
+/* BUTTON */
+.disable_btn{background-color: #f3f3f3;border:none !important;}
+.full_type_btn{display:block;width:100%;height:60px !important;border:1px solid #DDDDDD;border-radius: 10px;text-align: center;line-height: 60px;margin:10px 0;}
+.cmn_btn{box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;padding:10px 18px;border-radius: 12px;}
+.clr_yw{background-color: #ffe401;border:none;}
+.clr_bk{background-color: #333;border:none;color:#fff;}
+
+/* UI_CHECKBOX */
+.checkbox { line-height:0;}
+.checkbox > * { vertical-align: middle;}
+.checkbox input { position:absolute; opacity:0;}
+.checkbox label { position:relative; display:inline-block; min-height:24px; padding-top:1px; padding-left:25px; font-size:15px; color:#222; cursor: pointer;}
+.checkbox label i { display:block; position: absolute; top:3px; left:1px; width:20px; height:20px; border-radius:15px; border:1px solid #cccccc; background:#ccc; transition: all .3s ease;;}
+.checkbox label i:after { content:''; position:absolute; top:50%; left:50%; width:5px; height:3px; margin-top:-2px; border:2px solid #fff; border-color:transparent transparent #fff #fff; transform:translate(-50%, -50%) rotate(-45deg); transition: all .3s ease;}
+.checkbox input:checked + label i { border-color:#222; background:#222;}
+.checkbox input:checked + label i:after { border-color:transparent transparent #fff #fff;}
+
+/* HELPER */
+.mt50{margin-top: 50px;}
+.mt30{margin-top: 30px;}
+
+/* TEXT */
+.imp{color:#064c9c;}
+.blur{color:#ccc;}
+.bold{font-weight: bold;}

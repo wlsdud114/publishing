@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>모임 메인화면</title>
+</head>
+<body>
+    <header>
+        <button><img src="../image/icon/btn_menu.png" class="menu"></button>
+        <div class="gnb">
+            <div class="top_area">
+                <button class="close_btn"><img src="../image/icon/btn_close.png"></button>
+            </div>
+            <div class="bottom_area ly_flx ly_column ly_flx_btw">
+                <div class="profile">
+                    <img src="../image/layout/profile.jpg" class="user_profile_img">
+                    <p class="user_name">주주 닉네임</p>
+                    <p class="user_email">mogni@naver.com</p>
+                    <a href="setting.html"><img src="../image/icon/btn_settings.png" class="setting_btn"></a>
+                </div>
+                <div class="profile_menu ly_flx ly_column ly_flx_wrap">
+                    <div class="ly_flx ly_flx_btw">
+                        <a href="" class="half_btn"><img src="../image/icon/btn_message.png"><span class="alert_num">12</span></a>
+                        <a href="" class="half_btn"><img src="../image/icon/btn_alarm.png"><span class="alert_num">100+</span></a>
+                    </div>
+                    <a href=""><img src="../image/icon/btn_group.png">참여모임</a>
+                    <a href=""><img src="../image/icon/btn_savetag.png">저장됨</a>
+                    <a href=""><img src="../image/icon/btn_update.png">최신</a>
+                    <a href=""><img src="../image/icon/btn_favorite.png">관심 유저</a>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="logo"><img src="../image/logo/logo.png"></a>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div id="main_wrapper">
+            <div class="list_tit ly_flx ly_flx_btw">
+                <h1>내 목록</h1>
+                <button><img src="../image/icon/btn_reload.png">재인증하기</button>
+            </div>
+            <div class="group_list">
+                <div class="group_info_box">
+                    <div class="group_tit ly_flx ly_flx_btw">
+                        <div>
+                            <p class="g_info"><span>방장 : 비케이스탁</span><span class="date">모임결성일 : 2022년 7월 22일</span></p>
+                            <h1 class="g_tit">비케이탑스 화난 주주 모임dddddddd</h1>
+                        </div>
+                        <img src="../image/icon/icon_next.png" class="h_btn">
+                    </div>
+                    <div class="group_detail">
+                        <div class="ly_flx">
+                            <h2 class="level">1단계</h2>
+                            <div>
+                                <p class="date">승급일 : 2022.07.29</p>
+                                <div class="level_bar">
+                                    <p class="level_gauge"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="ly_flx ly_flx_wrap">
+                            <li>
+                                <p><img src="../image/icon/icon_user.png">주주회원수</p>
+                                <p>120명</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_graph.png">누적지분율</p>
+                                <p>0.27%</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_group.png">서포터즈 회원</p>
+                                <p>200명</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_partnership.png">동맹모임</p>
+                                <p>2곳</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list_tit group_srch">
+                <h1>참여 모임 리스트</h1>
+                <div>
+                    <input type="text" placeholder="모임 이름 및 상장코드를 입력 후 검색">
+                    <input type="submit" id="search"><label for="search"><img src="../image/icon/btn_search.png"></label>
+                </div>
+            </div>
+            <div class="group_list">
+                <div class="group_info_box">
+                    <div class="group_tit ly_flx ly_flx_btw">
+                        <div>
+                            <p class="g_info"><span>방장 : 비케이스탁</span><span class="date">모임결성일 : 2022년 7월 22일</span></p>
+                            <h1 class="g_tit">비케이탑스 화난 주주 모임dddddddd</h1>
+                        </div>
+                        <img src="../image/icon/icon_next.png" class="h_btn">
+                    </div>
+                    <div class="group_detail">
+                        <div class="ly_flx">
+                            <h2 class="level">1단계</h2>
+                            <div>
+                                <p class="date">승급일 : 2022.07.29</p>
+                                <div class="level_bar">
+                                    <p class="level_gauge"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="ly_flx ly_flx_wrap">
+                            <li>
+                                <p><img src="../image/icon/icon_user.png">주주회원수</p>
+                                <p>120명</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_graph.png">누적지분율</p>
+                                <p>0.27%</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_group.png">서포터즈 회원</p>
+                                <p>200명</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_partnership.png">동맹모임</p>
+                                <p>2곳</p>
+                            </li>
+                        </ul>
+                        <a href="" class="full_type_btn">가입 신청 (가입 가능)</a>
+                    </div>
+                </div>
+                <div class="group_info_box">
+                    <div class="group_tit ly_flx ly_flx_btw">
+                        <div>
+                            <p class="g_info"><span>방장 : 비케이스탁</span><span class="date">모임결성일 : 2022년 7월 22일</span></p>
+                            <h1 class="g_tit">비케이탑스 화난 주주 모임dddddddd</h1>
+                        </div>
+                        <img src="../image/icon/icon_next.png" class="h_btn">
+                    </div>
+                    <div class="group_detail">
+                        <div class="ly_flx">
+                            <h2 class="level">1단계</h2>
+                            <div>
+                                <p class="date">승급일 : 2022.07.29</p>
+                                <div class="level_bar">
+                                    <p class="level_gauge"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="ly_flx ly_flx_wrap">
+                            <li>
+                                <p><img src="../image/icon/icon_user.png">주주회원수</p>
+                                <p>120명</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_graph.png">누적지분율</p>
+                                <p>0.27%</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_group.png">서포터즈 회원</p>
+                                <p>200명</p>
+                            </li>
+                            <li>
+                                <p><img src="../image/icon/icon_partnership.png">동맹모임</p>
+                                <p>2곳</p>
+                            </li>
+                        </ul>
+                        <a href="" class="full_type_btn disable_btn">가입 불가 (보유주식 없음)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

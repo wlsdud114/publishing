@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+
+    <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>게시판_글쓰기</title>
+</head>
+<body>
+    <header>
+        <button><img src="../image/icon/btn_menu.png" class="menu"></button>
+        <div class="gnb">
+            <div class="top_area">
+                <button class="close_btn"><img src="../image/icon/btn_close.png"></button>
+            </div>
+            <div class="bottom_area ly_flx ly_column ly_flx_btw">
+                <div class="profile">
+                    <img src="../image/layout/profile.jpg" class="user_profile_img">
+                    <p class="user_name">주주 닉네임</p>
+                    <p class="user_email">mogni@naver.com</p>
+                    <a href="setting.html"><img src="../image/icon/btn_settings.png" class="setting_btn"></a>
+                </div>
+                <div class="profile_menu ly_flx ly_column ly_flx_wrap">
+                    <div class="ly_flx ly_flx_btw">
+                        <a href="" class="half_btn"><img src="../image/icon/btn_message.png"><span class="alert_num">12</span></a>
+                        <a href="" class="half_btn"><img src="../image/icon/btn_alarm.png"><span class="alert_num">100+</span></a>
+                    </div>
+                    <a href=""><img src="../image/icon/btn_group.png">참여모임</a>
+                    <a href=""><img src="../image/icon/btn_savetag.png">저장됨</a>
+                    <a href=""><img src="../image/icon/btn_update.png">최신</a>
+                    <a href=""><img src="../image/icon/btn_favorite.png">관심 유저</a>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="logo"><img src="../image/logo/logo.png"></a>
+    </header>
+    <main>
+        <div class="bg"></div>
+        <div id="main_wrapper">
+            <div class="board_cont_area">
+                <div class="ctg_select">
+                    <ul>
+                        <li><span class="option_btn" onclick="optionToggle();">찬반투표<img src="../image/icon/icon_option.png" class="ctgbtn"></span>
+                            <ul class="option_menu">
+                                <li><a href="">일반글</a></li>
+                                <li><a href="">찬반투표</a></li>
+                                <li><a href="">여론조사</a></li>
+                                <li><a href="">주주청원</a></li>
+                                <li><a href="">의결권 외</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <form>
+                    <input type="text" placeholder="제목을 간략하게 작성해주세요" class="post_tit">
+                    <textarea placeholder="진행하고자 하는 찬반투표 상세 설명을 남겨주세요" class="post_txt"></textarea>
+                </form>
+                <div class="posting_tool">
+                    <div class="file_name"><p>Filename.pdf<button></button></p></div>
+                    <div class="vote_tool ly_flx ly_flx_wrap">
+                        <div class="schedule">
+                            <label for="from">시작일</label>
+                            <input type="text" id="from" placeholder="YYYY-MM-DD">
+                        </div>
+                        <div class="schedule">
+                            <label for="to">종료일</label>
+                            <input type="text" id="to" placeholder="YYYY-MM-DD">
+                        </div>
+                        <p><input type="radio" name="vote" id="yes"><label for="yes">동의합니다</label></p>
+                        <p><input type="radio" name="vote" id="no"><label for="no">반대합니다</label></p>
+                    </div>
+                    <div class="tool_btn ly_flx ly_flx_wrap">
+                        <a href=""><img src="../image/icon/btn_addimg.png">사진추가</a>
+                        <a href=""><img src="../image/icon/btn_attach.png">첨부파일</a>
+                        <a href=""><img src="../image/icon/btn_link.png">링크추가</a>
+                        <a href=""><img src="../image/icon/btn_vote.png">투표함</a>
+                    </div>
+                </div>
+                <a href="group_home.html" class="full_type_btn mt50">목록보기</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
